@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.png
+debug_site.py
+test_one.py
+.claude/

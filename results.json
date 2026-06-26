@@ -1,0 +1,644 @@
+[
+  {
+    "model": "A14 64G",
+    "storage": "",
+    "price": 700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A14 128G",
+    "storage": "",
+    "price": 900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A15 64G",
+    "storage": "",
+    "price": 1000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A15 128G",
+    "storage": "",
+    "price": 1300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A16 5G (4G/128G)",
+    "storage": "",
+    "price": 1800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A16 5G (6G/128G)",
+    "storage": "",
+    "price": 2300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A22 64G",
+    "storage": "",
+    "price": 500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A22 128G",
+    "storage": "",
+    "price": 800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A23 64G",
+    "storage": "",
+    "price": 900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A23 128G",
+    "storage": "",
+    "price": 1100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A25 (6G/128G)",
+    "storage": "",
+    "price": 2200,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A25 (8G/128G)",
+    "storage": "",
+    "price": 2400,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A26 128G",
+    "storage": "",
+    "price": 3300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A32 64G",
+    "storage": "",
+    "price": 600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A32 128G",
+    "storage": "",
+    "price": 800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A33 (6G/128G)",
+    "storage": "",
+    "price": 800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A33 (8G/128G)",
+    "storage": "",
+    "price": 1000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A34 (6G/128G)",
+    "storage": "",
+    "price": 1800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A34 (8G/128G)",
+    "storage": "",
+    "price": 2000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A36 (8G/128G)",
+    "storage": "",
+    "price": 3900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A36 (8G/256G)",
+    "storage": "",
+    "price": 4400,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A35 (6G/128G)",
+    "storage": "",
+    "price": 2700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A35 (8G/128G)",
+    "storage": "",
+    "price": 2900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A52 128G",
+    "storage": "",
+    "price": 800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A52 256G",
+    "storage": "",
+    "price": 1100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A52S 128G",
+    "storage": "",
+    "price": 1200,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A52S 256G",
+    "storage": "",
+    "price": 1500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A53 128G",
+    "storage": "",
+    "price": 1400,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A53 256G",
+    "storage": "",
+    "price": 1700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A54 128G",
+    "storage": "",
+    "price": 2200,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A54 256G",
+    "storage": "",
+    "price": 2700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A55",
+    "storage": "",
+    "price": 3800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A56 (8G/256G)",
+    "storage": "",
+    "price": 4600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A56 (12G/256G)",
+    "storage": "",
+    "price": 4900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A71 (A715)",
+    "storage": "",
+    "price": 600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "A71 (A716) 5G",
+    "storage": "",
+    "price": 900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "M14",
+    "storage": "",
+    "price": 500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "M33",
+    "storage": "",
+    "price": 700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "M34",
+    "storage": "",
+    "price": 1100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "M53",
+    "storage": "",
+    "price": 1400,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S10+",
+    "storage": "",
+    "price": 500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S20",
+    "storage": "",
+    "price": 1100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S20 FE",
+    "storage": "",
+    "price": 800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S20+",
+    "storage": "",
+    "price": 1400,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S20 ultra 256G",
+    "storage": "",
+    "price": 1800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S20 ultra 512G",
+    "storage": "",
+    "price": 2000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S21 FE",
+    "storage": "",
+    "price": 2900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S21 128G",
+    "storage": "",
+    "price": 2000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S21 256G",
+    "storage": "",
+    "price": 2200,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S21+ 128G",
+    "storage": "",
+    "price": 1900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S21+ 256G",
+    "storage": "",
+    "price": 2100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S21 Ultra 256G",
+    "storage": "",
+    "price": 3500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S21 Ultra 512G",
+    "storage": "",
+    "price": 4000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S22 128G",
+    "storage": "",
+    "price": 2600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S22 256G",
+    "storage": "",
+    "price": 2900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S22+ 128G",
+    "storage": "",
+    "price": 3300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S22+ 256G",
+    "storage": "",
+    "price": 3600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S22 Ultra 256G",
+    "storage": "",
+    "price": 6900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S22 Ultra 512G",
+    "storage": "",
+    "price": 7500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23 FE 128G",
+    "storage": "",
+    "price": 4400,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23 FE 256G",
+    "storage": "",
+    "price": 4700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23 128G",
+    "storage": "",
+    "price": 5100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23 256G",
+    "storage": "",
+    "price": 5500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23+ 256G",
+    "storage": "",
+    "price": 6600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23+ 512G",
+    "storage": "",
+    "price": 7500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23 Ultra 256G",
+    "storage": "",
+    "price": 10000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23 Ultra 512G",
+    "storage": "",
+    "price": 10600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S23 Ultra 1TB",
+    "storage": "",
+    "price": 11100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S24FE 256G",
+    "storage": "",
+    "price": 7900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S24 256G",
+    "storage": "",
+    "price": 7000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S24 512G",
+    "storage": "",
+    "price": 8100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S24+ 256G",
+    "storage": "",
+    "price": 8900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S24+ 512G",
+    "storage": "",
+    "price": 9500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S24 Ultra 256G",
+    "storage": "",
+    "price": 13900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S24 Ultra 512G",
+    "storage": "",
+    "price": 14800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S25 256G",
+    "storage": "",
+    "price": 10700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S25 512G",
+    "storage": "",
+    "price": 12300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S25+ 256G",
+    "storage": "",
+    "price": 12600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S25+ 512G",
+    "storage": "",
+    "price": 13700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S25 Ultra 256G",
+    "storage": "",
+    "price": 19100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S25 Ultra 512G",
+    "storage": "",
+    "price": 20500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "S25 Ultra 1T",
+    "storage": "",
+    "price": 21700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "NOTE 10",
+    "storage": "",
+    "price": 700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "NOTE 10+",
+    "storage": "",
+    "price": 1000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "NOTE10 lite",
+    "storage": "",
+    "price": 1000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "NOTE 20",
+    "storage": "",
+    "price": 1700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "NOTE 20U 256G",
+    "storage": "",
+    "price": 3500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "NOTE 20U 512G",
+    "storage": "",
+    "price": 3800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Z flip4 128G",
+    "storage": "",
+    "price": 1300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Z flip4 256G",
+    "storage": "",
+    "price": 1500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Z flip5 256G",
+    "storage": "",
+    "price": 4100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Z flip5 512G",
+    "storage": "",
+    "price": 4700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Z flip6 256G",
+    "storage": "",
+    "price": 8100,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Z flip6 512G",
+    "storage": "",
+    "price": 8700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Z flip7 256G",
+    "storage": "",
+    "price": 13300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Z flip7 512G",
+    "storage": "",
+    "price": 14500,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold3 5G 256G",
+    "storage": "",
+    "price": 2600,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold3 5G 512G",
+    "storage": "",
+    "price": 2700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold4 256G",
+    "storage": "",
+    "price": 4800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold4 512G",
+    "storage": "",
+    "price": 5800,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold4 1TB",
+    "storage": "",
+    "price": 5900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold5 256G",
+    "storage": "",
+    "price": 7700,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold5 512G",
+    "storage": "",
+    "price": 8300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold6 256G",
+    "storage": "",
+    "price": 13900,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold6 512G",
+    "storage": "",
+    "price": 14300,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold7 256G",
+    "storage": "",
+    "price": 30000,
+    "scraped_at": "2026-06-27 03:26"
+  },
+  {
+    "model": "Fold7 512G",
+    "storage": "",
+    "price": 31000,
+    "scraped_at": "2026-06-27 03:26"
+  }
+]
