@@ -10,7 +10,8 @@ SCOPES = [
     "https://www.googleapis.com/auth/drive",
 ]
 
-SHEET_HEADERS = ["機型", "容量", "回收估價（NT$）", "更新時間"]
+# 欄位順序: A=機型 B=容量 C=回收估價 D=價格補正(手動) E=更新時間
+SHEET_HEADERS = ["機型", "容量", "回收估價（NT$）", "價格補正", "更新時間"]
 
 
 def get_credentials() -> Credentials:
@@ -36,23 +37,44 @@ def write_to_sheets(data: list[dict]):
     client = gspread.authorize(creds)
     sheet = client.open_by_key(spreadsheet_id).sheet1
 
+    # 先讀取現有的「價格補正」欄（D 欄），避免覆寫手動調整值
+    existing_adjustments = {}
+    try:
+        existing_data = sheet.get_all_values()
+        if len(existing_data) > 1:
+            headers = existing_data[0]
+            if "價格補正" in headers:
+                adj_col = headers.index("價格補正")
+                model_col = headers.index("機型") if "機型" in headers else 0
+                for row in existing_data[1:]:
+                    if len(row) > max(adj_col, model_col):
+                        model_key = row[model_col].strip()
+                        adj_val = row[adj_col].strip()
+                        if model_key and adj_val:
+                            existing_adjustments[model_key] = adj_val
+    except Exception:
+        pass  # 第一次執行，無既有資料
+
+    # 建立新資料列（D 欄補正值沿用舊值，預設空白）
     rows = [SHEET_HEADERS]
     for item in data:
+        model = item.get("model", "")
+        adj = existing_adjustments.get(model, "")
         rows.append([
-            item.get("model", ""),
+            model,
             item.get("storage", ""),
             format_price(item.get("price")),
+            adj,
             item.get("scraped_at", ""),
         ])
 
-    # Clear and overwrite
     sheet.clear()
     sheet.update("A1", rows)
 
-    # Bold header row
-    sheet.format("A1:D1", {"textFormat": {"bold": True}})
+    # 標題列加粗
+    sheet.format("A1:E1", {"textFormat": {"bold": True}})
 
-    print(f"已寫入 {len(data)} 筆資料到 Google Sheets")
+    print(f"已寫入 {len(data)} 筆資料到 Google Sheets（價格補正欄已保留）")
 
 
 if __name__ == "__main__":

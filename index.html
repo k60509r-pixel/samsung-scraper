@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>手機回收線上估價</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --line:#e5e7eb; --text:#0f172a;
+    --muted:#6b7280; --accent:#f5c400; --accent-text:#111827; --btn:#111827;
+    --chip:#f3f4f6; --radius:14px; --shadow:0 8px 24px rgba(15,23,42,.06);
+  }
+  html,body{margin:0;padding:0;background:var(--bg);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text)}
+  .rq-wrap{max-width:1040px;margin:32px auto;padding:0 16px}
+  .rq-hero{background:linear-gradient(180deg,#fff,var(--bg));border:1px solid var(--line);
+    border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin-bottom:18px}
+  .rq-title{font-size:26px;font-weight:900;margin:0}
+  .rq-sub{margin-top:10px;padding:8px 12px;border-radius:10px;background:var(--accent);color:var(--accent-text);font-weight:800;display:inline-block}
+  .rq-note{font-size:13px;color:var(--muted);margin-top:6px}
+
+  .rq-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;margin:16px 0}
+  .rq-card-title{font-weight:900;font-size:16px;margin-bottom:12px}
+  .rq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:860px){.rq-grid{grid-template-columns:1fr}}
+  .rq-field{display:flex;flex-direction:column;gap:6px}
+  .rq-label{font-size:14px;color:var(--muted)}
+  .rq-select{height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;font-size:15px;background:#fff}
+
+  .rq-checks{display:flex;flex-direction:column;gap:10px}
+  .rq-check{display:flex;align-items:flex-start;gap:10px;background:var(--chip);border:1px solid var(--line);padding:10px 12px;border-radius:12px}
+  .rq-check input{transform:scale(1.05);margin-top:2px}
+  .rq-check-main{display:flex;flex-direction:column}
+  .rq-check-title{font-weight:600;line-height:1.2}
+  .rq-tip{font-size:12px;color:var(--muted);line-height:1.5;margin-top:2px}
+
+  .rq-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+  .rq-actions .rq-btn{width:180px;height:48px;text-align:center}
+  @media (max-width:520px){ .rq-actions .rq-btn{width:100%} }
+
+  .rq-btn{height:46px;padding:0 18px;border:1px solid var(--btn);border-radius:12px;background:var(--btn);color:#fff;font-weight:900;cursor:pointer;letter-spacing:.3px}
+  .rq-btn.secondary{background:#fff;color:var(--btn)}
+  .rq-btn:active{transform:translateY(1px)}
+
+  .rq-btn.store{background:#007bff; border-color:#007bff}
+  .rq-btn.logistics{background:#28a745; border-color:#28a745}
+
+  .rq-result{background:var(--card);border:2px dashed var(--line);border-radius:var(--radius);padding:18px;margin-top:16px}
+  .rq-summary{
+    white-space:pre-wrap;
+    background:var(--chip);
+    border:1px dashed var(--line);
+    border-radius:10px;
+    padding:12px;
+    font-size:14px;
+    line-height:1.6;
+    color:var(--text);
+    margin:8px 0 0;
+  }
+
+  .rq-details{
+    margin-top:10px;padding:10px 12px;background:var(--chip);
+    border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:13px
+  }
+  .rq-details summary{cursor:pointer;font-weight:800;color:var(--text)}
+  .rq-details summary::-webkit-details-marker{display:none}
+  .rq-details summary:after{content:" ⌄"}
+  .rq-details ul{margin:8px 0 0 18px;padding:0}
+  .rq-details p{margin:8px 0 0}
+</style>
+</head>
+<body>
+<div id="recycle-quote-root"></div>
+
+<script>
+(function(){
+  /* ========== ① Samsung Sheets 設定 ========== */
+  const SAMSUNG_SHEETS_ID = '1zhHVKJLDVfUSmADvrhqUyNu1PY5psQ73H2zV1oGhKzs';
+  let SAMSUNG_PRICING = {};   // { "A14 64G": { "": 700 }, ... }
+  let samsungLoaded = false;
+
+  // 從機型全名拆出「基礎型號」和「容量」
+  // 例: "A14 64G" → {model:"A14", storage:"64G"}
+  //     "A16 5G (4G/128G)" → {model:"A16 5G", storage:"(4G/128G)"}
+  //     "S25 Ultra 256G" → {model:"S25 Ultra", storage:"256G"}
+  //     "NOTE 10+" → {model:"NOTE 10+", storage:""}
+  function splitModelStorage(fullName){
+    // 括號格式: 型號 (RAM/Storage)
+    let m = fullName.match(/^(.+?)\s+(\(\d+G\/\d+[GT]B?\))$/);
+    if(m) return { model: m[1].trim(), storage: m[2] };
+    // 結尾純容量: 64G / 128G / 256G / 512G / 1T / 1TB / 2TB
+    m = fullName.match(/^(.+?)\s+(\d+[GT]B?)$/);
+    if(m) return { model: m[1].trim(), storage: m[2] };
+    return { model: fullName, storage: '' };
+  }
+
+  function parseCSVRow(row){
+    const cols = []; let cur = ''; let inQ = false;
+    for(let i = 0; i < row.length; i++){
+      const ch = row[i];
+      if(ch === '"'){ inQ = !inQ; }
+      else if(ch === ',' && !inQ){ cols.push(cur); cur = ''; }
+      else { cur += ch; }
+    }
+    cols.push(cur);
+    return cols;
+  }
+
+  async function loadSamsungPricing(){
+    const url = `https://docs.google.com/spreadsheets/d/${SAMSUNG_SHEETS_ID}/export?format=csv&gid=0`;
+    const resp = await fetch(url);
+    if(!resp.ok) throw new Error('HTTP ' + resp.status);
+    const text = await resp.text();
+    const rows = text.trim().split('\n').slice(1); // skip header
+    const pricing = {};
+    rows.forEach(row => {
+      const cols       = parseCSVRow(row.replace(/\r$/,''));
+      const fullName   = (cols[0] || '').trim();
+      const basePrice  = parseInt((cols[2] || '').replace(/,/g,'').trim(), 10);
+      const adjustment = parseInt((cols[3] || '').replace(/,/g,'').trim(), 10) || 0;
+      if(!fullName || isNaN(basePrice)) return;
+      const { model, storage } = splitModelStorage(fullName);
+      if(!pricing[model]) pricing[model] = {};
+      pricing[model][storage] = basePrice + adjustment;
+    });
+    return pricing;
+  }
+
+  /* ========== ② Apple 基礎回收價 ========== */
+  const PRICING = {
+    "Apple": {
+      "iPhone 17 Pro Max": { "256GB": 32000, "512GB": 36500, "1TB": 39000, "2TB": 40500 },
+      "iPhone 17 Pro":     { "256GB": 28500, "512GB": 33500, "1TB": 36000 },
+      "iPhone 17 Air":     { "256GB": 16000, "512GB": 17000, "1TB": 18000 },
+      "iPhone 17":         { "256GB": 19500, "512GB": 23500 },
+      "iPhone 17e":        { "256GB": 12000, "512GB": 17000 },
+      "iPhone 16 Pro Max": { "256GB": 22600, "512GB": 24600, "1TB": 25800 },
+      "iPhone 16 Pro":     { "128GB": 18600, "256GB": 19600, "512GB": 21100 },
+      "iPhone 16 Plus":    { "128GB": 15500, "256GB": 17000 },
+      "iPhone 16":         { "128GB": 13000, "256GB": 14500 },
+      "iPhone 16e":        { "128GB": 10000, "256GB": 11000 },
+      "iPhone 15 Pro Max": { "256GB": 16700, "512GB": 18100, "1TB": 19500 },
+      "iPhone 15 Pro":     { "128GB": 13500, "256GB": 14000, "512GB": 14500, "1TB": 15300 },
+      "iPhone 15 Plus":    { "128GB": 12000, "256GB": 13000 },
+      "iPhone 15":         { "128GB": 10000, "256GB": 11000 },
+      "iPhone 14 Pro Max": { "128GB": 12500, "256GB": 13500, "512GB": 14000 },
+      "iPhone 14 Pro":     { "128GB": 9500,  "256GB": 10500, "512GB": 11000 },
+      "iPhone 14 Plus":    { "128GB": 8000,  "256GB": 9000 },
+      "iPhone 14":         { "128GB": 7000,  "256GB": 7500 },
+      "iPhone 13 Pro Max": { "128GB": 8000,  "256GB": 8500, "512GB": 9000 },
+      "iPhone 13 Pro":     { "128GB": 6500,  "256GB": 7500, "512GB": 8000 },
+      "iPhone 13 mini":    { "128GB": 3500,  "256GB": 4200 },
+      "iPhone 13":         { "128GB": 5500,  "256GB": 6000 },
+      "iPhone 12 Pro Max": { "128GB": 6000,  "256GB": 6500, "512GB": 6800 },
+      "iPhone 12 Pro":     { "128GB": 4800,  "256GB": 5300, "512GB": 5500 },
+      "iPhone 12 mini":    { "64GB":  2500,  "128GB": 3000, "256GB": 3000 },
+      "iPhone 12":         { "64GB":  3800,  "128GB": 4300, "256GB": 4500 },
+      "iPhone 11 Pro Max": { "64GB":  4000,  "256GB": 4300, "512GB": 4700 },
+      "iPhone 11 Pro":     { "64GB":  3300,  "256GB": 3800, "512GB": 4000 },
+      "iPhone 11":         { "64GB":  3000,  "128GB": 3500, "256GB": 3800 },
+      "iPhone XS Max":     { "64GB":  2200,  "256GB": 2200 },
+      "iPhone XS":         { "64GB":  1500,  "256GB": 1500 },
+      "iPhone XR":         { "64GB":  1200,  "128GB": 1200, "256GB": 1200 },
+      "iPhone X":          { "64GB":  800,   "256GB": 800 },
+      "iPhone 8 Plus":     { "64GB":  600,   "256GB": 600 },
+      "iPhone 8":          { "64GB":  600,   "256GB": 600 },
+      "iPhone 7 Plus":     { "32GB":  250,   "128GB": 250 },
+      "iPhone 7":          { "32GB":  250,   "128GB": 250 },
+      "iPhone SE (2rd Gen)": { "64GB": 1200, "128GB": 1200, "256GB": 1200 },
+      "iPhone SE (3rd Gen)": { "64GB": 1700, "128GB": 2000, "256GB": 2300 }
+    }
+  };
+
+  /* ========== ③ 網址設定 ========== */
+  const LINE_URL   = "https://lin.ee/JNegO9L";
+  const STORE_URL  = "https://ivyphone.com.tw/about_us";
+  const HOME_URL   = "https://lin.ee/JNegO9L";
+
+  const RULES = {
+    batteryBands:   { ">=90": 0.00, "86-89": 0.05, "81-85": 0.08, "<81|NA": 0.12 },
+    powerRates:     { normal: 0.00, noPower: 0.90, water: 0.98, crushed: 0.98 },
+    frameRates:     { good: 0.00, minor: 0.03, bigDent: 0.10, bent: 0.60 },
+    backRates:      { good: 0.00, minor: 0.03, obvious: 0.08, broken: 0.35 },
+    lcdRates:       { ok: 0.00, minor: 0.03, aging: 0.10, nonOEM: 0.50, bad: 0.50 },
+    camFront:       { ok: 0.00, dust: 0.10, bad: 0.20 },
+    camRear:        { ok: 0.00, dust: 0.10, bad: 0.25 },
+    bioRates:       { ok: 0.00, fpNg: 0.10, faceNg: 0.50 },
+    otherFuncRates: {
+      nfc:0.90, gps:0.90, wifiBt:0.90, simEsim:0.90,
+      earpiece:0.10, spk:0.10, mic:0.10, vib:0.10, charge:0.10, btn:0.10, prox:0.06
+    }
+  };
+
+  /* ========== ④ 工具函式 ========== */
+  function fmt(n){ return 'NT$ ' + (n||0).toLocaleString(); }
+  function todayTW(){
+    return new Date().toLocaleDateString('zh-TW', { year:'numeric', month:'2-digit', day:'2-digit', timeZone:'Asia/Taipei' });
+  }
+  function makeSelect(label, options){
+    const el = document.createElement('div'); el.className='rq-field';
+    const lab = document.createElement('label'); lab.className='rq-label'; lab.textContent = label;
+    const sel = document.createElement('select'); sel.className='rq-select';
+    el.append(lab, sel);
+    const api = { el, input: sel,
+      set(list){ sel.innerHTML=''; const o0=new Option('請選擇',''); sel.add(o0); (list||[]).forEach(v=>sel.add(new Option(v,v))); },
+      value(){ return sel.value; }
+    };
+    api.set(options||[]); return api;
+  }
+  function makeRadioGroup(label, items, defValue){
+    const el = document.createElement('div'); el.className='rq-field';
+    const lab = document.createElement('label'); lab.className='rq-label'; lab.textContent=label;
+    const box = document.createElement('div'); box.className='rq-checks';
+    const name = 'rq-'+Math.random().toString(36).slice(2);
+    (items||[]).forEach(it=>{
+      const wrap=document.createElement('label'); wrap.className='rq-check';
+      const r=document.createElement('input'); r.type='radio'; r.name=name; r.value=it.value; if(it.value===defValue) r.checked=true;
+      const main=document.createElement('div'); main.className='rq-check-main';
+      const t=document.createElement('div'); t.className='rq-check-title'; t.textContent=it.label;
+      if(it.desc){ const tip=document.createElement('div'); tip.className='rq-tip'; tip.textContent=it.desc; main.appendChild(tip); }
+      main.prepend(t); wrap.append(r, main); box.appendChild(wrap);
+    });
+    el.append(lab, box);
+    return {
+      el,
+      value(){ const c=box.querySelector('input:checked'); return c?c.value:defValue; },
+      set(v){ const t=box.querySelector('input[value="'+v+'"]'); if(t) t.checked=true; },
+      text(){ const c=box.querySelector('input:checked'); return c?c.parentElement.querySelector('.rq-check-title').textContent.trim():''; }
+    };
+  }
+  function makeCheck(labelText, descText=''){
+    const wrap=document.createElement('label'); wrap.className='rq-check';
+    const c=document.createElement('input'); c.type='checkbox';
+    const main=document.createElement('div'); main.className='rq-check-main';
+    const t=document.createElement('div'); t.className='rq-check-title'; t.textContent=labelText;
+    main.appendChild(t);
+    if(descText){ const tip=document.createElement('div'); tip.textContent=descText; tip.className='rq-tip'; main.appendChild(tip); }
+    wrap.append(c, main);
+    return { el:wrap, input:c, checked:()=>c.checked, text:()=>labelText };
+  }
+  function button(text, onClick, extraClass=''){
+    const b=document.createElement('button'); b.type='button'; b.className='rq-btn ' + extraClass; b.textContent=text; b.addEventListener('click', onClick); return b;
+  }
+  function makeDetails(title, html){
+    const d=document.createElement('details'); d.className='rq-details';
+    const s=document.createElement('summary'); s.textContent=title;
+    const b=document.createElement('div'); b.innerHTML=html;
+    d.append(s,b); return d;
+  }
+
+  /* ========== ⑤ 畫面建立 ========== */
+  const root = document.getElementById('recycle-quote-root');
+  const wrap = document.createElement('div'); wrap.className='rq-wrap';
+
+  const hero=document.createElement('div'); hero.className='rq-hero';
+  hero.innerHTML = `<div class="rq-title">手機回收線上估價</div><div class="rq-sub">拒收來路不明手機；遺忘 iCloud / Google 帳號鎖請洽官方客服</div><div class="rq-note">以下估價僅供參考，最終金額以現場檢測為準</div>`;
+  wrap.appendChild(hero);
+
+  const cardBase=document.createElement('div'); cardBase.className='rq-card';
+  cardBase.innerHTML = `<div class="rq-card-title">品牌 / 型號 / 容量</div>`;
+  const grid1=document.createElement('div'); grid1.className='rq-grid';
+  const selBrand   = makeSelect('品牌', ['Apple', 'Samsung']);
+  const selModel   = makeSelect('型號', []);
+  grid1.append(selBrand.el, selModel.el);
+  const grid2=document.createElement('div'); grid2.className='rq-grid';
+  const selStorage = makeSelect('容量', []);
+  grid2.append(selStorage.el);
+  cardBase.append(grid1, grid2);
+  wrap.appendChild(cardBase);
+
+  /* 品牌切換 */
+  selBrand.input.addEventListener('change', () => {
+    const brand = selBrand.value();
+    if(brand === 'Samsung'){
+      if(!samsungLoaded){
+        selModel.input.innerHTML = '<option value="">載入中...</option>';
+        selModel.input.disabled = true;
+        selStorage.set([]);
+      } else {
+        selModel.set(Object.keys(SAMSUNG_PRICING));
+        selModel.input.disabled = false;
+        selStorage.set([]);
+      }
+      batteryWrap.style.display = 'none';
+    } else {
+      selModel.set(Object.keys(PRICING[brand]||{}));
+      selModel.input.disabled = false;
+      selStorage.set([]);
+      batteryWrap.style.display = '';
+    }
+  });
+
+  selModel.input.addEventListener('change', () => {
+    const brand = selBrand.value();
+    if(brand === 'Samsung'){
+      const storages = Object.keys(SAMSUNG_PRICING[selModel.value()]||{});
+      // 若只有一個空字串 key，不顯示容量下拉（自動選空值）
+      if(storages.length === 1 && storages[0] === ''){
+        selStorage.input.innerHTML = '<option value="">（無需選擇）</option>';
+      } else {
+        selStorage.set(storages);
+      }
+    } else {
+      selStorage.set(Object.keys((PRICING[brand]||{})[selModel.value()]||{}));
+    }
+  });
+
+  const cardPower=document.createElement('div'); cardPower.className='rq-card';
+  cardPower.innerHTML = `<div class="rq-card-title">開關機功能</div>`;
+  const grpPower = makeRadioGroup('狀態', [{label:'正常開機', value:'normal'},{label:'無法開機', value:'noPower'},{label:'泡水', value:'water'},{label:'摔爛 / 車輾過', value:'crushed'}], 'normal');
+  cardPower.appendChild(grpPower.el);
+  wrap.appendChild(cardPower);
+
+  const cardCos=document.createElement('div'); cardCos.className='rq-card';
+  cardCos.innerHTML = `<div class="rq-card-title">螢幕 / 手機外觀</div>`;
+  const gridCos=document.createElement('div'); gridCos.className='rq-grid';
+  const grpFrame = makeRadioGroup('邊框', [{label:'完好無傷', value:'good'},{label:'輕微痕跡', value:'minor'},{label:'明顯撞傷', value:'bigDent'},{label:'明顯變形', value:'bent'}], 'good');
+  const grpBack  = makeRadioGroup('背蓋', [{label:'完好無傷', value:'good'},{label:'輕微痕跡', value:'minor'},{label:'明顯痕跡', value:'obvious'},{label:'背蓋破損', value:'broken'}], 'good');
+  gridCos.append(grpFrame.el, grpBack.el);
+  const grpLCD = makeRadioGroup('液晶觸碰顯示', [{label:'正常無傷痕', value:'ok'},{label:'輕微痕跡', value:'minor'},{label:'明顯刮傷 / 老化 / 泛黃', value:'aging'},{label:'非原廠螢幕', value:'nonOEM'},{label:'顯示異常 / 破損 / 觸碰NG', value:'bad'}], 'ok');
+  cardCos.append(gridCos, grpLCD.el);
+  cardCos.appendChild(makeDetails('如何判定螢幕／外觀？', `<ul><li><b>輕微痕跡</b>：細小刮痕。</li><li><b>顯示異常</b>：破損、觸控失靈、烙印。</li></ul>`));
+  wrap.appendChild(cardCos);
+
+  const cardCam=document.createElement('div'); cardCam.className='rq-card';
+  cardCam.innerHTML = `<div class="rq-card-title">相機功能</div>`;
+  const gridCam=document.createElement('div'); gridCam.className='rq-grid';
+  const grpCamFront = makeRadioGroup('前自拍相機', [{label:'正常', value:'ok'},{label:'內有異物', value:'dust'},{label:'故障', value:'bad'}], 'ok');
+  const grpCamRear  = makeRadioGroup('後相機',    [{label:'正常', value:'ok'},{label:'內有異物', value:'dust'},{label:'故障', value:'bad'}], 'ok');
+  gridCam.append(grpCamFront.el, grpCamRear.el);
+  cardCam.append(gridCam);
+  wrap.appendChild(cardCam);
+
+  const cardOther=document.createElement('div'); cardOther.className='rq-card';
+  cardOther.innerHTML = `<div class="rq-card-title">其他</div>`;
+  const grpBio = makeRadioGroup('生物辨識功能', [{label:'正常', value:'ok'},{label:'指紋 NG', value:'fpNg'},{label:'臉部 NG', value:'faceNg'}], 'ok');
+  const lblOther=document.createElement('div'); lblOther.className='rq-label'; lblOther.textContent='其餘功能性異常';
+  const boxOther=document.createElement('div'); boxOther.className='rq-checks';
+  const ckNfc=makeCheck('NFC 異常'), ckGps=makeCheck('GPS 異常'), ckWifiBt=makeCheck('Wi-Fi/藍牙異常'), ckSimEsim=makeCheck('SIM/eSIM 異常'), ckEarpiece=makeCheck('聽筒異常'), ckSpk=makeCheck('喇叭異常'), ckMic=makeCheck('麥克風異常'), ckVib=makeCheck('震動異常'), ckCharge=makeCheck('充電孔異常'), ckButtons=makeCheck('按鍵異常'), ckProx=makeCheck('感應器異常');
+  [ckNfc, ckGps, ckWifiBt, ckSimEsim, ckEarpiece, ckSpk, ckMic, ckVib, ckCharge, ckButtons, ckProx].forEach(x=>boxOther.appendChild(x.el));
+
+  /* 電池健康度（Samsung 時隱藏） */
+  const grpBattery = makeRadioGroup('電池健康度', [{label:'高於 90%', value:'>=90'},{label:'86% ~ 89%', value:'86-89'},{label:'81% ~ 85%', value:'81-85'},{label:'低於 81% / 無法顯示或非原廠零件', value:'<81|NA'}], '>=90');
+  const batteryWrap = grpBattery.el;
+
+  cardOther.append(grpBio.el, lblOther, boxOther, batteryWrap);
+  wrap.appendChild(cardOther);
+
+  const cardAct=document.createElement('div'); cardAct.className='rq-card';
+  const actions=document.createElement('div'); actions.className='rq-actions';
+  const btnCalc    = button('立即估價',      onCalc);
+  const btnReset   = button('清除重填',      onReset,        'secondary');
+  const btnCopy    = button('複製摘要',      onCopySummary,  'secondary');
+  const btnLineSend= button('LINE 傳送摘要', onSendLine,     'secondary');
+  actions.append(btnCalc, btnReset, btnCopy, btnLineSend);
+  cardAct.append(actions);
+  wrap.appendChild(cardAct);
+
+  const result=document.createElement('div'); result.className='rq-result'; result.style.display='none';
+  const summaryBox=document.createElement('pre'); summaryBox.className='rq-summary';
+  const resActions=document.createElement('div'); resActions.className='rq-actions'; resActions.style.marginTop='15px';
+  const btnStore= button('到門市回收',         ()=>window.open(STORE_URL,'_blank'), 'store');
+  const btnHome = button('超商回收 / 到府回收', ()=>window.open(HOME_URL,'_blank'),  'logistics');
+  resActions.append(btnStore, btnHome);
+  result.append(summaryBox, resActions);
+  wrap.appendChild(result);
+  root.appendChild(wrap);
+
+  /* ========== ⑥ 載入 Samsung 定價 ========== */
+  loadSamsungPricing().then(pricing => {
+    SAMSUNG_PRICING = pricing;
+    samsungLoaded = true;
+    // 若使用者已選 Samsung，補填型號
+    if(selBrand.value() === 'Samsung'){
+      selModel.set(Object.keys(SAMSUNG_PRICING));
+      selModel.input.disabled = false;
+    }
+  }).catch(() => {
+    samsungLoaded = false;
+    if(selBrand.value() === 'Samsung'){
+      selModel.input.innerHTML = '<option value="">載入失敗，請重新整理</option>';
+    }
+  });
+
+  /* ========== ⑦ 計算與摘要邏輯 ========== */
+  function onCalc(){
+    const brand   = selBrand.value();
+    const model   = selModel.value();
+    const storage = selStorage.value();
+    if(!brand || !model){ alert('請完整選擇「品牌 / 型號」'); return; }
+
+    let base = null;
+    if(brand === 'Samsung'){
+      const modelPricing = SAMSUNG_PRICING[model];
+      if(modelPricing){
+        // storage 可能是空字串（型號本身含容量）
+        base = modelPricing[storage] !== undefined ? modelPricing[storage]
+             : modelPricing[''] !== undefined      ? modelPricing['']
+             : null;
+      }
+    } else {
+      if(!storage){ alert('請完整選擇「容量」'); return; }
+      base = (PRICING[brand] && PRICING[brand][model] && PRICING[brand][model][storage]) || null;
+    }
+    if(!base){ alert('此型號尚未設定價格'); return; }
+
+    let price = base;
+    price -= Math.round(base * (RULES.powerRates[grpPower.value()] || 0));
+    if(brand !== 'Samsung'){
+      price -= Math.round(base * (RULES.batteryBands[grpBattery.value()] || 0));
+    }
+    price -= Math.round(base * (RULES.frameRates[grpFrame.value()] || 0));
+    price -= Math.round(base * (RULES.backRates[grpBack.value()]   || 0));
+    price -= Math.round(base * (RULES.lcdRates[grpLCD.value()]     || 0));
+    price -= Math.round(base * (RULES.camFront[grpCamFront.value()] || 0));
+    price -= Math.round(base * (RULES.camRear[grpCamRear.value()]   || 0));
+    price -= Math.round(base * (RULES.bioRates[grpBio.value()]     || 0));
+
+    let otherRate = 0;
+    if(ckNfc.checked())     otherRate += RULES.otherFuncRates.nfc;
+    if(ckGps.checked())     otherRate += RULES.otherFuncRates.gps;
+    if(ckWifiBt.checked())  otherRate += RULES.otherFuncRates.wifiBt;
+    if(ckSimEsim.checked()) otherRate += RULES.otherFuncRates.simEsim;
+    if(ckEarpiece.checked())otherRate += RULES.otherFuncRates.earpiece;
+    if(ckSpk.checked())     otherRate += RULES.otherFuncRates.spk;
+    if(ckMic.checked())     otherRate += RULES.otherFuncRates.mic;
+    if(ckVib.checked())     otherRate += RULES.otherFuncRates.vib;
+    if(ckCharge.checked())  otherRate += RULES.otherFuncRates.charge;
+    if(ckButtons.checked()) otherRate += RULES.otherFuncRates.btn;
+    if(ckProx.checked())    otherRate += RULES.otherFuncRates.prox;
+    price -= Math.round(base * otherRate);
+    price = Math.round(price / 100) * 100;
+
+    if(price <= 0){
+      alert('由於您的機況較為特殊，請洽官方 LINE 客服專人諮詢。');
+      window.open(LINE_URL, '_blank');
+      result.style.display='none';
+      return;
+    }
+
+    summaryBox.textContent = buildSummary(brand, price);
+    result.style.display = '';
+    result.scrollIntoView({behavior: 'smooth'});
+  }
+
+  function onReset(){ location.reload(); }
+
+  function buildSummary(brand, p){
+    const others = [];
+    [ckNfc, ckGps, ckWifiBt, ckSimEsim, ckEarpiece, ckSpk, ckMic, ckVib, ckCharge, ckButtons, ckProx].forEach(c=>{ if(c.checked()) others.push(c.text()); });
+    const lines = [
+      '【手機回收詢價】',
+      `品牌/型號/容量：${selBrand.value()} / ${selModel.value()}` + (selStorage.value() ? ` / ${selStorage.value()}` : ''),
+      `開關機：${grpPower.text()}`,
+      `外觀：邊框${grpFrame.text()} / 背蓋${grpBack.text()}`,
+      `螢幕：${grpLCD.text()}`,
+      `相機：前${grpCamFront.text()} / 後${grpCamRear.text()}`,
+    ];
+    if(brand !== 'Samsung'){
+      lines.push(`電池：${grpBattery.text()}`);
+    }
+    lines.push(
+      `其他異常：${others.length ? others.join('、') : '（無）'}`,
+      `估價日期：${todayTW()}`,
+      `估價結果：${p ? fmt(p) : '—'}`,
+      '',
+      '※ 以上為線上估價，最終以門市報價為準。'
+    );
+    return lines.join('\n');
+  }
+
+  async function onCopySummary(){
+    try{ await navigator.clipboard.writeText(summaryBox.textContent || buildSummary(selBrand.value(), undefined)); alert('已複製摘要'); }catch(e){ alert('複製失敗'); }
+  }
+
+  function onSendLine(){
+    window.open('https://line.me/R/msg/text/?' + encodeURIComponent(summaryBox.textContent || buildSummary(selBrand.value(), undefined)), '_blank');
+    window.open(LINE_URL, '_blank');
+  }
+})();
+</script>
+</body>
+</html>
