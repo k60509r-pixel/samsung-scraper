@@ -75,9 +75,11 @@
 <script>
 (function(){
   /* ========== ① Samsung Sheets 設定 ========== */
-  const SAMSUNG_SHEETS_ID = '1zhHVKJLDVfUSmADvrhqUyNu1PY5psQ73H2zV1oGhKzs';
-  let SAMSUNG_PRICING = {};   // { "A14 64G": { "": 700 }, ... }
+  const SHEETS_ID = '1zhHVKJLDVfUSmADvrhqUyNu1PY5psQ73H2zV1oGhKzs';
+  let SAMSUNG_PRICING = {};
+  let OPPO_PRICING    = {};
   let samsungLoaded = false;
+  let oppoLoaded    = false;
 
   // 從機型全名拆出「基礎型號」和「容量」
   // 例: "A14 64G" → {model:"A14", storage:"64G"}
@@ -106,8 +108,8 @@
     return cols;
   }
 
-  async function loadSamsungPricing(){
-    const url = `https://docs.google.com/spreadsheets/d/${SAMSUNG_SHEETS_ID}/export?format=csv&gid=0`;
+  async function loadSheetPricing(sheetName){
+    const url = `https://docs.google.com/spreadsheets/d/${SHEETS_ID}/export?format=csv&sheet=${encodeURIComponent(sheetName)}&t=${Date.now()}`;
     const resp = await fetch(url);
     if(!resp.ok) throw new Error('HTTP ' + resp.status);
     const text = await resp.text();
@@ -259,7 +261,7 @@
   const cardBase=document.createElement('div'); cardBase.className='rq-card';
   cardBase.innerHTML = `<div class="rq-card-title">品牌 / 型號 / 容量</div>`;
   const grid1=document.createElement('div'); grid1.className='rq-grid';
-  const selBrand   = makeSelect('品牌', ['Apple', 'Samsung']);
+  const selBrand   = makeSelect('品牌', ['Apple', 'Samsung', 'OPPO']);
   const selModel   = makeSelect('型號', []);
   grid1.append(selBrand.el, selModel.el);
   const grid2=document.createElement('div'); grid2.className='rq-grid';
@@ -271,30 +273,40 @@
   /* 品牌切換 */
   selBrand.input.addEventListener('change', () => {
     const brand = selBrand.value();
+    const isAndroid = brand === 'Samsung' || brand === 'OPPO';
+    batteryWrap.style.display = isAndroid ? 'none' : '';
+    const nonOEMRow = grpLCD.el.querySelector('input[value="nonOEM"]')?.closest('.rq-check');
+    if(nonOEMRow) nonOEMRow.style.display = isAndroid ? 'none' : '';
+    boxOtherWrap.style.display    = isAndroid ? 'none' : '';
+    samsungOtherWrap.style.display = isAndroid ? '' : 'none';
+
     if(brand === 'Samsung'){
       if(!samsungLoaded){
         selModel.input.innerHTML = '<option value="">載入中...</option>';
-        selModel.input.disabled = true;
-        selStorage.set([]);
+        selModel.input.disabled = true; selStorage.set([]);
       } else {
         selModel.set(Object.keys(SAMSUNG_PRICING));
-        selModel.input.disabled = false;
-        selStorage.set([]);
+        selModel.input.disabled = false; selStorage.set([]);
       }
-      batteryWrap.style.display = 'none';
+    } else if(brand === 'OPPO'){
+      if(!oppoLoaded){
+        selModel.input.innerHTML = '<option value="">載入中...</option>';
+        selModel.input.disabled = true; selStorage.set([]);
+      } else {
+        selModel.set(Object.keys(OPPO_PRICING));
+        selModel.input.disabled = false; selStorage.set([]);
+      }
     } else {
       selModel.set(Object.keys(PRICING[brand]||{}));
-      selModel.input.disabled = false;
-      selStorage.set([]);
-      batteryWrap.style.display = '';
+      selModel.input.disabled = false; selStorage.set([]);
     }
   });
 
   selModel.input.addEventListener('change', () => {
     const brand = selBrand.value();
-    if(brand === 'Samsung'){
-      const storages = Object.keys(SAMSUNG_PRICING[selModel.value()]||{});
-      // 若只有一個空字串 key，不顯示容量下拉（自動選空值）
+    const sheetPricing = brand === 'Samsung' ? SAMSUNG_PRICING : brand === 'OPPO' ? OPPO_PRICING : null;
+    if(sheetPricing){
+      const storages = Object.keys(sheetPricing[selModel.value()]||{});
       if(storages.length === 1 && storages[0] === ''){
         selStorage.input.innerHTML = '<option value="">（無需選擇）</option>';
       } else {
@@ -366,20 +378,27 @@
   wrap.appendChild(result);
   root.appendChild(wrap);
 
-  /* ========== ⑥ 載入 Samsung 定價 ========== */
-  loadSamsungPricing().then(pricing => {
-    SAMSUNG_PRICING = pricing;
-    samsungLoaded = true;
-    // 若使用者已選 Samsung，補填型號
+  /* ========== ⑥ 載入 Samsung / OPPO 定價 ========== */
+  loadSheetPricing('Samsung 回收報價').then(pricing => {
+    SAMSUNG_PRICING = pricing; samsungLoaded = true;
     if(selBrand.value() === 'Samsung'){
-      selModel.set(Object.keys(SAMSUNG_PRICING));
-      selModel.input.disabled = false;
+      selModel.set(Object.keys(SAMSUNG_PRICING)); selModel.input.disabled = false;
     }
   }).catch(() => {
     samsungLoaded = false;
-    if(selBrand.value() === 'Samsung'){
+    if(selBrand.value() === 'Samsung')
       selModel.input.innerHTML = '<option value="">載入失敗，請重新整理</option>';
+  });
+
+  loadSheetPricing('OPPO 回收報價').then(pricing => {
+    OPPO_PRICING = pricing; oppoLoaded = true;
+    if(selBrand.value() === 'OPPO'){
+      selModel.set(Object.keys(OPPO_PRICING)); selModel.input.disabled = false;
     }
+  }).catch(() => {
+    oppoLoaded = false;
+    if(selBrand.value() === 'OPPO')
+      selModel.input.innerHTML = '<option value="">載入失敗，請重新整理</option>';
   });
 
   /* ========== ⑦ 計算與摘要邏輯 ========== */
@@ -390,14 +409,10 @@
     if(!brand || !model){ alert('請完整選擇「品牌 / 型號」'); return; }
 
     let base = null;
-    if(brand === 'Samsung'){
-      const modelPricing = SAMSUNG_PRICING[model];
-      if(modelPricing){
-        // storage 可能是空字串（型號本身含容量）
-        base = modelPricing[storage] !== undefined ? modelPricing[storage]
-             : modelPricing[''] !== undefined      ? modelPricing['']
-             : null;
-      }
+    const sheetPricing = brand === 'Samsung' ? SAMSUNG_PRICING : brand === 'OPPO' ? OPPO_PRICING : null;
+    if(sheetPricing){
+      const mp = sheetPricing[model];
+      if(mp) base = mp[storage] !== undefined ? mp[storage] : mp[''] !== undefined ? mp[''] : null;
     } else {
       if(!storage){ alert('請完整選擇「容量」'); return; }
       base = (PRICING[brand] && PRICING[brand][model] && PRICING[brand][model][storage]) || null;
@@ -406,7 +421,8 @@
 
     let price = base;
     price -= Math.round(base * (RULES.powerRates[grpPower.value()] || 0));
-    if(brand !== 'Samsung'){
+    const isAndroid = brand === 'Samsung' || brand === 'OPPO';
+    if(!isAndroid){
       price -= Math.round(base * (RULES.batteryBands[grpBattery.value()] || 0));
     }
     price -= Math.round(base * (RULES.frameRates[grpFrame.value()] || 0));
@@ -417,17 +433,21 @@
     price -= Math.round(base * (RULES.bioRates[grpBio.value()]     || 0));
 
     let otherRate = 0;
-    if(ckNfc.checked())     otherRate += RULES.otherFuncRates.nfc;
-    if(ckGps.checked())     otherRate += RULES.otherFuncRates.gps;
-    if(ckWifiBt.checked())  otherRate += RULES.otherFuncRates.wifiBt;
-    if(ckSimEsim.checked()) otherRate += RULES.otherFuncRates.simEsim;
-    if(ckEarpiece.checked())otherRate += RULES.otherFuncRates.earpiece;
-    if(ckSpk.checked())     otherRate += RULES.otherFuncRates.spk;
-    if(ckMic.checked())     otherRate += RULES.otherFuncRates.mic;
-    if(ckVib.checked())     otherRate += RULES.otherFuncRates.vib;
-    if(ckCharge.checked())  otherRate += RULES.otherFuncRates.charge;
-    if(ckButtons.checked()) otherRate += RULES.otherFuncRates.btn;
-    if(ckProx.checked())    otherRate += RULES.otherFuncRates.prox;
+    if(isAndroid){
+      if(grpSamsungOther.value() === 'ng') otherRate += 0.10;
+    } else {
+      if(ckNfc.checked())     otherRate += RULES.otherFuncRates.nfc;
+      if(ckGps.checked())     otherRate += RULES.otherFuncRates.gps;
+      if(ckWifiBt.checked())  otherRate += RULES.otherFuncRates.wifiBt;
+      if(ckSimEsim.checked()) otherRate += RULES.otherFuncRates.simEsim;
+      if(ckEarpiece.checked())otherRate += RULES.otherFuncRates.earpiece;
+      if(ckSpk.checked())     otherRate += RULES.otherFuncRates.spk;
+      if(ckMic.checked())     otherRate += RULES.otherFuncRates.mic;
+      if(ckVib.checked())     otherRate += RULES.otherFuncRates.vib;
+      if(ckCharge.checked())  otherRate += RULES.otherFuncRates.charge;
+      if(ckButtons.checked()) otherRate += RULES.otherFuncRates.btn;
+      if(ckProx.checked())    otherRate += RULES.otherFuncRates.prox;
+    }
     price -= Math.round(base * otherRate);
     price = Math.round(price / 100) * 100;
 
@@ -446,8 +466,13 @@
   function onReset(){ location.reload(); }
 
   function buildSummary(brand, p){
+    const isAndroidSummary = brand === 'Samsung' || brand === 'OPPO';
     const others = [];
-    [ckNfc, ckGps, ckWifiBt, ckSimEsim, ckEarpiece, ckSpk, ckMic, ckVib, ckCharge, ckButtons, ckProx].forEach(c=>{ if(c.checked()) others.push(c.text()); });
+    if(isAndroidSummary){
+      if(grpSamsungOther.value() === 'ng') others.push('功能異常');
+    } else {
+      [ckNfc, ckGps, ckWifiBt, ckSimEsim, ckEarpiece, ckSpk, ckMic, ckVib, ckCharge, ckButtons, ckProx].forEach(c=>{ if(c.checked()) others.push(c.text()); });
+    }
     const lines = [
       '【手機回收詢價】',
       `品牌/型號/容量：${selBrand.value()} / ${selModel.value()}` + (selStorage.value() ? ` / ${selStorage.value()}` : ''),
@@ -456,7 +481,8 @@
       `螢幕：${grpLCD.text()}`,
       `相機：前${grpCamFront.text()} / 後${grpCamRear.text()}`,
     ];
-    if(brand !== 'Samsung'){
+    const isAndroidSummary = brand === 'Samsung' || brand === 'OPPO';
+    if(!isAndroidSummary){
       lines.push(`電池：${grpBattery.text()}`);
     }
     lines.push(

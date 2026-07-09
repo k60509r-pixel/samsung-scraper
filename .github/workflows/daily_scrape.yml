@@ -1,4 +1,4 @@
-name: Samsung Recycle Price Scraper
+name: Daily Recycle Price Scraper
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  scrape:
+  scrape-samsung:
     runs-on: ubuntu-latest
     timeout-minutes: 90
 
@@ -27,19 +27,56 @@ jobs:
       - name: Install Playwright Chromium
         run: playwright install chromium --with-deps
 
-      - name: Run scraper
+      - name: Run Samsung scraper
         run: python scraper.py
 
-      - name: Write to Google Sheets
+      - name: Write Samsung to Google Sheets
         env:
           GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
         run: python write_to_sheets.py results.json
 
-      - name: Upload results artifact
+      - name: Upload Samsung results artifact
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: scrape-results-${{ github.run_number }}
+          name: scrape-samsung-${{ github.run_number }}
           path: results.json
+          retention-days: 30
+
+  scrape-oppo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium --with-deps
+
+      - name: Run OPPO scraper
+        run: python scraper_oppo.py
+
+      - name: Write OPPO to Google Sheets
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_oppo.py results_oppo.json
+
+      - name: Upload OPPO results artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scrape-oppo-${{ github.run_number }}
+          path: results_oppo.json
           retention-days: 30

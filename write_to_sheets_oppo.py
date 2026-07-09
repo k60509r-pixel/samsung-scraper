@@ -10,7 +10,6 @@ SCOPES = [
     "https://www.googleapis.com/auth/drive",
 ]
 
-# 欄位順序: A=機型 B=容量 C=回收估價 D=價格補正(手動) E=更新時間
 SHEET_HEADERS = ["機型", "容量", "回收估價（NT$）", "價格補正", "更新時間"]
 
 
@@ -35,7 +34,7 @@ def write_to_sheets(data: list[dict]):
 
     creds = get_credentials()
     client = gspread.authorize(creds)
-    sheet = client.open_by_key(spreadsheet_id).worksheet("Samsung 回收報價")
+    sheet = client.open_by_key(spreadsheet_id).worksheet("OPPO 回收報價")
 
     # 先讀取現有的「價格補正」欄（D 欄），避免覆寫手動調整值
     existing_adjustments = {}
@@ -53,9 +52,8 @@ def write_to_sheets(data: list[dict]):
                         if model_key and adj_val:
                             existing_adjustments[model_key] = adj_val
     except Exception:
-        pass  # 第一次執行，無既有資料
+        pass
 
-    # 建立新資料列（D 欄補正值沿用舊值，預設空白）
     rows = [SHEET_HEADERS]
     for item in data:
         model = item.get("model", "")
@@ -70,20 +68,18 @@ def write_to_sheets(data: list[dict]):
 
     sheet.clear()
     sheet.update("A1", rows)
-
-    # 標題列加粗
     sheet.format("A1:E1", {"textFormat": {"bold": True}})
 
-    print(f"已寫入 {len(data)} 筆資料到 Google Sheets（價格補正欄已保留）")
+    print(f"已寫入 {len(data)} 筆 OPPO 資料到 Google Sheets（價格補正欄已保留）")
 
 
 if __name__ == "__main__":
-    input_file = sys.argv[1] if len(sys.argv) > 1 else "results.json"
+    input_file = sys.argv[1] if len(sys.argv) > 1 else "results_oppo.json"
     try:
         with open(input_file, encoding="utf-8") as f:
             data = json.load(f)
     except FileNotFoundError:
-        print(f"找不到 {input_file}，請先執行 scraper.py")
+        print(f"找不到 {input_file}，請先執行 scraper_oppo.py")
         sys.exit(1)
 
     write_to_sheets(data)
