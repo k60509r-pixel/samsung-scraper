@@ -44,6 +44,43 @@ jobs:
           path: results.json
           retention-days: 30
 
+  scrape-ipad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium --with-deps
+
+      - name: Run iPad scraper
+        run: python scraper_ipad.py
+
+      - name: Write iPad to Google Sheets
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_ipad.py results_ipad.json
+
+      - name: Upload iPad results artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scrape-ipad-${{ github.run_number }}
+          path: results_ipad.json
+          retention-days: 30
+
   scrape-oppo:
     runs-on: ubuntu-latest
     timeout-minutes: 90
