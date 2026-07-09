@@ -49,15 +49,16 @@ async def select_ios_and_brand(page: Page, brand_value: str):
         await page.evaluate(f"""
             (() => {{
                 const radios = Array.from(document.querySelectorAll('input[type=radio]'));
-                const iosRadio = radios.find(r =>
-                    r.value.toLowerCase() === 'ios' ||
-                    (r.nextSibling && r.nextSibling.textContent &&
-                     r.nextSibling.textContent.toLowerCase().includes('ios'))
-                );
+                const iosRadio = radios.find(r => {{
+                    const v = (r.value || '').toLowerCase();
+                    const label = (r.parentElement ? r.parentElement.textContent : '').toLowerCase();
+                    return v === 'ios' || v === 'apple' || v === 'iphone'
+                        || label.includes('ios') || label.includes('apple') || label.includes('iphone');
+                }});
                 if (iosRadio) {{
                     iosRadio.checked = true;
                     iosRadio.dispatchEvent(new Event('change', {{bubbles: true}}));
-                    iosRadio.dispatchEvent(new Event('click', {{bubbles: true}}));
+                    iosRadio.dispatchEvent(new Event('click',  {{bubbles: true}}));
                 }}
                 const brandSel = document.querySelector('select#phonecata, select[name=phonecata]');
                 if (brandSel) {{
@@ -83,36 +84,56 @@ async def get_ipad_series_list(page: Page):
     """載入頁面，取得所有 iPad 系列的 brand_value 和顯示名稱。"""
     await page.goto(BASE_URL, wait_until="commit", timeout=60000)
     await page.wait_for_load_state("domcontentloaded", timeout=60000)
-    await page.wait_for_timeout(2000)
+    await page.wait_for_timeout(3000)
 
-    # 先點 iOS radio，讓品牌下拉更新
-    await page.evaluate("""
+    # 診斷：印出所有 radio buttons
+    all_radios = await page.evaluate("""
+        (() => {
+            return Array.from(document.querySelectorAll('input[type=radio]'))
+                .map(r => ({value: r.value, name: r.name, label: r.parentElement ? r.parentElement.textContent.trim() : ''}));
+        })()
+    """)
+    print("=== 所有 radio buttons ===")
+    for r in all_radios:
+        print(f"  name={r['name']} value={r['value']} label={r['label'][:40]}")
+
+    # 嘗試多種方式找 iOS/Apple radio
+    clicked = await page.evaluate("""
         (() => {
             const radios = Array.from(document.querySelectorAll('input[type=radio]'));
-            const iosRadio = radios.find(r =>
-                r.value.toLowerCase() === 'ios' ||
-                (r.nextSibling && r.nextSibling.textContent &&
-                 r.nextSibling.textContent.toLowerCase().includes('ios'))
-            );
+            const iosRadio = radios.find(r => {
+                const v = (r.value || '').toLowerCase();
+                const label = (r.parentElement ? r.parentElement.textContent : '').toLowerCase();
+                return v === 'ios' || v === 'apple' || v === 'iphone'
+                    || label.includes('ios') || label.includes('apple') || label.includes('iphone');
+            });
             if (iosRadio) {
                 iosRadio.checked = true;
                 iosRadio.dispatchEvent(new Event('change', {bubbles: true}));
-                iosRadio.dispatchEvent(new Event('click', {bubbles: true}));
+                iosRadio.dispatchEvent(new Event('click',  {bubbles: true}));
+                return iosRadio.value;
             }
+            return null;
         })()
     """)
-    await page.wait_for_timeout(1500)
+    print(f"=== iOS radio 點擊結果: {clicked} ===")
+    await page.wait_for_timeout(2000)
 
-    # 找所有含 "iPad" 的品牌選項
-    brand_options = await page.evaluate("""
+    # 診斷：印出品牌下拉所有選項
+    all_brands = await page.evaluate("""
         (() => {
             const sel = document.querySelector('select#phonecata, select[name=phonecata]');
             if (!sel) return [];
-            return Array.from(sel.options)
-                .filter(o => o.value && o.text.toLowerCase().includes('ipad'))
-                .map(o => ({value: o.value, text: o.text.trim()}));
+            return Array.from(sel.options).map(o => ({value: o.value, text: o.text.trim()}));
         })()
     """)
+    print("=== 品牌下拉所有選項 ===")
+    for b in all_brands:
+        print(f"  value={b['value']} text={b['text']}")
+
+    # 找所有含 "iPad" 或 "ipad" 的品牌選項
+    brand_options = [b for b in all_brands if 'ipad' in b['text'].lower() and b['value']]
+    print(f"=== 找到 {len(brand_options)} 個 iPad 系列 ===")
     return brand_options
 
 
@@ -203,7 +224,9 @@ async def main():
         await list_ctx.close()
 
         if not brand_options:
-            print("ERROR: 找不到任何 iPad 品牌選項，請確認網站結構")
+            print("ERROR: 找不到任何 iPad 品牌選項（查看上方診斷輸出）")
+            with open("results_ipad.json", "w", encoding="utf-8") as f:
+                json.dump([], f)
             await browser.close()
             return []
 
