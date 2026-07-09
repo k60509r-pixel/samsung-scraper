@@ -86,54 +86,77 @@ async def get_ipad_series_list(page: Page):
     await page.wait_for_load_state("domcontentloaded", timeout=60000)
     await page.wait_for_timeout(3000)
 
-    # 診斷：印出所有 radio buttons
+    # ── 診斷 Step 1：印出所有 radio buttons ──
     all_radios = await page.evaluate("""
-        (() => {
-            return Array.from(document.querySelectorAll('input[type=radio]'))
-                .map(r => ({value: r.value, name: r.name, label: r.parentElement ? r.parentElement.textContent.trim() : ''}));
-        })()
+        (() => Array.from(document.querySelectorAll('input[type=radio]'))
+            .map(r => ({
+                name:  r.name,
+                value: r.value,
+                label: (r.closest('label') || r.parentElement || {}).textContent || ''
+            })))()
     """)
-    print("=== 所有 radio buttons ===")
+    print("=== RADIO BUTTONS ===")
     for r in all_radios:
-        print(f"  name={r['name']} value={r['value']} label={r['label'][:40]}")
+        print(f"  name={r['name']!r:20} value={r['value']!r:15} label={r['label'].strip()[:50]!r}")
 
-    # 嘗試多種方式找 iOS/Apple radio
-    clicked = await page.evaluate("""
-        (() => {
-            const radios = Array.from(document.querySelectorAll('input[type=radio]'));
-            const iosRadio = radios.find(r => {
-                const v = (r.value || '').toLowerCase();
-                const label = (r.parentElement ? r.parentElement.textContent : '').toLowerCase();
-                return v === 'ios' || v === 'apple' || v === 'iphone'
-                    || label.includes('ios') || label.includes('apple') || label.includes('iphone');
-            });
-            if (iosRadio) {
-                iosRadio.checked = true;
-                iosRadio.dispatchEvent(new Event('change', {bubbles: true}));
-                iosRadio.dispatchEvent(new Event('click',  {bubbles: true}));
-                return iosRadio.value;
-            }
-            return null;
-        })()
-    """)
-    print(f"=== iOS radio 點擊結果: {clicked} ===")
-    await page.wait_for_timeout(2000)
-
-    # 診斷：印出品牌下拉所有選項
-    all_brands = await page.evaluate("""
+    # ── 診斷 Step 2：印出預設品牌下拉（還沒點任何 radio）──
+    default_brands = await page.evaluate("""
         (() => {
             const sel = document.querySelector('select#phonecata, select[name=phonecata]');
-            if (!sel) return [];
-            return Array.from(sel.options).map(o => ({value: o.value, text: o.text.trim()}));
+            if (!sel) return [['(select not found)', '']];
+            return Array.from(sel.options).map(o => [o.value, o.text.trim()]);
         })()
     """)
-    print("=== 品牌下拉所有選項 ===")
-    for b in all_brands:
-        print(f"  value={b['value']} text={b['text']}")
+    print("=== BRAND SELECT (before radio click) ===")
+    for v, t in default_brands:
+        print(f"  value={v!r:10} text={t!r}")
 
-    # 找所有含 "iPad" 或 "ipad" 的品牌選項
-    brand_options = [b for b in all_brands if 'ipad' in b['text'].lower() and b['value']]
+    # ── Step 3：逐一嘗試每個 radio，看哪個能帶出 iPad 品牌 ──
+    found_brands = []
+    for radio in all_radios:
+        r_name  = radio['name']
+        r_value = radio['value']
+        await page.evaluate(f"""
+            (() => {{
+                const r = document.querySelector('input[name="{r_name}"][value="{r_value}"]');
+                if (r) {{
+                    r.checked = true;
+                    r.dispatchEvent(new Event('change', {{bubbles:true}}));
+                    r.dispatchEvent(new Event('click',  {{bubbles:true}}));
+                }}
+            }})()
+        """)
+        await page.wait_for_timeout(1200)
+        brands_after = await page.evaluate("""
+            (() => {
+                const sel = document.querySelector('select#phonecata, select[name=phonecata]');
+                if (!sel) return [];
+                return Array.from(sel.options).map(o => [o.value, o.text.trim()]);
+            })()
+        """)
+        ipad_in_list = [b for b in brands_after if 'ipad' in b[1].lower()]
+        print(f"  After clicking radio name={r_name!r} value={r_value!r} → {len(brands_after)} brand options, iPad found: {ipad_in_list}")
+        if ipad_in_list:
+            found_brands = brands_after
+            break
+
+    if not found_brands:
+        print("=== 所有 radio 都試過，仍找不到 iPad 品牌，印出最後一次品牌選項 ===")
+        found_brands = await page.evaluate("""
+            (() => {
+                const sel = document.querySelector('select#phonecata, select[name=phonecata]');
+                if (!sel) return [];
+                return Array.from(sel.options).map(o => [o.value, o.text.trim()]);
+            })()
+        """)
+        for v, t in found_brands:
+            print(f"  value={v!r:10} text={t!r}")
+        return []
+
+    brand_options = [{'value': v, 'text': t} for v, t in found_brands if 'ipad' in t.lower() and v]
     print(f"=== 找到 {len(brand_options)} 個 iPad 系列 ===")
+    for b in brand_options:
+        print(f"  {b}")
     return brand_options
 
 
