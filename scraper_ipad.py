@@ -119,9 +119,17 @@ async def scrape_one_model(page: Page, series_name: str, model_text: str,
                     if (label) label.click();
                 }}
 
-                // 設 phonecata（即使隱藏也能設值）
+                // 設 phonecata（強制加入 option，因為 iOS 品牌不在預設清單）
                 const cataSel = document.querySelector('select#phonecata');
-                if (cataSel) cataSel.value = '{phonecata_value}';
+                if (cataSel) {{
+                    let cataOpt = cataSel.querySelector('option[value="{phonecata_value}"]');
+                    if (!cataOpt) {{
+                        cataOpt = document.createElement('option');
+                        cataOpt.value = '{phonecata_value}';
+                        cataSel.appendChild(cataOpt);
+                    }}
+                    cataSel.value = '{phonecata_value}';
+                }}
 
                 // 強制加入 phonename option 並選取
                 const nameSel = document.querySelector('select#phonename');
