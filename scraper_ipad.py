@@ -53,25 +53,41 @@ async def click_ios_radio(page: Page):
 
 async def get_ipad_series_list(page: Page):
     """載入頁面，點擊 iOS radio，取得所有 iPad 系列的 brand_value。"""
+
+    # 攔截所有 XHR/fetch 請求
+    ajax_requests = []
+    def on_request(req):
+        if req.resource_type in ('xhr', 'fetch'):
+            ajax_requests.append({'url': req.url, 'method': req.method, 'post': req.post_data})
+    page.on('request', on_request)
+
+    ajax_responses = []
+    async def on_response(resp):
+        if resp.request.resource_type in ('xhr', 'fetch'):
+            try:
+                body = await resp.text()
+            except Exception:
+                body = '(無法讀取)'
+            ajax_responses.append({'url': resp.url, 'status': resp.status, 'body': body[:500]})
+    page.on('response', on_response)
+
     await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
     await page.wait_for_timeout(2000)
+    ajax_requests.clear()
+    ajax_responses.clear()
 
-    # 印出所有 radio buttons（供除錯）
-    all_radios = await page.evaluate("""
-        (() => Array.from(document.querySelectorAll('input[type=radio]'))
-            .slice(0, 10)
-            .map(r => ({name: r.name, value: r.value,
-                label: (r.closest('label') || r.parentElement || {}).textContent?.trim()?.slice(0,40) || ''})))()
-    """)
-    print("=== RADIO BUTTONS (前10個) ===")
-    for r in all_radios:
-        print(f"  name={r['name']!r} value={r['value']!r} label={r['label']!r}")
-
-    # 點擊 iOS radio
+    print("=== 點擊 iOS radio ===")
     clicked = await click_ios_radio(page)
-    if not clicked:
-        print("ERROR: 無法點擊 iOS radio")
-        return []
+    await page.wait_for_timeout(3000)
+
+    print(f"=== 點擊後 AJAX 請求（共 {len(ajax_requests)} 個）===")
+    for r in ajax_requests:
+        print(f"  {r['method']} {r['url']} post={r['post']!r}")
+
+    print(f"=== 點擊後 AJAX 回應（共 {len(ajax_responses)} 個）===")
+    for r in ajax_responses:
+        print(f"  {r['status']} {r['url']}")
+        print(f"    body={r['body']!r}")
 
     # 讀取品牌 select
     brands = await page.evaluate("""
