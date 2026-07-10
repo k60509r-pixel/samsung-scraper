@@ -7,13 +7,125 @@ from playwright.async_api import async_playwright, Page
 SCRAPED_AT = datetime.now().strftime("%Y-%m-%d %H:%M")
 BASE_URL = "https://www.onion-net.com.tw/used_recycle"
 
-# 洋蔥網 iPad 四個系列對應的品牌文字（用於比對 select#phonecata）
+# 洋蔥網 iPad 四個系列名稱（品牌 select 中的文字）
 IPAD_SERIES_KEYWORDS = ["iPad系列", "iPad Mini系列", "iPad Air系列", "iPad Pro系列"]
 
 
 def parse_price_from_url(url: str):
     m = re.search(r"total=(\d+)", url)
     return int(m.group(1)) if m else None
+
+
+async def click_ios_radio(page: Page):
+    """用 Playwright 真實點擊 iOS radio，等待 brand select 更新。"""
+    # 先記錄點擊前的品牌數量
+    before_count = await page.evaluate("""
+        (() => {
+            const sel = document.querySelector('select#phonecata');
+            return sel ? sel.options.length : 0;
+        })()
+    """)
+
+    # 用 Playwright page.click() 真實點擊（可觸發 jQuery/AJAX handler）
+    try:
+        await page.click('input[name="u_system"][value="u_ios"]', timeout=5000)
+    except Exception as e:
+        print(f"  [警告] 點擊 iOS radio 失敗: {e}")
+        return False
+
+    # 等待 brand select 的選項改變（最多等 8 秒）
+    for _ in range(16):
+        await page.wait_for_timeout(500)
+        after_count = await page.evaluate("""
+            (() => {
+                const sel = document.querySelector('select#phonecata');
+                return sel ? sel.options.length : 0;
+            })()
+        """)
+        if after_count != before_count:
+            print(f"  brand select 已更新（{before_count} → {after_count} 個選項）")
+            return True
+
+    # 即使選項數量沒變，也繼續嘗試（可能已經是 iOS 狀態）
+    print(f"  [注意] brand select 選項數量未變（{before_count}），繼續嘗試...")
+    return True
+
+
+async def get_ipad_series_list(page: Page):
+    """載入頁面，點擊 iOS radio，取得所有 iPad 系列的 brand_value。"""
+    await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
+    await page.wait_for_timeout(2000)
+
+    # 印出所有 radio buttons（供除錯）
+    all_radios = await page.evaluate("""
+        (() => Array.from(document.querySelectorAll('input[type=radio]'))
+            .slice(0, 10)
+            .map(r => ({name: r.name, value: r.value,
+                label: (r.closest('label') || r.parentElement || {}).textContent?.trim()?.slice(0,40) || ''})))()
+    """)
+    print("=== RADIO BUTTONS (前10個) ===")
+    for r in all_radios:
+        print(f"  name={r['name']!r} value={r['value']!r} label={r['label']!r}")
+
+    # 點擊 iOS radio
+    clicked = await click_ios_radio(page)
+    if not clicked:
+        print("ERROR: 無法點擊 iOS radio")
+        return []
+
+    # 讀取品牌 select
+    brands = await page.evaluate("""
+        (() => {
+            const sel = document.querySelector('select#phonecata');
+            if (!sel) return [];
+            return Array.from(sel.options).map(o => ({value: o.value, text: o.text.trim()}));
+        })()
+    """)
+    print("=== 品牌下拉（點擊 iOS 後）===")
+    for b in brands:
+        print(f"  value={b['value']!r} text={b['text']!r}")
+
+    # 篩選 iPad 系列
+    ipad_brands = [b for b in brands if 'ipad' in b['text'].lower() and b['value'] and b['value'] != '0']
+    print(f"=== 找到 {len(ipad_brands)} 個 iPad 系列 ===")
+    return ipad_brands
+
+
+async def select_ios_and_brand(page: Page, brand_value: str):
+    """點 iOS radio，選品牌，等 phonename 有選項。"""
+    await click_ios_radio(page)
+    await page.wait_for_timeout(500)
+
+    # 選品牌
+    await page.select_option('select#phonecata', brand_value)
+    await page.wait_for_timeout(500)
+
+    # 等 phonename 出現選項（最多 10 秒）
+    for _ in range(10):
+        count = await page.evaluate("""
+            (() => {
+                const sel = document.querySelector('select#phonename');
+                return sel ? sel.options.length : 0;
+            })()
+        """)
+        if count > 1:
+            return
+        await page.wait_for_timeout(1000)
+    raise RuntimeError(f"select#phonename 無法載入（brand_value={brand_value}）")
+
+
+async def get_models_for_series(page: Page, brand_value: str):
+    await select_ios_and_brand(page, brand_value)
+    raw = await page.evaluate("""
+        (() => {
+            const sel = document.querySelector('select#phonename');
+            if (!sel) return [];
+            return Array.from(sel.options)
+                .filter(o => o.value && o.value !== '0')
+                .map(o => ({text: o.text.trim(), value: o.value}));
+        })()
+    """)
+    return [(m["text"], m["value"]) for m in raw]
 
 
 async def select_full_new_conditions_and_resubmit(page: Page):
@@ -43,138 +155,6 @@ async def select_full_new_conditions_and_resubmit(page: Page):
     return None
 
 
-async def select_ios_and_brand(page: Page, brand_value: str):
-    """選 iOS radio，再選指定 brand_value，等到 phonename 有選項。"""
-    for attempt in range(5):
-        await page.evaluate(f"""
-            (() => {{
-                const radios = Array.from(document.querySelectorAll('input[type=radio]'));
-                const iosRadio = radios.find(r => {{
-                    const v = (r.value || '').toLowerCase();
-                    const label = (r.parentElement ? r.parentElement.textContent : '').toLowerCase();
-                    return v === 'ios' || v === 'apple' || v === 'iphone'
-                        || label.includes('ios') || label.includes('apple') || label.includes('iphone');
-                }});
-                if (iosRadio) {{
-                    iosRadio.checked = true;
-                    iosRadio.dispatchEvent(new Event('change', {{bubbles: true}}));
-                    iosRadio.dispatchEvent(new Event('click',  {{bubbles: true}}));
-                }}
-                const brandSel = document.querySelector('select#phonecata, select[name=phonecata]');
-                if (brandSel) {{
-                    brandSel.value = '{brand_value}';
-                    brandSel.dispatchEvent(new Event('change', {{bubbles: true}}));
-                }}
-            }})()
-        """)
-        await page.wait_for_timeout(1000)
-        count = await page.evaluate("""
-            (() => {
-                const sel = document.querySelector('select#phonename');
-                return sel ? sel.options.length : 0;
-            })()
-        """)
-        if count > 1:
-            return
-        await page.wait_for_timeout(1000)
-    raise RuntimeError(f"select#phonename 無法載入（brand_value={brand_value}）")
-
-
-async def get_ipad_series_list(page: Page):
-    """載入頁面，取得所有 iPad 系列的 brand_value 和顯示名稱。"""
-    await page.goto(BASE_URL, wait_until="commit", timeout=60000)
-    await page.wait_for_load_state("domcontentloaded", timeout=60000)
-    await page.wait_for_timeout(3000)
-
-    # ── 診斷 Step 1：印出所有 radio buttons ──
-    all_radios = await page.evaluate("""
-        (() => Array.from(document.querySelectorAll('input[type=radio]'))
-            .map(r => ({
-                name:  r.name,
-                value: r.value,
-                label: (r.closest('label') || r.parentElement || {}).textContent || ''
-            })))()
-    """)
-    print("=== RADIO BUTTONS ===")
-    for r in all_radios:
-        print(f"  name={r['name']!r:20} value={r['value']!r:15} label={r['label'].strip()[:50]!r}")
-
-    # ── 診斷 Step 2：印出預設品牌下拉（還沒點任何 radio）──
-    default_brands = await page.evaluate("""
-        (() => {
-            const sel = document.querySelector('select#phonecata, select[name=phonecata]');
-            if (!sel) return [['(select not found)', '']];
-            return Array.from(sel.options).map(o => [o.value, o.text.trim()]);
-        })()
-    """)
-    print("=== BRAND SELECT (before radio click) ===")
-    for v, t in default_brands:
-        print(f"  value={v!r:10} text={t!r}")
-
-    # ── Step 3：逐一嘗試每個 radio，看哪個能帶出 iPad 品牌 ──
-    found_brands = []
-    for radio in all_radios:
-        r_name  = radio['name']
-        r_value = radio['value']
-        await page.evaluate(f"""
-            (() => {{
-                const r = document.querySelector('input[name="{r_name}"][value="{r_value}"]');
-                if (r) {{
-                    r.checked = true;
-                    r.dispatchEvent(new Event('change', {{bubbles:true}}));
-                    r.dispatchEvent(new Event('click',  {{bubbles:true}}));
-                }}
-            }})()
-        """)
-        await page.wait_for_timeout(1200)
-        brands_after = await page.evaluate("""
-            (() => {
-                const sel = document.querySelector('select#phonecata, select[name=phonecata]');
-                if (!sel) return [];
-                return Array.from(sel.options).map(o => [o.value, o.text.trim()]);
-            })()
-        """)
-        ipad_in_list = [b for b in brands_after if 'ipad' in b[1].lower()]
-        print(f"  After clicking radio name={r_name!r} value={r_value!r} → {len(brands_after)} brand options, iPad found: {ipad_in_list}")
-        if ipad_in_list:
-            found_brands = brands_after
-            break
-
-    if not found_brands:
-        print("=== 所有 radio 都試過，仍找不到 iPad 品牌，印出最後一次品牌選項 ===")
-        found_brands = await page.evaluate("""
-            (() => {
-                const sel = document.querySelector('select#phonecata, select[name=phonecata]');
-                if (!sel) return [];
-                return Array.from(sel.options).map(o => [o.value, o.text.trim()]);
-            })()
-        """)
-        for v, t in found_brands:
-            print(f"  value={v!r:10} text={t!r}")
-        return []
-
-    brand_options = [{'value': v, 'text': t} for v, t in found_brands if 'ipad' in t.lower() and v]
-    print(f"=== 找到 {len(brand_options)} 個 iPad 系列 ===")
-    for b in brand_options:
-        print(f"  {b}")
-    return brand_options
-
-
-async def get_models_for_series(page: Page, brand_value: str):
-    await select_ios_and_brand(page, brand_value)
-    await page.wait_for_timeout(500)
-    raw = await page.evaluate("""
-        (() => {
-            const sel = document.querySelector('select#phonename');
-            if (!sel) return [];
-            return Array.from(sel.options)
-                .filter(o => o.value && o.value !== '0')
-                .map(o => ({text: o.text.trim(), value: o.value}));
-        })()
-    """)
-    return [(m["text"], m["value"]) for m in raw]
-
-
 async def scrape_one_model(page: Page, series_name: str, model_text: str, select_value: str, brand_value: str):
     result = {
         "series": series_name,
@@ -186,14 +166,13 @@ async def scrape_one_model(page: Page, series_name: str, model_text: str, select
     try:
         for attempt in range(3):
             try:
-                await page.goto(BASE_URL, wait_until="commit", timeout=60000)
-                await page.wait_for_load_state("domcontentloaded", timeout=30000)
+                await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
                 break
             except Exception:
                 if attempt == 2:
                     raise
                 await page.wait_for_timeout(2000)
-        await page.wait_for_timeout(800)
+        await page.wait_for_timeout(500)
 
         await select_ios_and_brand(page, brand_value)
 
@@ -265,9 +244,8 @@ async def main():
 
             ctx = await browser.new_context(user_agent=ua)
             page = await ctx.new_page()
-            await page.goto(BASE_URL, wait_until="commit", timeout=60000)
-            await page.wait_for_load_state("domcontentloaded", timeout=60000)
-            await page.wait_for_timeout(2000)
+            await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
+            await page.wait_for_timeout(1000)
             models = await get_models_for_series(page, brand_value)
             await ctx.close()
 
