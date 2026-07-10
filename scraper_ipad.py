@@ -2,13 +2,20 @@ import asyncio
 import json
 import re
 from datetime import datetime
+from html.parser import HTMLParser
 from playwright.async_api import async_playwright, Page
 
 SCRAPED_AT = datetime.now().strftime("%Y-%m-%d %H:%M")
 BASE_URL = "https://www.onion-net.com.tw/used_recycle"
+AJAX_URL = "https://www.onion-net.com.tw/ajax/phonename"
 
-# 洋蔥網 iPad 四個系列名稱（品牌 select 中的文字）
-IPAD_SERIES_KEYWORDS = ["iPad系列", "iPad Mini系列", "iPad Air系列", "iPad Pro系列"]
+# 已確認的 phonecata 值
+IPAD_SERIES = [
+    {"value": "17", "text": "iPad系列"},
+    {"value": "18", "text": "iPad Mini系列"},
+    {"value": "19", "text": "iPad Air系列"},
+    {"value": "20", "text": "iPad Pro系列"},
+]
 
 
 def parse_price_from_url(url: str):
@@ -16,60 +23,33 @@ def parse_price_from_url(url: str):
     return int(m.group(1)) if m else None
 
 
-async def click_ios_radio(page: Page):
-    """點擊 iOS 的 label 元素（實際 input 是隱藏的），等待 brand select 更新。"""
-    before_count = await page.evaluate("""
-        (() => {
-            const sel = document.querySelector('select#phonecata');
-            return sel ? sel.options.length : 0;
-        })()
-    """)
+class OptionParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.options = []
 
-    # 網站用隱藏 input + 自訂 label，必須點 label 而非 input
-    clicked = await page.evaluate("""
-        (() => {
-            const radio = document.querySelector('input[name="u_system"][value="u_ios"]');
-            if (!radio) return 'radio not found';
-            // 找對應的 label（by for= 或 closest label）
-            const label = radio.closest('label')
-                || document.querySelector(`label[for="${radio.id}"]`)
-                || radio.parentElement;
-            if (label) {
-                label.click();
-                return 'label clicked: ' + label.textContent.trim().slice(0, 30);
-            }
-            // 最後手段：直接設值並觸發 change
-            radio.checked = true;
-            radio.dispatchEvent(new Event('change', {bubbles: true}));
-            return 'fallback dispatchEvent';
-        })()
-    """)
-    print(f"  iOS click result: {clicked}")
+    def handle_starttag(self, tag, attrs):
+        if tag == "option":
+            attrs_dict = dict(attrs)
+            self._current_value = attrs_dict.get("value", "")
 
-    # 等待 brand select 改變（最多 6 秒）
-    for _ in range(12):
-        await page.wait_for_timeout(500)
-        after_count = await page.evaluate("""
-            (() => {
-                const sel = document.querySelector('select#phonecata');
-                return sel ? sel.options.length : 0;
-            })()
-        """)
-        if after_count != before_count:
-            print(f"  brand select 已更新（{before_count} → {after_count} 個選項）")
-            return True
-
-    print(f"  [注意] brand select 未變（仍 {before_count} 個選項）")
-    return True
+    def handle_data(self, data):
+        if hasattr(self, "_current_value") and self._current_value and self._current_value != "0":
+            self.options.append((self._current_value, data.strip()))
+            del self._current_value
 
 
-async def get_ipad_series_via_api(page: Page):
-    """直接呼叫 /ajax/phonename API，掃描 phonecata 1-40，找出回傳 iPad 機型的值。"""
-    await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
-    await page.wait_for_timeout(1000)
+async def get_models_via_api(page: Page, phonecata: str, csrf: str) -> list[tuple[str, str]]:
+    """直接呼叫 AJAX API 取得機型清單，回傳 [(option_value, option_text), ...]。"""
+    url = f"{AJAX_URL}?phonecata={phonecata}&type=data&csrf_test_name={csrf}"
+    html = await page.evaluate(f"fetch({url!r}).then(r => r.text())")
+    parser = OptionParser()
+    parser.feed(html)
+    return parser.options
 
-    # 取得 CSRF token
-    csrf = await page.evaluate("""
+
+async def get_csrf(page: Page) -> str:
+    return await page.evaluate("""
         (() => {
             const inp = document.querySelector('input[name="csrf_test_name"]');
             if (inp) return inp.value;
@@ -77,86 +57,6 @@ async def get_ipad_series_via_api(page: Page):
             return m ? m[1] : '';
         })()
     """)
-    print(f"CSRF token: {csrf!r}")
-
-    base_ajax = BASE_URL.replace('/used_recycle', '') + '/ajax/phonename'
-    ipad_brands = []
-
-    for val in range(1, 41):
-        url = f"{base_ajax}?phonecata={val}&type=data&csrf_test_name={csrf}"
-        try:
-            resp_text = await page.evaluate(f"""
-                fetch({url!r}).then(r => r.text())
-            """)
-        except Exception as e:
-            print(f"  phonecata={val}: fetch error {e}")
-            continue
-
-        has_ipad = 'ipad' in resp_text.lower()
-        preview = resp_text[:120].replace('\n', ' ')
-        print(f"  phonecata={val}: iPad={has_ipad} → {preview}")
-        if has_ipad:
-            ipad_brands.append({'value': str(val), 'html': resp_text})
-        await page.wait_for_timeout(150)
-
-    return ipad_brands
-
-
-async def get_ipad_series_list(page: Page):
-    """掃描 API 找 iPad 系列 → 解析機型選項。"""
-    raw_series = await get_ipad_series_via_api(page)
-
-    if not raw_series:
-        print("ERROR: 掃描 1-40 都找不到 iPad 機型")
-        return []
-
-    # 解析每個系列的 <option> HTML 取得系列名稱
-    # series name 從 phonename 回傳的 option text 判斷（如有 iPad Pro / iPad Mini 等）
-    # 先印出完整 HTML 供確認
-    result = []
-    for s in raw_series:
-        print(f"\n=== phonecata={s['value']} 的機型 HTML ===")
-        print(s['html'][:500])
-        result.append({'value': s['value'], 'text': f'phonecata_{s["value"]}', 'html': s['html']})
-
-    return result
-
-
-async def select_ios_and_brand(page: Page, brand_value: str):
-    """點 iOS radio，選品牌，等 phonename 有選項。"""
-    await click_ios_radio(page)
-    await page.wait_for_timeout(500)
-
-    # 選品牌
-    await page.select_option('select#phonecata', brand_value)
-    await page.wait_for_timeout(500)
-
-    # 等 phonename 出現選項（最多 10 秒）
-    for _ in range(10):
-        count = await page.evaluate("""
-            (() => {
-                const sel = document.querySelector('select#phonename');
-                return sel ? sel.options.length : 0;
-            })()
-        """)
-        if count > 1:
-            return
-        await page.wait_for_timeout(1000)
-    raise RuntimeError(f"select#phonename 無法載入（brand_value={brand_value}）")
-
-
-async def get_models_for_series(page: Page, brand_value: str):
-    await select_ios_and_brand(page, brand_value)
-    raw = await page.evaluate("""
-        (() => {
-            const sel = document.querySelector('select#phonename');
-            if (!sel) return [];
-            return Array.from(sel.options)
-                .filter(o => o.value && o.value !== '0')
-                .map(o => ({text: o.text.trim(), value: o.value}));
-        })()
-    """)
-    return [(m["text"], m["value"]) for m in raw]
 
 
 async def select_full_new_conditions_and_resubmit(page: Page):
@@ -186,7 +86,8 @@ async def select_full_new_conditions_and_resubmit(page: Page):
     return None
 
 
-async def scrape_one_model(page: Page, series_name: str, model_text: str, select_value: str, brand_value: str):
+async def scrape_one_model(page: Page, series_name: str, model_text: str,
+                           phonename_value: str, phonecata_value: str):
     result = {
         "series": series_name,
         "model": model_text,
@@ -197,27 +98,49 @@ async def scrape_one_model(page: Page, series_name: str, model_text: str, select
     try:
         for attempt in range(3):
             try:
-                await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
+                await page.goto(BASE_URL, wait_until="commit", timeout=60000)
+                await page.wait_for_load_state("domcontentloaded", timeout=30000)
                 break
             except Exception:
                 if attempt == 2:
                     raise
                 await page.wait_for_timeout(2000)
-        await page.wait_for_timeout(500)
+        await page.wait_for_timeout(800)
 
-        await select_ios_and_brand(page, brand_value)
-
+        # 直接用 JS 設定隱藏欄位並提交（跳過 UI 互動）
         await page.evaluate(f"""
             (() => {{
-                const sel = document.querySelector('select#phonename');
-                if (sel) {{
-                    sel.value = '{select_value}';
-                    sel.dispatchEvent(new Event('change', {{bubbles: true}}));
-                    const form = sel.closest('form');
-                    if (form) form.submit();
+                // 點 iOS label（觸發網站 JS 狀態切換）
+                const iosRadio = document.querySelector('input[name="u_system"][value="u_ios"]');
+                if (iosRadio) {{
+                    const label = iosRadio.closest('label')
+                        || document.querySelector(`label[for="${{iosRadio.id}}"]`)
+                        || iosRadio.parentElement;
+                    if (label) label.click();
                 }}
+
+                // 設 phonecata（即使隱藏也能設值）
+                const cataSel = document.querySelector('select#phonecata');
+                if (cataSel) cataSel.value = '{phonecata_value}';
+
+                // 強制加入 phonename option 並選取
+                const nameSel = document.querySelector('select#phonename');
+                if (nameSel) {{
+                    let opt = nameSel.querySelector('option[value="{phonename_value}"]');
+                    if (!opt) {{
+                        opt = document.createElement('option');
+                        opt.value = '{phonename_value}';
+                        nameSel.appendChild(opt);
+                    }}
+                    nameSel.value = '{phonename_value}';
+                }}
+
+                // 提交表單
+                const form = document.querySelector('form');
+                if (form) form.submit();
             }})()
         """)
+
         try:
             await page.wait_for_url("**/used_recycle?**total=**", timeout=15000)
         except Exception:
@@ -249,48 +172,34 @@ async def main():
         browser = await p.chromium.launch(headless=True)
         ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
 
-        # 取得所有 iPad 系列的 brand_value
-        list_ctx = await browser.new_context(user_agent=ua)
-        list_page = await list_ctx.new_page()
-        print("取得 iPad 系列清單...")
-        brand_options = await get_ipad_series_list(list_page)
-        await list_ctx.close()
+        # 取得 CSRF token
+        ctx0 = await browser.new_context(user_agent=ua)
+        page0 = await ctx0.new_page()
+        await page0.goto(BASE_URL, wait_until="networkidle", timeout=60000)
+        csrf = await get_csrf(page0)
+        print(f"CSRF token: {csrf!r}")
 
-        if not brand_options:
-            print("ERROR: 找不到任何 iPad 品牌選項（查看上方診斷輸出）")
-            with open("results_ipad.json", "w", encoding="utf-8") as f:
-                json.dump([], f)
-            await browser.close()
-            return []
+        # 逐系列取機型清單並爬取
+        for series in IPAD_SERIES:
+            series_name = series["text"]
+            phonecata = series["value"]
+            print(f"\n── {series_name} (phonecata={phonecata}) ──")
 
-        print(f"找到 {len(brand_options)} 個 iPad 系列：")
-        for b in brand_options:
-            print(f"  value={b['value']}  text={b['text']}")
+            models = await get_models_via_api(page0, phonecata, csrf)
+            print(f"  找到 {len(models)} 個機型")
 
-        # 逐系列爬取機型
-        for brand in brand_options:
-            series_name = brand["text"]
-            brand_value = brand["value"]
-            print(f"\n── {series_name} ──")
-
-            ctx = await browser.new_context(user_agent=ua)
-            page = await ctx.new_page()
-            await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
-            await page.wait_for_timeout(1000)
-            models = await get_models_for_series(page, brand_value)
-            await ctx.close()
-
-            print(f"  找到 {len(models)} 個機型，開始爬取...")
-            for model_text, select_value in models:
-                ctx2 = await browser.new_context(user_agent=ua)
-                page2 = await ctx2.new_page()
+            for phonename_value, model_text in models:
+                ctx = await browser.new_context(user_agent=ua)
+                page = await ctx.new_page()
                 try:
-                    data = await scrape_one_model(page2, series_name, model_text, select_value, brand_value)
+                    data = await scrape_one_model(page, series_name, model_text,
+                                                  phonename_value, phonecata)
                 finally:
-                    await ctx2.close()
+                    await ctx.close()
                 results.append(data)
                 await asyncio.sleep(0.3)
 
+        await ctx0.close()
         await browser.close()
 
     with open("results_ipad.json", "w", encoding="utf-8") as f:
