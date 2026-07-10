@@ -17,8 +17,7 @@ def parse_price_from_url(url: str):
 
 
 async def click_ios_radio(page: Page):
-    """用 Playwright 真實點擊 iOS radio，等待 brand select 更新。"""
-    # 先記錄點擊前的品牌數量
+    """點擊 iOS 的 label 元素（實際 input 是隱藏的），等待 brand select 更新。"""
     before_count = await page.evaluate("""
         (() => {
             const sel = document.querySelector('select#phonecata');
@@ -26,15 +25,29 @@ async def click_ios_radio(page: Page):
         })()
     """)
 
-    # 用 Playwright page.click() 真實點擊（可觸發 jQuery/AJAX handler）
-    try:
-        await page.click('input[name="u_system"][value="u_ios"]', timeout=5000)
-    except Exception as e:
-        print(f"  [警告] 點擊 iOS radio 失敗: {e}")
-        return False
+    # 網站用隱藏 input + 自訂 label，必須點 label 而非 input
+    clicked = await page.evaluate("""
+        (() => {
+            const radio = document.querySelector('input[name="u_system"][value="u_ios"]');
+            if (!radio) return 'radio not found';
+            // 找對應的 label（by for= 或 closest label）
+            const label = radio.closest('label')
+                || document.querySelector(`label[for="${radio.id}"]`)
+                || radio.parentElement;
+            if (label) {
+                label.click();
+                return 'label clicked: ' + label.textContent.trim().slice(0, 30);
+            }
+            // 最後手段：直接設值並觸發 change
+            radio.checked = true;
+            radio.dispatchEvent(new Event('change', {bubbles: true}));
+            return 'fallback dispatchEvent';
+        })()
+    """)
+    print(f"  iOS click result: {clicked}")
 
-    # 等待 brand select 的選項改變（最多等 8 秒）
-    for _ in range(16):
+    # 等待 brand select 改變（最多 6 秒）
+    for _ in range(12):
         await page.wait_for_timeout(500)
         after_count = await page.evaluate("""
             (() => {
@@ -46,8 +59,7 @@ async def click_ios_radio(page: Page):
             print(f"  brand select 已更新（{before_count} → {after_count} 個選項）")
             return True
 
-    # 即使選項數量沒變，也繼續嘗試（可能已經是 iOS 狀態）
-    print(f"  [注意] brand select 選項數量未變（{before_count}），繼續嘗試...")
+    print(f"  [注意] brand select 未變（仍 {before_count} 個選項）")
     return True
 
 
