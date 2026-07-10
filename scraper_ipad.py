@@ -63,60 +63,63 @@ async def click_ios_radio(page: Page):
     return True
 
 
-async def get_ipad_series_list(page: Page):
-    """載入頁面，點擊 iOS radio，取得所有 iPad 系列的 brand_value。"""
-
-    # 攔截所有 XHR/fetch 請求
-    ajax_requests = []
-    def on_request(req):
-        if req.resource_type in ('xhr', 'fetch'):
-            ajax_requests.append({'url': req.url, 'method': req.method, 'post': req.post_data})
-    page.on('request', on_request)
-
-    ajax_responses = []
-    async def on_response(resp):
-        if resp.request.resource_type in ('xhr', 'fetch'):
-            try:
-                body = await resp.text()
-            except Exception:
-                body = '(無法讀取)'
-            ajax_responses.append({'url': resp.url, 'status': resp.status, 'body': body[:500]})
-    page.on('response', on_response)
-
+async def get_ipad_series_via_api(page: Page):
+    """直接呼叫 /ajax/phonename API，掃描 phonecata 1-40，找出回傳 iPad 機型的值。"""
     await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
-    await page.wait_for_timeout(2000)
-    ajax_requests.clear()
-    ajax_responses.clear()
+    await page.wait_for_timeout(1000)
 
-    print("=== 點擊 iOS radio ===")
-    clicked = await click_ios_radio(page)
-    await page.wait_for_timeout(3000)
-
-    print(f"=== 點擊後 AJAX 請求（共 {len(ajax_requests)} 個）===")
-    for r in ajax_requests:
-        print(f"  {r['method']} {r['url']} post={r['post']!r}")
-
-    print(f"=== 點擊後 AJAX 回應（共 {len(ajax_responses)} 個）===")
-    for r in ajax_responses:
-        print(f"  {r['status']} {r['url']}")
-        print(f"    body={r['body']!r}")
-
-    # 讀取品牌 select
-    brands = await page.evaluate("""
+    # 取得 CSRF token
+    csrf = await page.evaluate("""
         (() => {
-            const sel = document.querySelector('select#phonecata');
-            if (!sel) return [];
-            return Array.from(sel.options).map(o => ({value: o.value, text: o.text.trim()}));
+            const inp = document.querySelector('input[name="csrf_test_name"]');
+            if (inp) return inp.value;
+            const m = document.cookie.match(/csrf_test_name=([^;]+)/);
+            return m ? m[1] : '';
         })()
     """)
-    print("=== 品牌下拉（點擊 iOS 後）===")
-    for b in brands:
-        print(f"  value={b['value']!r} text={b['text']!r}")
+    print(f"CSRF token: {csrf!r}")
 
-    # 篩選 iPad 系列
-    ipad_brands = [b for b in brands if 'ipad' in b['text'].lower() and b['value'] and b['value'] != '0']
-    print(f"=== 找到 {len(ipad_brands)} 個 iPad 系列 ===")
+    base_ajax = BASE_URL.replace('/used_recycle', '') + '/ajax/phonename'
+    ipad_brands = []
+
+    for val in range(1, 41):
+        url = f"{base_ajax}?phonecata={val}&type=data&csrf_test_name={csrf}"
+        try:
+            resp_text = await page.evaluate(f"""
+                fetch({url!r}).then(r => r.text())
+            """)
+        except Exception as e:
+            print(f"  phonecata={val}: fetch error {e}")
+            continue
+
+        has_ipad = 'ipad' in resp_text.lower()
+        preview = resp_text[:120].replace('\n', ' ')
+        print(f"  phonecata={val}: iPad={has_ipad} → {preview}")
+        if has_ipad:
+            ipad_brands.append({'value': str(val), 'html': resp_text})
+        await page.wait_for_timeout(150)
+
     return ipad_brands
+
+
+async def get_ipad_series_list(page: Page):
+    """掃描 API 找 iPad 系列 → 解析機型選項。"""
+    raw_series = await get_ipad_series_via_api(page)
+
+    if not raw_series:
+        print("ERROR: 掃描 1-40 都找不到 iPad 機型")
+        return []
+
+    # 解析每個系列的 <option> HTML 取得系列名稱
+    # series name 從 phonename 回傳的 option text 判斷（如有 iPad Pro / iPad Mini 等）
+    # 先印出完整 HTML 供確認
+    result = []
+    for s in raw_series:
+        print(f"\n=== phonecata={s['value']} 的機型 HTML ===")
+        print(s['html'][:500])
+        result.append({'value': s['value'], 'text': f'phonecata_{s["value"]}', 'html': s['html']})
+
+    return result
 
 
 async def select_ios_and_brand(page: Page, brand_value: str):
