@@ -80,9 +80,11 @@
   const IPAD_GID = '1663301572';
   let SAMSUNG_PRICING = {};
   let OPPO_PRICING    = {};
+  let VIVO_PRICING    = {};
   let IPAD_PRICING    = {};  // { "iPad系列": { "iPad (第9代)": { "64GB": 3000 } } }
   let samsungLoaded = false;
   let oppoLoaded    = false;
+  let vivoLoaded    = false;
   let ipadLoaded    = false;
 
   // 從機型全名拆出「基礎型號」和「容量」
@@ -308,6 +310,7 @@
     <optgroup label="Android">
       <option value="Samsung">Samsung</option>
       <option value="OPPO">OPPO</option>
+      <option value="VIVO">VIVO</option>
     </optgroup>`;
   const selModel   = makeSelect('型號', []);
   grid1.append(selBrand.el, selModel.el);
@@ -320,7 +323,7 @@
   /* 品牌切換 */
   selBrand.input.addEventListener('change', () => {
     const brand = selBrand.value();
-    const isAndroid = brand === 'Samsung' || brand === 'OPPO';
+    const isAndroid = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO';
     const isIpad    = brand === 'iPad';
     const noNonOEM  = isAndroid || isIpad;
     const simplified= isAndroid || isIpad;  // 其他功能用二選一
@@ -338,6 +341,9 @@
     } else if(brand === 'OPPO'){
       if(!oppoLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
       else{ selModel.set(Object.keys(OPPO_PRICING)); selModel.input.disabled=false; }
+    } else if(brand === 'VIVO'){
+      if(!vivoLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
+      else{ selModel.set(Object.keys(VIVO_PRICING)); selModel.input.disabled=false; }
     } else if(brand === 'iPad'){
       if(!ipadLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
       else{ setIpadModelOptions(selModel.input, IPAD_PRICING); selModel.input.disabled=false; }
@@ -363,6 +369,10 @@
       else selStorage.set(storages);
     } else if(brand === 'OPPO'){
       const storages = Object.keys(OPPO_PRICING[model]||{});
+      if(storages.length === 1 && storages[0] === '') selStorage.input.innerHTML='<option value="">（無需選擇）</option>';
+      else selStorage.set(storages);
+    } else if(brand === 'VIVO'){
+      const storages = Object.keys(VIVO_PRICING[model]||{});
       if(storages.length === 1 && storages[0] === '') selStorage.input.innerHTML='<option value="">（無需選擇）</option>';
       else selStorage.set(storages);
     } else {
@@ -463,6 +473,17 @@
       selModel.input.innerHTML = '<option value="">載入失敗，請重新整理</option>';
   });
 
+  loadSheetPricing('VIVO_GID_PLACEHOLDER').then(pricing => {
+    VIVO_PRICING = pricing; vivoLoaded = true;
+    if(selBrand.value() === 'VIVO'){
+      selModel.set(Object.keys(VIVO_PRICING)); selModel.input.disabled = false;
+    }
+  }).catch(() => {
+    vivoLoaded = false;
+    if(selBrand.value() === 'VIVO')
+      selModel.input.innerHTML = '<option value="">載入失敗，請重新整理</option>';
+  });
+
   loadiPadPricing(IPAD_GID).then(pricing => {
     IPAD_PRICING = pricing; ipadLoaded = true;
     if(selBrand.value() === 'iPad'){
@@ -481,7 +502,7 @@
     const storage = selStorage.value();
     if(!brand || !model){ alert('請完整選擇「品牌 / 型號」'); return; }
 
-    const isAndroid  = brand === 'Samsung' || brand === 'OPPO';
+    const isAndroid  = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO';
     const isIpad     = brand === 'iPad';
     const simplified = isAndroid || isIpad;
 
@@ -491,6 +512,9 @@
       if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
     } else if(brand === 'OPPO'){
       const mp = OPPO_PRICING[model];
+      if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
+    } else if(brand === 'VIVO'){
+      const mp = VIVO_PRICING[model];
       if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
     } else if(isIpad){
       for(const series of Object.values(IPAD_PRICING)){
@@ -552,7 +576,7 @@
   function onReset(){ location.reload(); }
 
   function buildSummary(brand, p){
-    const simplified = brand === 'Samsung' || brand === 'OPPO' || brand === 'iPad';
+    const simplified = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO' || brand === 'iPad';
     const others = [];
     if(simplified){
       if(grpSamsungOther.value() === 'ng') others.push('功能異常');
