@@ -473,7 +473,7 @@
       selModel.input.innerHTML = '<option value="">載入失敗，請重新整理</option>';
   });
 
-  loadSheetPricing('VIVO_GID_PLACEHOLDER').then(pricing => {
+  loadSheetPricing('289965306').then(pricing => {
     VIVO_PRICING = pricing; vivoLoaded = true;
     if(selBrand.value() === 'VIVO'){
       selModel.set(Object.keys(VIVO_PRICING)); selModel.input.disabled = false;
