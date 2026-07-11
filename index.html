@@ -156,7 +156,7 @@
 
   /* ========== ② Apple 基礎回收價 ========== */
   const PRICING = {
-    "Apple": {
+    "iPhone": {
       "iPhone 17 Pro Max": { "256GB": 32000, "512GB": 36500, "1TB": 39000, "2TB": 40500 },
       "iPhone 17 Pro":     { "256GB": 28500, "512GB": 33500, "1TB": 36000 },
       "iPhone 17 Air":     { "256GB": 16000, "512GB": 17000, "1TB": 18000 },
@@ -298,7 +298,17 @@
   const cardBase=document.createElement('div'); cardBase.className='rq-card';
   cardBase.innerHTML = `<div class="rq-card-title">品牌 / 型號 / 容量</div>`;
   const grid1=document.createElement('div'); grid1.className='rq-grid';
-  const selBrand   = makeSelect('品牌', ['Apple', 'iPad', 'Samsung', 'OPPO']);
+  const selBrand   = makeSelect('品牌', []);
+  selBrand.input.innerHTML = `
+    <option value="">請選擇</option>
+    <optgroup label="iOS">
+      <option value="iPhone">iPhone</option>
+      <option value="iPad">iPad</option>
+    </optgroup>
+    <optgroup label="Android">
+      <option value="Samsung">Samsung</option>
+      <option value="OPPO">OPPO</option>
+    </optgroup>`;
   const selModel   = makeSelect('型號', []);
   grid1.append(selBrand.el, selModel.el);
   const grid2=document.createElement('div'); grid2.className='rq-grid';
