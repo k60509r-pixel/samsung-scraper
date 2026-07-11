@@ -75,8 +75,11 @@ def setup_session() -> tuple[requests.Session, str, str, dict]:
     csrf = csrf_inp["value"] if csrf_inp else ""
     print(f"CSRF: {csrf!r}")
 
-    # Form action
-    form = soup.find("form")
+    # 找含有 select#phonecata 的回收估價表單（不是頁面頂部的搜尋表單）
+    phonecata_sel = soup.find("select", {"id": "phonecata"})
+    form = phonecata_sel.find_parent("form") if phonecata_sel else None
+    if not form:
+        form = soup.find("form", action=lambda a: a and "recycle" in str(a).lower())
     action = form.get("action", BASE_URL) if form else BASE_URL
     if action.startswith("/"):
         action = "https://www.onion-net.com.tw" + action
