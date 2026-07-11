@@ -398,7 +398,16 @@
   const grpBattery = makeRadioGroup('電池健康度', [{label:'高於 90%', value:'>=90'},{label:'86% ~ 89%', value:'86-89'},{label:'81% ~ 85%', value:'81-85'},{label:'低於 81% / 無法顯示或非原廠零件', value:'<81|NA'}], '>=90');
   const batteryWrap = grpBattery.el;
 
-  cardOther.append(grpBio.el, lblOther, boxOther, batteryWrap);
+  /* Samsung / OPPO / iPad 用的二選一「其他功能」（一般版用多選 checkbox） */
+  const boxOtherWrap = document.createElement('div');
+  boxOtherWrap.append(lblOther, boxOther);
+
+  const grpSamsungOther = makeRadioGroup('其餘功能性異常',
+    [{label:'無異常', value:'ok'}, {label:'有異常', value:'ng'}], 'ok');
+  const samsungOtherWrap = grpSamsungOther.el;
+  samsungOtherWrap.style.display = 'none';  // 預設隱藏；切到 simplified brand 才顯示
+
+  cardOther.append(grpBio.el, boxOtherWrap, samsungOtherWrap, batteryWrap);
   wrap.appendChild(cardOther);
 
   const cardAct=document.createElement('div'); cardAct.className='rq-card';
