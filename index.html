@@ -81,10 +81,18 @@
   let SAMSUNG_PRICING = {};
   let OPPO_PRICING    = {};
   let VIVO_PRICING    = {};
-  let IPAD_PRICING    = {};  // { "iPad系列": { "iPad (第9代)": { "64GB": 3000 } } }
+  let GOOGLE_PRICING  = {};
+  let ASUS_PRICING    = {};
+  let REALME_PRICING  = {};
+  let XIAOMI_PRICING  = {};
+  let IPAD_PRICING    = {};
   let samsungLoaded = false;
   let oppoLoaded    = false;
   let vivoLoaded    = false;
+  let googleLoaded  = false;
+  let asusLoaded    = false;
+  let realmeLoaded  = false;
+  let xiaomiLoaded  = false;
   let ipadLoaded    = false;
 
   // 從機型全名拆出「基礎型號」和「容量」
@@ -311,6 +319,10 @@
       <option value="Samsung">Samsung</option>
       <option value="OPPO">OPPO</option>
       <option value="VIVO">VIVO</option>
+      <option value="Google">Google</option>
+      <option value="ASUS">ASUS</option>
+      <option value="Realme">Realme</option>
+      <option value="Xiaomi">Xiaomi（小米／紅米）</option>
     </optgroup>`;
   const selModel   = makeSelect('型號', []);
   grid1.append(selBrand.el, selModel.el);
@@ -323,7 +335,7 @@
   /* 品牌切換 */
   selBrand.input.addEventListener('change', () => {
     const brand = selBrand.value();
-    const isAndroid = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO';
+    const isAndroid = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO' || brand === 'Google' || brand === 'ASUS' || brand === 'Realme' || brand === 'Xiaomi';
     const isIpad    = brand === 'iPad';
     const noNonOEM  = isAndroid || isIpad;
     const simplified= isAndroid || isIpad;  // 其他功能用二選一
@@ -344,6 +356,18 @@
     } else if(brand === 'VIVO'){
       if(!vivoLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
       else{ selModel.set(Object.keys(VIVO_PRICING)); selModel.input.disabled=false; }
+    } else if(brand === 'Google'){
+      if(!googleLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
+      else{ selModel.set(Object.keys(GOOGLE_PRICING)); selModel.input.disabled=false; }
+    } else if(brand === 'ASUS'){
+      if(!asusLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
+      else{ selModel.set(Object.keys(ASUS_PRICING)); selModel.input.disabled=false; }
+    } else if(brand === 'Realme'){
+      if(!realmeLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
+      else{ selModel.set(Object.keys(REALME_PRICING)); selModel.input.disabled=false; }
+    } else if(brand === 'Xiaomi'){
+      if(!xiaomiLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
+      else{ selModel.set(Object.keys(XIAOMI_PRICING)); selModel.input.disabled=false; }
     } else if(brand === 'iPad'){
       if(!ipadLoaded){ selModel.input.innerHTML='<option value="">載入中...</option>'; selModel.input.disabled=true; }
       else{ setIpadModelOptions(selModel.input, IPAD_PRICING); selModel.input.disabled=false; }
@@ -373,6 +397,22 @@
       else selStorage.set(storages);
     } else if(brand === 'VIVO'){
       const storages = Object.keys(VIVO_PRICING[model]||{});
+      if(storages.length === 1 && storages[0] === '') selStorage.input.innerHTML='<option value="">（無需選擇）</option>';
+      else selStorage.set(storages);
+    } else if(brand === 'Google'){
+      const storages = Object.keys(GOOGLE_PRICING[model]||{});
+      if(storages.length === 1 && storages[0] === '') selStorage.input.innerHTML='<option value="">（無需選擇）</option>';
+      else selStorage.set(storages);
+    } else if(brand === 'ASUS'){
+      const storages = Object.keys(ASUS_PRICING[model]||{});
+      if(storages.length === 1 && storages[0] === '') selStorage.input.innerHTML='<option value="">（無需選擇）</option>';
+      else selStorage.set(storages);
+    } else if(brand === 'Realme'){
+      const storages = Object.keys(REALME_PRICING[model]||{});
+      if(storages.length === 1 && storages[0] === '') selStorage.input.innerHTML='<option value="">（無需選擇）</option>';
+      else selStorage.set(storages);
+    } else if(brand === 'Xiaomi'){
+      const storages = Object.keys(XIAOMI_PRICING[model]||{});
       if(storages.length === 1 && storages[0] === '') selStorage.input.innerHTML='<option value="">（無需選擇）</option>';
       else selStorage.set(storages);
     } else {
@@ -475,14 +515,28 @@
 
   loadSheetPricing('289965306').then(pricing => {
     VIVO_PRICING = pricing; vivoLoaded = true;
-    if(selBrand.value() === 'VIVO'){
-      selModel.set(Object.keys(VIVO_PRICING)); selModel.input.disabled = false;
-    }
-  }).catch(() => {
-    vivoLoaded = false;
-    if(selBrand.value() === 'VIVO')
-      selModel.input.innerHTML = '<option value="">載入失敗，請重新整理</option>';
-  });
+    if(selBrand.value() === 'VIVO'){ selModel.set(Object.keys(VIVO_PRICING)); selModel.input.disabled=false; }
+  }).catch(()=>{ vivoLoaded=false; if(selBrand.value()==='VIVO') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
+
+  loadSheetPricing('GOOGLE_GID').then(pricing => {
+    GOOGLE_PRICING = pricing; googleLoaded = true;
+    if(selBrand.value() === 'Google'){ selModel.set(Object.keys(GOOGLE_PRICING)); selModel.input.disabled=false; }
+  }).catch(()=>{ googleLoaded=false; if(selBrand.value()==='Google') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
+
+  loadSheetPricing('ASUS_GID').then(pricing => {
+    ASUS_PRICING = pricing; asusLoaded = true;
+    if(selBrand.value() === 'ASUS'){ selModel.set(Object.keys(ASUS_PRICING)); selModel.input.disabled=false; }
+  }).catch(()=>{ asusLoaded=false; if(selBrand.value()==='ASUS') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
+
+  loadSheetPricing('REALME_GID').then(pricing => {
+    REALME_PRICING = pricing; realmeLoaded = true;
+    if(selBrand.value() === 'Realme'){ selModel.set(Object.keys(REALME_PRICING)); selModel.input.disabled=false; }
+  }).catch(()=>{ realmeLoaded=false; if(selBrand.value()==='Realme') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
+
+  loadSheetPricing('XIAOMI_GID').then(pricing => {
+    XIAOMI_PRICING = pricing; xiaomiLoaded = true;
+    if(selBrand.value() === 'Xiaomi'){ selModel.set(Object.keys(XIAOMI_PRICING)); selModel.input.disabled=false; }
+  }).catch(()=>{ xiaomiLoaded=false; if(selBrand.value()==='Xiaomi') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
 
   loadiPadPricing(IPAD_GID).then(pricing => {
     IPAD_PRICING = pricing; ipadLoaded = true;
@@ -502,7 +556,7 @@
     const storage = selStorage.value();
     if(!brand || !model){ alert('請完整選擇「品牌 / 型號」'); return; }
 
-    const isAndroid  = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO';
+    const isAndroid  = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO' || brand === 'Google' || brand === 'ASUS' || brand === 'Realme' || brand === 'Xiaomi';
     const isIpad     = brand === 'iPad';
     const simplified = isAndroid || isIpad;
 
@@ -515,6 +569,18 @@
       if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
     } else if(brand === 'VIVO'){
       const mp = VIVO_PRICING[model];
+      if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
+    } else if(brand === 'Google'){
+      const mp = GOOGLE_PRICING[model];
+      if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
+    } else if(brand === 'ASUS'){
+      const mp = ASUS_PRICING[model];
+      if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
+    } else if(brand === 'Realme'){
+      const mp = REALME_PRICING[model];
+      if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
+    } else if(brand === 'Xiaomi'){
+      const mp = XIAOMI_PRICING[model];
       if(mp) base = mp[storage]!==undefined ? mp[storage] : mp['']!==undefined ? mp[''] : null;
     } else if(isIpad){
       for(const series of Object.values(IPAD_PRICING)){
@@ -576,7 +642,7 @@
   function onReset(){ location.reload(); }
 
   function buildSummary(brand, p){
-    const simplified = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO' || brand === 'iPad';
+    const simplified = brand === 'Samsung' || brand === 'OPPO' || brand === 'VIVO' || brand === 'Google' || brand === 'ASUS' || brand === 'Realme' || brand === 'Xiaomi' || brand === 'iPad';
     const others = [];
     if(simplified){
       if(grpSamsungOther.value() === 'ng') others.push('功能異常');

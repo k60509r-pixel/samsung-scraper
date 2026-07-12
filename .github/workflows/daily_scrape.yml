@@ -154,3 +154,91 @@ jobs:
           name: scrape-vivo-${{ github.run_number }}
           path: results_vivo.json
           retention-days: 30
+
+  scrape-google:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: "pip" }
+      - run: pip install -r requirements.txt
+      - run: playwright install chromium --with-deps
+      - run: python scraper_google.py
+      - name: Write Google to Google Sheets
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_google.py results_google.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scrape-google-${{ github.run_number }}
+          path: results_google.json
+          retention-days: 30
+
+  scrape-asus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: "pip" }
+      - run: pip install -r requirements.txt
+      - run: playwright install chromium --with-deps
+      - run: python scraper_asus.py
+      - name: Write ASUS to Google Sheets
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_asus.py results_asus.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scrape-asus-${{ github.run_number }}
+          path: results_asus.json
+          retention-days: 30
+
+  scrape-realme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: "pip" }
+      - run: pip install -r requirements.txt
+      - run: playwright install chromium --with-deps
+      - run: python scraper_realme.py
+      - name: Write Realme to Google Sheets
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_realme.py results_realme.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scrape-realme-${{ github.run_number }}
+          path: results_realme.json
+          retention-days: 30
+
+  scrape-xiaomi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: "pip" }
+      - run: pip install -r requirements.txt
+      - run: playwright install chromium --with-deps
+      - run: python scraper_xiaomi.py
+      - name: Write Xiaomi to Google Sheets
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_xiaomi.py results_xiaomi.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scrape-xiaomi-${{ github.run_number }}
+          path: results_xiaomi.json
+          retention-days: 30

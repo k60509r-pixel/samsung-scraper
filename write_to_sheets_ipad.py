@@ -37,22 +37,25 @@ def write_to_sheets(data: list[dict]):
     client = gspread.authorize(creds)
     sheet = client.open_by_key(spreadsheet_id).worksheet("iPad回收報價")
 
-    # 保留現有「價格補正」欄（以「系列+機型」為 key）
+    # 保留現有「價格補正」欄及 G-K 欄（以「系列|機型」為 key）
     existing_adjustments = {}
+    existing_gk = {}
     try:
         existing_data = sheet.get_all_values()
         if len(existing_data) > 1:
-            headers = existing_data[0]
-            if "價格補正" in headers:
-                adj_col    = headers.index("價格補正")
-                series_col = headers.index("系列") if "系列" in headers else 0
-                model_col  = headers.index("機型") if "機型" in headers else 1
-                for row in existing_data[1:]:
-                    if len(row) > max(adj_col, series_col, model_col):
-                        key = row[series_col].strip() + "|" + row[model_col].strip()
-                        adj_val = row[adj_col].strip()
-                        if key and adj_val:
-                            existing_adjustments[key] = adj_val
+            headers    = existing_data[0]
+            adj_col    = headers.index("價格補正") if "價格補正" in headers else 4
+            series_col = headers.index("系列")    if "系列"    in headers else 0
+            model_col  = headers.index("機型")    if "機型"    in headers else 1
+            for row in existing_data[1:]:
+                padded = row + [''] * max(0, 12 - len(row))
+                key = padded[series_col].strip() + "|" + padded[model_col].strip()
+                if not key or key == "|":
+                    continue
+                adj_val = padded[adj_col].strip()
+                if adj_val:
+                    existing_adjustments[key] = adj_val
+                existing_gk[key] = padded[6:11]  # G~K
     except Exception:
         pass
 
@@ -75,7 +78,15 @@ def write_to_sheets(data: list[dict]):
     sheet.update("A1", rows)
     sheet.format("A1:F1", {"textFormat": {"bold": True}})
 
-    print(f"已寫入 {len(data)} 筆 iPad 資料到 Google Sheets（價格補正欄已保留）")
+    # 還原 G-K 欄
+    gk_data = []
+    for item in data:
+        key = item.get("series","") + "|" + item.get("model","")
+        gk_data.append(existing_gk.get(key, ['', '', '', '', '']))
+    if gk_data:
+        sheet.update(f"G2:K{1 + len(gk_data)}", gk_data)
+
+    print(f"已寫入 {len(data)} 筆 iPad 資料到 Google Sheets（價格補正及G-K欄已保留）")
 
 
 if __name__ == "__main__":

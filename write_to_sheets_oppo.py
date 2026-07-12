@@ -36,21 +36,24 @@ def write_to_sheets(data: list[dict]):
     client = gspread.authorize(creds)
     sheet = client.open_by_key(spreadsheet_id).worksheet("OPPO 回收報價")
 
-    # 先讀取現有的「價格補正」欄（D 欄），避免覆寫手動調整值
+    # 讀取現有「價格補正」(D欄) 及 G-K 欄，避免覆寫手動資料
     existing_adjustments = {}
+    existing_gk = {}
     try:
         existing_data = sheet.get_all_values()
         if len(existing_data) > 1:
             headers = existing_data[0]
-            if "價格補正" in headers:
-                adj_col = headers.index("價格補正")
-                model_col = headers.index("機型") if "機型" in headers else 0
-                for row in existing_data[1:]:
-                    if len(row) > max(adj_col, model_col):
-                        model_key = row[model_col].strip()
-                        adj_val = row[adj_col].strip()
-                        if model_key and adj_val:
-                            existing_adjustments[model_key] = adj_val
+            adj_col   = headers.index("價格補正") if "價格補正" in headers else 3
+            model_col = headers.index("機型")    if "機型"    in headers else 0
+            for row in existing_data[1:]:
+                padded = row + [''] * max(0, 11 - len(row))
+                model_key = padded[model_col].strip()
+                if not model_key:
+                    continue
+                adj_val = padded[adj_col].strip()
+                if adj_val:
+                    existing_adjustments[model_key] = adj_val
+                existing_gk[model_key] = padded[6:11]
     except Exception:
         pass
 
@@ -70,7 +73,11 @@ def write_to_sheets(data: list[dict]):
     sheet.update("A1", rows)
     sheet.format("A1:E1", {"textFormat": {"bold": True}})
 
-    print(f"已寫入 {len(data)} 筆 OPPO 資料到 Google Sheets（價格補正欄已保留）")
+    gk_data = [existing_gk.get(item.get("model", ""), ['', '', '', '', '']) for item in data]
+    if gk_data:
+        sheet.update(f"G2:K{1 + len(gk_data)}", gk_data)
+
+    print(f"已寫入 {len(data)} 筆 OPPO 資料到 Google Sheets（價格補正及G-K欄已保留）")
 
 
 if __name__ == "__main__":
