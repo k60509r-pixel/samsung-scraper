@@ -518,22 +518,22 @@
     if(selBrand.value() === 'VIVO'){ selModel.set(Object.keys(VIVO_PRICING)); selModel.input.disabled=false; }
   }).catch(()=>{ vivoLoaded=false; if(selBrand.value()==='VIVO') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
 
-  loadSheetPricing('GOOGLE_GID').then(pricing => {
+  loadSheetPricing('1267535819').then(pricing => {
     GOOGLE_PRICING = pricing; googleLoaded = true;
     if(selBrand.value() === 'Google'){ selModel.set(Object.keys(GOOGLE_PRICING)); selModel.input.disabled=false; }
   }).catch(()=>{ googleLoaded=false; if(selBrand.value()==='Google') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
 
-  loadSheetPricing('ASUS_GID').then(pricing => {
+  loadSheetPricing('1647915330').then(pricing => {
     ASUS_PRICING = pricing; asusLoaded = true;
     if(selBrand.value() === 'ASUS'){ selModel.set(Object.keys(ASUS_PRICING)); selModel.input.disabled=false; }
   }).catch(()=>{ asusLoaded=false; if(selBrand.value()==='ASUS') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
 
-  loadSheetPricing('REALME_GID').then(pricing => {
+  loadSheetPricing('440874531').then(pricing => {
     REALME_PRICING = pricing; realmeLoaded = true;
     if(selBrand.value() === 'Realme'){ selModel.set(Object.keys(REALME_PRICING)); selModel.input.disabled=false; }
   }).catch(()=>{ realmeLoaded=false; if(selBrand.value()==='Realme') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
 
-  loadSheetPricing('XIAOMI_GID').then(pricing => {
+  loadSheetPricing('165420424').then(pricing => {
     XIAOMI_PRICING = pricing; xiaomiLoaded = true;
     if(selBrand.value() === 'Xiaomi'){ selModel.set(Object.keys(XIAOMI_PRICING)); selModel.input.disabled=false; }
   }).catch(()=>{ xiaomiLoaded=false; if(selBrand.value()==='Xiaomi') selModel.input.innerHTML='<option value="">載入失敗，請重新整理</option>'; });
