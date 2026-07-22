@@ -242,3 +242,25 @@ jobs:
           name: scrape-xiaomi-${{ github.run_number }}
           path: results_xiaomi.json
           retention-days: 30
+
+  scrape-senao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: "pip" }
+      - run: pip install -r requirements.txt
+      - run: playwright install chromium --with-deps
+      - run: python scraper_senao.py
+      - name: Write Senao to Google Sheets
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_senao.py results_senao.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scrape-senao-${{ github.run_number }}
+          path: results_senao.json
+          retention-days: 30
