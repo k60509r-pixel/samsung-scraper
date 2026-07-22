@@ -1,0 +1,7754 @@
+[
+  {
+    "raw": "(神腦)IPHONE XR 128GB",
+    "model": "IPHONE XR",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "(神腦)IPHONE XR 256GB",
+    "model": "IPHONE XR",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "(神腦)IPHONE XR 64GB",
+    "model": "IPHONE XR",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "(神腦)IPHONE XS 256GB",
+    "model": "IPHONE XS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "(神腦)IPHONE XS 512GB",
+    "model": "IPHONE XS",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "(神腦)IPHONE XS 64GB",
+    "model": "IPHONE XS",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "(神腦)IPHONE XS MAX 256GB",
+    "model": "IPHONE XS MAX",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "(神腦)IPHONE XS MAX 512GB",
+    "model": "IPHONE XS MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "(神腦)IPHONE XS MAX 64GB",
+    "model": "IPHONE XS MAX",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "APPLE WATCH ULTRA LTE",
+    "model": "APPLE WATCH ULTRA LTE",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.2 LTE 128GB(2019)",
+    "model": "IPAD 10.2 LTE",
+    "capacity": "128GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.2 LTE 256GB(2021)",
+    "model": "IPAD 10.2 LTE",
+    "capacity": "256GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.2 LTE 32GB(2019)",
+    "model": "IPAD 10.2 LTE",
+    "capacity": "32GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.2 LTE 64GB(2021)",
+    "model": "IPAD 10.2 LTE",
+    "capacity": "64GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.2 WIFI 128GB(2019)",
+    "model": "IPAD 10.2 WIFI",
+    "capacity": "128GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.2 WIFI 256GB(2021)",
+    "model": "IPAD 10.2 WIFI",
+    "capacity": "256GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.2 WIFI 32GB(2019)",
+    "model": "IPAD 10.2 WIFI",
+    "capacity": "32GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.2 WIFI 64GB(2021)",
+    "model": "IPAD 10.2 WIFI",
+    "capacity": "64GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.9 5G 256G(2022)",
+    "model": "IPAD 10.9 5G",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.9 5G 64G(2022)",
+    "model": "IPAD 10.9 5G",
+    "capacity": "64GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.9 WIFI 256G(2022)",
+    "model": "IPAD 10.9 WIFI",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 10.9 WIFI 64G(2022)",
+    "model": "IPAD 10.9 WIFI",
+    "capacity": "64GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 11.0 5G 128GB(2025)",
+    "model": "IPAD 11.0 5G",
+    "capacity": "128GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 11.0 5G 256GB(2025)",
+    "model": "IPAD 11.0 5G",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 11.0 5G 512GB(2025)",
+    "model": "IPAD 11.0 5G",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 11.0 WIFI 128GB(2025)",
+    "model": "IPAD 11.0 WIFI",
+    "capacity": "128GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 11.0 WIFI 256GB(2025)",
+    "model": "IPAD 11.0 WIFI",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD 11.0 WIFI 512GB(2025)",
+    "model": "IPAD 11.0 WIFI",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 10.9 5G 256GB(2022)",
+    "model": "IPAD AIR 10.9 5G",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 10.9 5G 64GB(2022)",
+    "model": "IPAD AIR 10.9 5G",
+    "capacity": "64GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 10.9 WIFI 256GB(2022)",
+    "model": "IPAD AIR 10.9 WIFI",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 10.9 WIFI 64GB(2022)",
+    "model": "IPAD AIR 10.9 WIFI",
+    "capacity": "64GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 128G(2024)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "128GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 128GB(2025)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "128GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 128GB(2026)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "128GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 1T(2024)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "1TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 1TB(2025)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "1TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 1TB(2026)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "1TB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 256G(2024)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 256GB(2025)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 256GB(2026)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "256GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 512G(2024)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 512GB(2025)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 5G 512GB(2026)",
+    "model": "IPAD AIR 11.0 5G",
+    "capacity": "512GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 128G(2024)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "128GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 128GB(2025)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "128GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 128GB(2026)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "128GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 1T(2024)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "1TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 1TB(2025)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "1TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 1TB(2026)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "1TB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 256G(2024)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 256GB(2025)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 256GB(2026)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "256GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 512G(2024)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 512GB(2025)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 11.0 WIFI 512GB(2026)",
+    "model": "IPAD AIR 11.0 WIFI",
+    "capacity": "512GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 128G(2024)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "128GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 128GB(2025)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "128GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 128GB(2026)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "128GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 1T(2024)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "1TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 1TB(2025)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "1TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 1TB(2026)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "1TB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 256G(2024)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 256GB(2025)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 256GB(2026)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "256GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 512G(2024)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 512GB(2025)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 5G 512GB(2026)",
+    "model": "IPAD AIR 13.0 5G",
+    "capacity": "512GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 128G(2024)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "128GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 128GB(2025)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "128GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 128GB(2026)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "128GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 1T(2024)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "1TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 1TB(2025)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "1TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 1TB(2026)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "1TB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 256G(2024)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 256GB(2025)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 256GB(2026)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "256GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 512G(2024)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 512GB(2025)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR 13.0 WIFI 512GB(2026)",
+    "model": "IPAD AIR 13.0 WIFI",
+    "capacity": "512GB",
+    "year": "2026",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR LTE 256GB(2019)",
+    "model": "IPAD AIR LTE",
+    "capacity": "256GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR LTE 64GB(2019)",
+    "model": "IPAD AIR LTE",
+    "capacity": "64GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR WIFI 256GB(2019)",
+    "model": "IPAD AIR WIFI",
+    "capacity": "256GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD AIR WIFI 64GB(2019)",
+    "model": "IPAD AIR WIFI",
+    "capacity": "64GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD LTE 128GB(2018)",
+    "model": "IPAD LTE",
+    "capacity": "128GB",
+    "year": "2018",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD LTE 32GB(2018)",
+    "model": "IPAD LTE",
+    "capacity": "32GB",
+    "year": "2018",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 5G 128G(2024)",
+    "model": "IPAD MINI 8.3 5G",
+    "capacity": "128GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 5G 256G(2024)",
+    "model": "IPAD MINI 8.3 5G",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 5G 256GB(2021)",
+    "model": "IPAD MINI 8.3 5G",
+    "capacity": "256GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 5G 512G(2024)",
+    "model": "IPAD MINI 8.3 5G",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 5G 64GB(2021)",
+    "model": "IPAD MINI 8.3 5G",
+    "capacity": "64GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 WIFI 128G(2024)",
+    "model": "IPAD MINI 8.3 WIFI",
+    "capacity": "128GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 WIFI 256G(2024)",
+    "model": "IPAD MINI 8.3 WIFI",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 WIFI 256GB(2021)",
+    "model": "IPAD MINI 8.3 WIFI",
+    "capacity": "256GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 WIFI 512G(2024)",
+    "model": "IPAD MINI 8.3 WIFI",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI 8.3 WIFI 64GB(2021)",
+    "model": "IPAD MINI 8.3 WIFI",
+    "capacity": "64GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI LTE 256GB(2019)",
+    "model": "IPAD MINI LTE",
+    "capacity": "256GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI LTE 64GB (2019))",
+    "model": "IPAD MINI LTE",
+    "capacity": "64GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI WI-FI 64GB (2019)",
+    "model": "IPAD MINI WI-FI",
+    "capacity": "64GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD MINI WIFI 256GB(2019)",
+    "model": "IPAD MINI WIFI",
+    "capacity": "256GB",
+    "year": "2019",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 128G(2022)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "128GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 128GB(2021)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "128GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 1T(2022)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "1TB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 1T(2024)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "1TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 1TB(2021)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "1TB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 256G(2022)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 256G(2024)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 256GB(2021)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "256GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 2T(2022)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "2TB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 2T(2024)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "2TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 2TB(2021)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "2TB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 512G(2022)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "512GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 512G(2024)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 5G 512GB(2021)",
+    "model": "IPAD PRO 11.0 5G",
+    "capacity": "512GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 LTE 128GB(2020)",
+    "model": "IPAD PRO 11.0 LTE",
+    "capacity": "128GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 LTE 1TB(2020)",
+    "model": "IPAD PRO 11.0 LTE",
+    "capacity": "1TB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 LTE 256GB(2020)",
+    "model": "IPAD PRO 11.0 LTE",
+    "capacity": "256GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 LTE 512GB(2020)",
+    "model": "IPAD PRO 11.0 LTE",
+    "capacity": "512GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 128G(2022)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "128GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 128GB(2020)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "128GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 128GB(2021)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "128GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 1T(2022)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "1TB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 1T(2024)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "1TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 1TB(2020)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "1TB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 1TB(2021)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "1TB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 256G(2022)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 256G(2024)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 256GB(2020)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "256GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 256GB(2021)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "256GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 2T(2022)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "2TB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 2T(2024)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "2TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 2TB(2021)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "2TB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 512G(2022)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "512GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 512G(2024)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 512GB(2020)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "512GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 11.0 WIFI 512GB(2021)",
+    "model": "IPAD PRO 11.0 WIFI",
+    "capacity": "512GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 128G(2022)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "128GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 128GB(2021)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "128GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 1T(2022)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "1TB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 1TB(2021)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "1TB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 256G(2022)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 256GB(2021)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "256GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 2T(2022)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "2TB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 2TB(2021)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "2TB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 512G(2022)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "512GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 5G 512GB(2021)",
+    "model": "IPAD PRO 12.9 5G",
+    "capacity": "512GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 LTE 128GB(2020)",
+    "model": "IPAD PRO 12.9 LTE",
+    "capacity": "128GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 LTE 1TB(2020)",
+    "model": "IPAD PRO 12.9 LTE",
+    "capacity": "1TB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 LTE 256GB(2020)",
+    "model": "IPAD PRO 12.9 LTE",
+    "capacity": "256GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 LTE 512GB(2020)",
+    "model": "IPAD PRO 12.9 LTE",
+    "capacity": "512GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 128G(2022)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "128GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 128GB(2020)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "128GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 128GB(2021)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "128GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 1T(2022)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "1TB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 1TB(2020)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "1TB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 1TB(2021)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "1TB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 256G(2022)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 256GB(2020)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "256GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 256GB(2021)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "256GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 2T(2022)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "2TB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 2TB(2021)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "2TB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 512G(2022)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "512GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 512GB(2020)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "512GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 12.9 WIFI 512GB(2021)",
+    "model": "IPAD PRO 12.9 WIFI",
+    "capacity": "512GB",
+    "year": "2021",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 13.0 5G 1T(2024)",
+    "model": "IPAD PRO 13.0 5G",
+    "capacity": "1TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 13.0 5G 256G(2024)",
+    "model": "IPAD PRO 13.0 5G",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 13.0 5G 2T(2024)",
+    "model": "IPAD PRO 13.0 5G",
+    "capacity": "2TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 13.0 5G 512G(2024)",
+    "model": "IPAD PRO 13.0 5G",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 13.0 WIFI 1T(2024)",
+    "model": "IPAD PRO 13.0 WIFI",
+    "capacity": "1TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 13.0 WIFI 256G(2024)",
+    "model": "IPAD PRO 13.0 WIFI",
+    "capacity": "256GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 13.0 WIFI 2T(2024)",
+    "model": "IPAD PRO 13.0 WIFI",
+    "capacity": "2TB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO 13.0 WIFI 512G(2024)",
+    "model": "IPAD PRO 13.0 WIFI",
+    "capacity": "512GB",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 11.0 5G 1TB(2025)",
+    "model": "IPAD PRO M5 11.0 5G",
+    "capacity": "1TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 11.0 5G 256GB(2025)",
+    "model": "IPAD PRO M5 11.0 5G",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 11.0 5G 2TB(2025)",
+    "model": "IPAD PRO M5 11.0 5G",
+    "capacity": "2TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 11.0 5G 512GB(2025)",
+    "model": "IPAD PRO M5 11.0 5G",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 11.0 WI-FI 1TB(2025)",
+    "model": "IPAD PRO M5 11.0 WI-FI",
+    "capacity": "1TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 11.0 WI-FI 256GB(2025)",
+    "model": "IPAD PRO M5 11.0 WI-FI",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 11.0 WI-FI 2TB(2025)",
+    "model": "IPAD PRO M5 11.0 WI-FI",
+    "capacity": "2TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 11.0 WI-FI 512GB(2025)",
+    "model": "IPAD PRO M5 11.0 WI-FI",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 13.0 5G 1TB(2025)",
+    "model": "IPAD PRO M5 13.0 5G",
+    "capacity": "1TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 13.0 5G 256GB(2025)",
+    "model": "IPAD PRO M5 13.0 5G",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 13.0 5G 2TB(2025)",
+    "model": "IPAD PRO M5 13.0 5G",
+    "capacity": "2TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 13.0 5G 512GB(2025)",
+    "model": "IPAD PRO M5 13.0 5G",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 13.0 WI-FI 1TB(2025)",
+    "model": "IPAD PRO M5 13.0 WI-FI",
+    "capacity": "1TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 13.0 WI-FI 256GB(2025)",
+    "model": "IPAD PRO M5 13.0 WI-FI",
+    "capacity": "256GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 13.0 WI-FI 2TB(2025)",
+    "model": "IPAD PRO M5 13.0 WI-FI",
+    "capacity": "2TB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD PRO M5 13.0 WI-FI 512GB(2025)",
+    "model": "IPAD PRO M5 13.0 WI-FI",
+    "capacity": "512GB",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD WIFI 128GB(2018)",
+    "model": "IPAD WIFI",
+    "capacity": "128GB",
+    "year": "2018",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD WIFI 32GB(2018)",
+    "model": "IPAD WIFI",
+    "capacity": "32GB",
+    "year": "2018",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD10.2LTE128GB(2020)",
+    "model": "IPAD10.2LTE",
+    "capacity": "128GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD10.2LTE32GB(2020)",
+    "model": "IPAD10.2LTE",
+    "capacity": "32GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD10.2WIFI128GB(2020)",
+    "model": "IPAD10.2WIFI",
+    "capacity": "128GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPAD10.2WIFI32GB(2020)",
+    "model": "IPAD10.2WIFI",
+    "capacity": "32GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPADAIR10.9LTE256G2020",
+    "model": "IPADAIR10.9LTE",
+    "capacity": "256GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPADAIR10.9LTE64G(2020)",
+    "model": "IPADAIR10.9LTE",
+    "capacity": "64GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPADAIR10.9WIFI256G2020",
+    "model": "IPADAIR10.9WIFI",
+    "capacity": "256GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPADAIR10.9WIFI64G(2020)",
+    "model": "IPADAIR10.9WIFI",
+    "capacity": "64GB",
+    "year": "2020",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 128GB",
+    "model": "IPHONE 11",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 256GB",
+    "model": "IPHONE 11",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 64GB",
+    "model": "IPHONE 11",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 PRO 256GB",
+    "model": "IPHONE 11 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 PRO 512GB",
+    "model": "IPHONE 11 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 PRO 64GB",
+    "model": "IPHONE 11 PRO",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 PRO MAX 256GB",
+    "model": "IPHONE 11 PRO MAX",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 PRO MAX 512GB",
+    "model": "IPHONE 11 PRO MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 11 PRO MAX 64GB",
+    "model": "IPHONE 11 PRO MAX",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 128GB",
+    "model": "IPHONE 12",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 256GB",
+    "model": "IPHONE 12",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 64GB",
+    "model": "IPHONE 12",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 MINI 128GB",
+    "model": "IPHONE 12 MINI",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 MINI 256GB",
+    "model": "IPHONE 12 MINI",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 MINI 64GB",
+    "model": "IPHONE 12 MINI",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 PRO 128GB",
+    "model": "IPHONE 12 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 PRO 256GB",
+    "model": "IPHONE 12 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 PRO 512GB",
+    "model": "IPHONE 12 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 PRO MAX 128GB",
+    "model": "IPHONE 12 PRO MAX",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 PRO MAX 256GB",
+    "model": "IPHONE 12 PRO MAX",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 12 PRO MAX 512GB",
+    "model": "IPHONE 12 PRO MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 128GB",
+    "model": "IPHONE 13",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 256GB",
+    "model": "IPHONE 13",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 512GB",
+    "model": "IPHONE 13",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 MINI 256GB",
+    "model": "IPHONE 13 MINI",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 MINI 512GB",
+    "model": "IPHONE 13 MINI",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 MINI 128GB",
+    "model": "IPHONE 13 MINI",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 PRO 128GB",
+    "model": "IPHONE 13 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 PRO 1TB",
+    "model": "IPHONE 13 PRO",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 PRO 256GB",
+    "model": "IPHONE 13 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 PRO 512GB",
+    "model": "IPHONE 13 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 PRO MAX 128GB",
+    "model": "IPHONE 13 PRO MAX",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 PRO MAX 1TB",
+    "model": "IPHONE 13 PRO MAX",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 PRO MAX 256GB",
+    "model": "IPHONE 13 PRO MAX",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 13 PRO MAX 512GB",
+    "model": "IPHONE 13 PRO MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 128GB",
+    "model": "IPHONE 14",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 256GB",
+    "model": "IPHONE 14",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 512GB",
+    "model": "IPHONE 14",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PLUS 128GB",
+    "model": "IPHONE 14 PLUS",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PLUS 256GB",
+    "model": "IPHONE 14 PLUS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PLUS 512GB",
+    "model": "IPHONE 14 PLUS",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PRO 128GB",
+    "model": "IPHONE 14 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PRO 1TB",
+    "model": "IPHONE 14 PRO",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PRO 256GB",
+    "model": "IPHONE 14 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PRO 512GB",
+    "model": "IPHONE 14 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PRO MAX 128GB",
+    "model": "IPHONE 14 PRO MAX",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PRO MAX 1TB",
+    "model": "IPHONE 14 PRO MAX",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PRO MAX 256GB",
+    "model": "IPHONE 14 PRO MAX",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 14 PRO MAX 512GB",
+    "model": "IPHONE 14 PRO MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 128GB",
+    "model": "IPHONE 15",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 256GB",
+    "model": "IPHONE 15",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 512GB",
+    "model": "IPHONE 15",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PLUS 128GB",
+    "model": "IPHONE 15 PLUS",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PLUS 256GB",
+    "model": "IPHONE 15 PLUS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PLUS 512GB",
+    "model": "IPHONE 15 PLUS",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PRO 128GB",
+    "model": "IPHONE 15 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PRO 1TB",
+    "model": "IPHONE 15 PRO",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PRO 256GB",
+    "model": "IPHONE 15 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PRO 512GB",
+    "model": "IPHONE 15 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PRO MAX 1TB",
+    "model": "IPHONE 15 PRO MAX",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PRO MAX 256GB",
+    "model": "IPHONE 15 PRO MAX",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 15 PRO MAX 512GB",
+    "model": "IPHONE 15 PRO MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 128GB",
+    "model": "IPHONE 16",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 256GB",
+    "model": "IPHONE 16",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 512GB",
+    "model": "IPHONE 16",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PLUS 128GB",
+    "model": "IPHONE 16 PLUS",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PLUS 256GB",
+    "model": "IPHONE 16 PLUS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PLUS 512GB",
+    "model": "IPHONE 16 PLUS",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PRO 128GB",
+    "model": "IPHONE 16 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PRO 1TB",
+    "model": "IPHONE 16 PRO",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PRO 256GB",
+    "model": "IPHONE 16 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PRO 512GB",
+    "model": "IPHONE 16 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PRO MAX 1TB",
+    "model": "IPHONE 16 PRO MAX",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PRO MAX 256GB",
+    "model": "IPHONE 16 PRO MAX",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16 PRO MAX 512GB",
+    "model": "IPHONE 16 PRO MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16E 128GB",
+    "model": "IPHONE 16E",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16E 256GB",
+    "model": "IPHONE 16E",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 16E 512GB",
+    "model": "IPHONE 16E",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 256GB",
+    "model": "IPHONE 17",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 512GB",
+    "model": "IPHONE 17",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 PRO 1TB",
+    "model": "IPHONE 17 PRO",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 PRO 256GB",
+    "model": "IPHONE 17 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 PRO 512GB",
+    "model": "IPHONE 17 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 PRO MAX 1TB",
+    "model": "IPHONE 17 PRO MAX",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 PRO MAX 256GB",
+    "model": "IPHONE 17 PRO MAX",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 PRO MAX 2TB",
+    "model": "IPHONE 17 PRO MAX",
+    "capacity": "2TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17 PRO MAX 512GB",
+    "model": "IPHONE 17 PRO MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17E 256GB",
+    "model": "IPHONE 17E",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE 17E 512GB",
+    "model": "IPHONE 17E",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE AIR 1TB",
+    "model": "IPHONE AIR",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE AIR 256GB",
+    "model": "IPHONE AIR",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE AIR 512GB",
+    "model": "IPHONE AIR",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE SE 128GB(2022)",
+    "model": "IPHONE SE",
+    "capacity": "128GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE SE 256GB(2022)",
+    "model": "IPHONE SE",
+    "capacity": "256GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "IPHONE SE 64GB(2022)",
+    "model": "IPHONE SE",
+    "capacity": "64GB",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10 GPS 42MM",
+    "model": "S10 GPS 42MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10 GPS 46MM",
+    "model": "S10 GPS 46MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10 LTE 42MM",
+    "model": "S10 LTE 42MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10 LTE 46MM",
+    "model": "S10 LTE 46MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S11 GPS 42MM",
+    "model": "S11 GPS 42MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S11 GPS 46MM",
+    "model": "S11 GPS 46MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S11 LTE 42MM",
+    "model": "S11 LTE 42MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S11 LTE 46MM",
+    "model": "S11 LTE 46MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S6 GPS 40MM",
+    "model": "S6 GPS 40MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S6 GPS 44MM",
+    "model": "S6 GPS 44MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S6 LTE 40MM",
+    "model": "S6 LTE 40MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S6 LTE 44MM",
+    "model": "S6 LTE 44MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S7 GPS 41MM",
+    "model": "S7 GPS 41MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S7 GPS 45MM",
+    "model": "S7 GPS 45MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S7 LTE 41MM",
+    "model": "S7 LTE 41MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S7 LTE 45MM",
+    "model": "S7 LTE 45MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "SE 3 GPS 40MM 2025",
+    "model": "SE 3 GPS 40MM",
+    "capacity": "",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "SE 3 GPS 44MM 2025",
+    "model": "SE 3 GPS 44MM",
+    "capacity": "",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "SE 3 LTE 40MM 2025",
+    "model": "SE 3 LTE 40MM",
+    "capacity": "",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "SE 3 LTE 44MM 2025",
+    "model": "SE 3 LTE 44MM",
+    "capacity": "",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ULTRA 2 LTE 49MM 2024",
+    "model": "ULTRA 2 LTE 49MM",
+    "capacity": "",
+    "year": "2024",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ULTRA 3 LTE 49MM 2025",
+    "model": "ULTRA 3 LTE 49MM",
+    "capacity": "",
+    "year": "2025",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH S8 GPS 41MM",
+    "model": "WATCH S8 GPS 41MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH S8 GPS 45MM",
+    "model": "WATCH S8 GPS 45MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH S8 LTE 41MM",
+    "model": "WATCH S8 LTE 41MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH S8 LTE 45MM",
+    "model": "WATCH S8 LTE 45MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH S9 GPS 41MM",
+    "model": "WATCH S9 GPS 41MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH S9 GPS 45MM",
+    "model": "WATCH S9 GPS 45MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH S9 LTE 41MM",
+    "model": "WATCH S9 LTE 41MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH S9 LTE 45MM",
+    "model": "WATCH S9 LTE 45MM",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH SE GPS 40MM 2022",
+    "model": "WATCH SE GPS 40MM",
+    "capacity": "",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH SE GPS 40MM 2023",
+    "model": "WATCH SE GPS 40MM",
+    "capacity": "",
+    "year": "2023",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH SE GPS 44MM 2022",
+    "model": "WATCH SE GPS 44MM",
+    "capacity": "",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH SE GPS 44MM 2023",
+    "model": "WATCH SE GPS 44MM",
+    "capacity": "",
+    "year": "2023",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH SE LTE 44MM 2022",
+    "model": "WATCH SE LTE 44MM",
+    "capacity": "",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH SE LTE 44MM 2023",
+    "model": "WATCH SE LTE 44MM",
+    "capacity": "",
+    "year": "2023",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH SE LTE 40MM 2022",
+    "model": "WATCH SE LTE 40MM",
+    "capacity": "",
+    "year": "2022",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH SE LTE 40MM 2023",
+    "model": "WATCH SE LTE 40MM",
+    "capacity": "",
+    "year": "2023",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "WATCH ULTRA 2 LTE",
+    "model": "WATCH ULTRA 2 LTE",
+    "capacity": "",
+    "year": "",
+    "brand": "APPLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "R5S (ZS676KS)12G/256G",
+    "model": "R5S (ZS676KS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "R6 (AI2201) 12G/256G",
+    "model": "R6 (AI2201",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "R6 (AI2201) 16G/512G",
+    "model": "R6 (AI2201",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "R6P (AI2201) 18G/512G",
+    "model": "R6P (AI2201",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 6 (AI2203)12G/256G蝙蝠俠",
+    "model": "ROG 6 (AI2203)12G/256G蝙蝠俠",
+    "capacity": "",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 6D (AI2203)16G/256G",
+    "model": "ROG 6D (AI2203",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 6DU (AI2203) 16G/512G",
+    "model": "ROG 6DU (AI2203",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 7U (AI2205)16G/512G",
+    "model": "ROG 7U (AI2205",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 8 16G/512G",
+    "model": "ROG 8",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 8 PRO 16G/512G",
+    "model": "ROG 8 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 8 PRO EDITION 24G/1TB",
+    "model": "ROG 8 PRO EDITION",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 9 16G/512G",
+    "model": "ROG 9",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 9 PRO 16G/512G",
+    "model": "ROG 9 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG 9 PRO EDITION 24G/1T",
+    "model": "ROG 9 PRO EDITION",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG II(ZS660KL)12G/512G",
+    "model": "ROG II(ZS660KL",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG III(ZS661KS)12G/512G",
+    "model": "ROG III(ZS661KS",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG5 (ZS673KS) 16G/256G",
+    "model": "ROG5 (ZS673KS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG5S (ZS676KS)16G/256G",
+    "model": "ROG5S (ZS676KS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG5S (ZS676KS)18G/512G",
+    "model": "ROG5S (ZS676KS",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG5U (ZS673KS) 18G/512G",
+    "model": "ROG5U (ZS673KS",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ROG7 (AI2205)16G/512G",
+    "model": "ROG7 (AI2205",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF10 (AI2302) 16G/512G",
+    "model": "ZF10 (AI2302",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF10 (AI2302) 8G/128G",
+    "model": "ZF10 (AI2302",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF10 (AI2302) 8G/256G",
+    "model": "ZF10 (AI2302",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF11 ULTRA 12G/256G",
+    "model": "ZF11 ULTRA",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF11 ULTRA 16G/512G",
+    "model": "ZF11 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF12 ULTRA 12G/256G",
+    "model": "ZF12 ULTRA",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF12 ULTRA 16G/512G",
+    "model": "ZF12 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF7 (ZS670KS) 6G/128G",
+    "model": "ZF7 (ZS670KS",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF7 (ZS670KS) 8G/128G",
+    "model": "ZF7 (ZS670KS",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF7 PRO(ZS671KS)8G/256G",
+    "model": "ZF7 PRO(ZS671KS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF8 (ZS590KS) 12G/256G",
+    "model": "ZF8 (ZS590KS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF8 (ZS590KS) 8G/128G",
+    "model": "ZF8 (ZS590KS",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF8 (ZS590KS) 8G/256G",
+    "model": "ZF8 (ZS590KS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF8 FLIP(ZS672KS)8G/128G",
+    "model": "ZF8 FLIP(ZS672KS",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF8 FLIP(ZS672KS)8G/256G",
+    "model": "ZF8 FLIP(ZS672KS",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF9 (AI2202) 8G/128G",
+    "model": "ZF9 (AI2202",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZF9 (AI2202) 8G/256G",
+    "model": "ZF9 (AI2202",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZS600KL 8G/128G",
+    "model": "ZS600KL",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "ZS600KL 8G/512G",
+    "model": "ZS600KL",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "ASUS",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 12G/128G",
+    "model": "PIXEL 10",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 12G/256G",
+    "model": "PIXEL 10",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 PRO 16G/128G",
+    "model": "PIXEL 10 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 PRO 16G/256G",
+    "model": "PIXEL 10 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 PRO 16G/512G",
+    "model": "PIXEL 10 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 PRO FOLD 16G/256G",
+    "model": "PIXEL 10 PRO FOLD",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 PRO FOLD 16G/512G",
+    "model": "PIXEL 10 PRO FOLD",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 PRO XL 16G/256G",
+    "model": "PIXEL 10 PRO XL",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10 PRO XL 16G/512G",
+    "model": "PIXEL 10 PRO XL",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10A 8G/128G",
+    "model": "PIXEL 10A",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 10A 8G/256G",
+    "model": "PIXEL 10A",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 6 8/128G",
+    "model": "PIXEL 6 8",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 6 8G/256G",
+    "model": "PIXEL 6",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 6 PRO 12G/128G",
+    "model": "PIXEL 6 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 6 PRO 12G/256G",
+    "model": "PIXEL 6 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 7 8GB/128G",
+    "model": "PIXEL 7",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 7 8GB/256GB",
+    "model": "PIXEL 7",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 7 PRO 12G/128GB",
+    "model": "PIXEL 7 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 7 PRO 12GB/256GB",
+    "model": "PIXEL 7 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 7A 8GB/128G",
+    "model": "PIXEL 7A",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 8 8GB/128G",
+    "model": "PIXEL 8",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 8 8GB/256G",
+    "model": "PIXEL 8",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 8 PRO 12GB/128G",
+    "model": "PIXEL 8 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 8 PRO 12GB/256G",
+    "model": "PIXEL 8 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 8A 8G/128G",
+    "model": "PIXEL 8A",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 8A 8G/256G",
+    "model": "PIXEL 8A",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9 12G/128G",
+    "model": "PIXEL 9",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9 12G/256G",
+    "model": "PIXEL 9",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9 PRO 16G/128G",
+    "model": "PIXEL 9 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9 PRO 16G/256G",
+    "model": "PIXEL 9 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9 PRO FOLD 16G/256G",
+    "model": "PIXEL 9 PRO FOLD",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9 PRO FOLD 16G/512G",
+    "model": "PIXEL 9 PRO FOLD",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9 PRO XL 16G/256G",
+    "model": "PIXEL 9 PRO XL",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9 PRO XL 16G/512G",
+    "model": "PIXEL 9 PRO XL",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9A 8G/128G",
+    "model": "PIXEL 9A",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "PIXEL 9A 8G/256G",
+    "model": "PIXEL 9A",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "GOOGLE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "DESIRE 22 PRO",
+    "model": "DESIRE 22 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "HTC",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "U23 8G+128G",
+    "model": "U23 8G+",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "HTC",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "U23 PRO 12G+256G",
+    "model": "U23 PRO 12G+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "HTC",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "U23 PRO 8G+256G",
+    "model": "U23 PRO 8G+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "HTC",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "U24 PRO 12G+256G",
+    "model": "U24 PRO 12G+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "HTC",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "U24 PRO 12G+512G",
+    "model": "U24 PRO 12G+",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "HTC",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A3 PRO 5G (CPH2639) 6G/128G",
+    "model": "A3 PRO 5G (CPH2639",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A3 PRO 5G (CPH2639) 8G/256G",
+    "model": "A3 PRO 5G (CPH2639",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A38 (CPH2579) 4G/128G",
+    "model": "A38 (CPH2579",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A3X(CPH2641)",
+    "model": "A3X",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A5 (CPH2735) 4G/128G",
+    "model": "A5 (CPH2735",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A5 PRO(CPH2695) 6G/128G",
+    "model": "A5 PRO(CPH2695",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A5 PRO(CPH2695) 8G/256G",
+    "model": "A5 PRO(CPH2695",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A6S 6G/128G",
+    "model": "A6S",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A6S 8G/256G",
+    "model": "A6S",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A6X 4G/128G",
+    "model": "A6X",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A6X 6G/128G",
+    "model": "A6X",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A72(CPH2067) 4G/128G",
+    "model": "A72(CPH2067",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A73_5G(CPH2161) 8G/128G",
+    "model": "A73_5G(CPH2161",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A74 5G (CPH2197)",
+    "model": "A74 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A77 5G (CPH2339) 4G/64G",
+    "model": "A77 5G (CPH2339",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A77 5G (CPH2339) 6G/128G",
+    "model": "A77 5G (CPH2339",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A78 5G (CPH2483) 4G/128G",
+    "model": "A78 5G (CPH2483",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A78 5G (CPH2483) 8G/128G",
+    "model": "A78 5G (CPH2483",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A79 5G (CPH2557) 4G/128G",
+    "model": "A79 5G (CPH2557",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A79 5G (CPH2557) 8G/256G",
+    "model": "A79 5G (CPH2557",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A9 2020 8G/128G",
+    "model": "A9 2020",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A9 2020 4G/128G",
+    "model": "A9 2020",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A91(CPH2021)8G/128G",
+    "model": "A91(CPH2021",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND N2 FLIP(CPH2437) 8G/256G",
+    "model": "FIND N2 FLIP(CPH2437",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND N3 (CPH2499) 16G/512G",
+    "model": "FIND N3 (CPH2499",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND N3 FLIP(CHP2519) 12G/256G",
+    "model": "FIND N3 FLIP(CHP2519",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND N6 16G/512G",
+    "model": "FIND N6",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND X3 PRO(CPH2173)",
+    "model": "FIND X3 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND X5 PRO(CPH2305)",
+    "model": "FIND X5 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND X8 (CPH2651) 12G/256G",
+    "model": "FIND X8 (CPH2651",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND X8 PRO (CPH2659) 16G/512G",
+    "model": "FIND X8 PRO (CPH2659",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND X9 12G/256G",
+    "model": "FIND X9",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND X9 PRO 16G/512G",
+    "model": "FIND X9 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND X9 ULTRA 12G/512G",
+    "model": "FIND X9 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FIND X9S 12G/256G",
+    "model": "FIND X9S",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FINDX2 PRO(CPH2025)12G/512G",
+    "model": "FINDX2 PRO(CPH2025",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FINDX2(CPH2023) 12G/256G",
+    "model": "FINDX2(CPH2023",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO 5Z (CPH2211)",
+    "model": "RENO 5Z",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO(CPH1917)8G/256G",
+    "model": "RENO(CPH1917",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO10 (CPH2531) 8G/128G",
+    "model": "RENO10 (CPH2531",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO10 (CPH2531) 8G/256G",
+    "model": "RENO10 (CPH2531",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO10 PRO (CPH2525) 12G/256G",
+    "model": "RENO10 PRO (CPH2525",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO10 PRO+ (CPH2521) 12G/256G",
+    "model": "RENO10 PRO+ (CPH2521",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO11 (CPH2599) 12G/256G",
+    "model": "RENO11 (CPH2599",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO11 (CPH2599) 8G/256G",
+    "model": "RENO11 (CPH2599",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO11 PRO(CPH2607) 12G/512G",
+    "model": "RENO11 PRO(CPH2607",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO12 (CPH2625) 12G/256G",
+    "model": "RENO12 (CPH2625",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO12 (CPH2625) 12G/512G",
+    "model": "RENO12 (CPH2625",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO12 PRO(CPH2629) 12G/512G",
+    "model": "RENO12 PRO(CPH2629",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO13 (CPH2689) 12G/256G",
+    "model": "RENO13 (CPH2689",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO13 (CPH2689) 12G/512G",
+    "model": "RENO13 (CPH2689",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO13 F (CPH2699) 8G/256G",
+    "model": "RENO13 F (CPH2699",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO13 PRO(CPH2697) 12G/512G",
+    "model": "RENO13 PRO(CPH2697",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO14 (CPH2737) 12G/256G",
+    "model": "RENO14 (CPH2737",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO14 (CPH2737) 12G/512G",
+    "model": "RENO14 (CPH2737",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO14 F (CPH2743) 8G/256G",
+    "model": "RENO14 F (CPH2743",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO14 PRO (CPH2739) 12G/512G",
+    "model": "RENO14 PRO (CPH2739",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO15 12G/256G",
+    "model": "RENO15",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO15 12G/512G",
+    "model": "RENO15",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO15 F 12G/256G",
+    "model": "RENO15 F",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO15 PRO 12G/256G",
+    "model": "RENO15 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO15 PRO MAX 12G/512G",
+    "model": "RENO15 PRO MAX",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO16 12G/256G",
+    "model": "RENO16",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO16 8G/256G",
+    "model": "RENO16",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO16 F 8G/256G",
+    "model": "RENO16 F",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO2",
+    "model": "RENO2",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO4 (CPH2091)",
+    "model": "RENO4",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO4 PRO (CPH2089)",
+    "model": "RENO4 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO4Z (CPH2065)",
+    "model": "RENO4Z",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO5 PRO(CPH2201)",
+    "model": "RENO5 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO5(CPH2145)",
+    "model": "RENO5",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO6 (CPH2251)",
+    "model": "RENO6",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO6 PRO(CPH2247)",
+    "model": "RENO6 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO6 Z(CPH2237)",
+    "model": "RENO6 Z",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO7 (CPH2371)",
+    "model": "RENO7",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO7 PRO (CPH2293)",
+    "model": "RENO7 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO7 Z(CPH2343)",
+    "model": "RENO7 Z",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO8 PRO(CPH2357)",
+    "model": "RENO8 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO8 T(CPH2505) 8G/128G",
+    "model": "RENO8 T(CPH2505",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO8 Z(CPH2457)",
+    "model": "RENO8 Z",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO8(CPH2359)",
+    "model": "RENO8",
+    "capacity": "",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO8(CPH2359) 12G/256G",
+    "model": "RENO8(CPH2359",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO變焦 12G/256G",
+    "model": "RENO變焦",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO變焦 6G/128G",
+    "model": "RENO變焦",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "RENO變焦8G/256G",
+    "model": "RENO變焦8G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "OPPO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "10 PRO 8G/256G",
+    "model": "10 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "10 PRO+ 12G/256G",
+    "model": "10 PRO+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "10T 5G 4G/128G",
+    "model": "10T 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "11 5G 8G/256G",
+    "model": "11 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "11 PRO 8G/256G",
+    "model": "11 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "11 PRO+ 12G/512G",
+    "model": "11 PRO+",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "11X 5G 8G/128G",
+    "model": "11X 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "12 PRO+ 12G/512G",
+    "model": "12 PRO+",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "12+12G/256G",
+    "model": "12+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "12X 6G/128G",
+    "model": "12X",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "12X 8G/256G",
+    "model": "12X",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "13 5G 8G/256G",
+    "model": "13 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "13 PRO 12G/256G",
+    "model": "13 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "13 PRO+ 12G/512G",
+    "model": "13 PRO+",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "13+ 12G/256G",
+    "model": "13+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "14 PRO 12G/256G",
+    "model": "14 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "14X 6G/128G",
+    "model": "14X",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "14X 8G/256G",
+    "model": "14X",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "15 PRO 12G/256G",
+    "model": "15 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "15 T 8G/256G",
+    "model": "15 T",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "16 5G 12G/256G",
+    "model": "16 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "16 PRO 12G/256G",
+    "model": "16 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "9 PRO 8G/128G",
+    "model": "9 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "9 PRO+ 8G/256G",
+    "model": "9 PRO+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "9I 5G 4G/64G",
+    "model": "9I 5G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "C100 5G 4G/128G",
+    "model": "C100 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "C51 4G/64G",
+    "model": "C51",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "C61 4G/128G",
+    "model": "C61",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "C71 4G/128G",
+    "model": "C71",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "GT 2 PRO 大師紙 12G/256G",
+    "model": "GT 2 PRO 大師紙",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "GT 7T 12G/256G",
+    "model": "GT 7T",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "GT 8G/128G (5G)",
+    "model": "GT 8G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "GT NEO3",
+    "model": "GT NEO3",
+    "capacity": "",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "GT 大師版(8+256)",
+    "model": "GT 大師版",
+    "capacity": "",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "GT6 16G/512G",
+    "model": "GT6",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NARZO 50 PRO 5G",
+    "model": "NARZO 50 PRO 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NEO3T 8G",
+    "model": "NEO 8G",
+    "capacity": "3TB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE 50 4G/128G",
+    "model": "NOTE 50",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE 80 4G/128G",
+    "model": "NOTE 80",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REALME X50 5G 6G/128G",
+    "model": "REALME X50 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REALME X50 PRO 12G/256G",
+    "model": "REALME X50 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REALME X7 PRO 8G/128G",
+    "model": "REALME X7 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REALME X7 PRO 8G/256G",
+    "model": "REALME X7 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REALME XT 8G/128G",
+    "model": "REALME XT",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "REALME",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A07 (A076B 4G/128G)",
+    "model": "A07",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A13 5G(A136-4G/64G)",
+    "model": "A13 5G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A14 5G(A146-4G/64G)",
+    "model": "A14 5G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A15 5G(A1560 4G/128G)",
+    "model": "A15 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A15 5G(A1560 6G/128G)",
+    "model": "A15 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A16 5G(A1660 4G/128G)",
+    "model": "A16 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A17 (A1760 6G/128G)",
+    "model": "A17",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A17 (A1760 8G/128G)",
+    "model": "A17",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A22 5G(A226-4G/128G)",
+    "model": "A22 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A22 5G(A226-4G/64G)",
+    "model": "A22 5G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A23 5G(A236-4G/64G)",
+    "model": "A23 5G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A25 5G(A256 6G/128G)",
+    "model": "A25 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A26 (A266 8G/128G)",
+    "model": "A26",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A27 (A2760 8G/128G)",
+    "model": "A27",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A30S(A307)",
+    "model": "A30S",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A31(A315)",
+    "model": "A31",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A32 5G(A326)",
+    "model": "A32 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A32 5G(A326-4G 64G)",
+    "model": "A32 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A33 5G(A336-6G/128G)",
+    "model": "A33 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A34 5G(A346 6G/128G)",
+    "model": "A34 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A35 5G(A3560 6G/128G)",
+    "model": "A35 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A35 5G(A3560 8G/128G)",
+    "model": "A35 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A36 (A3660 8G/128G)",
+    "model": "A36",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A37 (A376B 8G/256G)",
+    "model": "A37",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A42 5G(A426)",
+    "model": "A42 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A50(A505)",
+    "model": "A50",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A51 5G(A516)",
+    "model": "A51 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A51(A515)",
+    "model": "A51",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A52 5G(A526-6G 128G)",
+    "model": "A52 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A52 5G(A526-8G 256G)",
+    "model": "A52 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A52S 5G(A528-6G/128G)",
+    "model": "A52S 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A52S 5G(A528-8G/256G)",
+    "model": "A52S 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A53 5G(A536-8G/128G)",
+    "model": "A53 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A53 5G(A536-8G/256G)",
+    "model": "A53 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A54 5G(A546 6G/128G)",
+    "model": "A54 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A54 5G(A546 8G/256G)",
+    "model": "A54 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A55 5G(A5560 8G/128G)",
+    "model": "A55 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A55 5G(A5560 8G/256G)",
+    "model": "A55 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A56 (A5660 12G/256G)",
+    "model": "A56",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A56 (A5660 8G/256G)",
+    "model": "A56",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A57 (A576B 12G/256G)",
+    "model": "A57",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A70(A7050)",
+    "model": "A70",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A71 5G(A716)",
+    "model": "A71 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A71(A715)",
+    "model": "A71",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A80(A805)",
+    "model": "A80",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "A9(A920)",
+    "model": "A9",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "FOLD(F900-12G/512G)",
+    "model": "FOLD",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "M14 5G(M146 4G/64G)",
+    "model": "M14 5G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "M34 5G 6G/128G",
+    "model": "M34 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "N960-128G",
+    "model": "N960-",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "N960-512G",
+    "model": "N960-",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE10 LITE(N770)",
+    "model": "NOTE10 LITE",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE10(8G/256G)",
+    "model": "NOTE10",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE10+(12G/256G)",
+    "model": "NOTE10+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE10+(12G/512G)",
+    "model": "NOTE10+",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE20 ULTRA(N9860 256G)",
+    "model": "NOTE20 ULTRA",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE20 ULTRA(N9860 512G)",
+    "model": "NOTE20 ULTRA",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "NOTE20(N9810 256G)",
+    "model": "NOTE20",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "P610(TAB S6 LITE WIFI)",
+    "model": "P610",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "P615(TAB S6 LITE LTE)",
+    "model": "P615",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10(G973)128G",
+    "model": "S10(G973",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10+(G975 )1TB",
+    "model": "S10+(G975",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10+(G975 )512G",
+    "model": "S10+(G975",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10+(G975)128G",
+    "model": "S10+(G975",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S10E(G970)",
+    "model": "S10E",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S20 FE (G781-256G)",
+    "model": "S20 FE",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S20 FE 5G(G781)",
+    "model": "S20 FE 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S20 ULTRA(12G/256G)",
+    "model": "S20 ULTRA",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S20 ULTRA(16G/512G)",
+    "model": "S20 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S20(12G/128G)",
+    "model": "S20",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S20+(12G/128G)",
+    "model": "S20+",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S21 5G(G9910 128G)",
+    "model": "S21 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S21 5G(G9910 256G)",
+    "model": "S21 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S21 ULTRA 5G(G9980 256G)",
+    "model": "S21 ULTRA 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S21 ULTRA 5G(G9980 512G)",
+    "model": "S21 ULTRA 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S21+ 5G(G9960 128G)",
+    "model": "S21+ 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S21+ 5G(G9960 256G)",
+    "model": "S21+ 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S22 5G SM-S9010 8G/128G",
+    "model": "S22 5G SM-S9010",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S22 5G SM-S9010 8G/256G",
+    "model": "S22 5G SM-S9010",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S22 ULTRA 5G SM-S9080 12G/256G",
+    "model": "S22 ULTRA 5G SM-S9080",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S22 ULTRA 5G SM-S9080 12G/512G",
+    "model": "S22 ULTRA 5G SM-S9080",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S22+ 5G SM-S9060 8G/128G",
+    "model": "S22+ 5G SM-S9060",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S22+ 5G SM-S9060 8G/256G",
+    "model": "S22+ 5G SM-S9060",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23 5G(S9110 8G/128G)",
+    "model": "S23 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23 5G(S9110 8G/256G)",
+    "model": "S23 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23 FE 8G/128G",
+    "model": "S23 FE",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23 FE 8G/256G",
+    "model": "S23 FE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23 ULTRA 5G(S9180 12G/1TB)",
+    "model": "S23 ULTRA 5G",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23 ULTRA 5G(S9180 12G/256G)",
+    "model": "S23 ULTRA 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23 ULTRA 5G(S9180 12G/512G)",
+    "model": "S23 ULTRA 5G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23+ 5G(S9160 8G/256G)",
+    "model": "S23+ 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S23+ 5G(S9160 8G/512G)",
+    "model": "S23+ 5G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S24 FE 8G/256G",
+    "model": "S24 FE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S24 ULTRA(S9280 12G/1TB)",
+    "model": "S24 ULTRA",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S24 ULTRA(S9280 12G/256G)",
+    "model": "S24 ULTRA",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S24 ULTRA(S9280 12G/512G)",
+    "model": "S24 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S24(S9210 8G/256G)",
+    "model": "S24",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S24(S9210 8G/512G)",
+    "model": "S24",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S24+(S9260 12G/256G)",
+    "model": "S24+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S24+(S9260 12G/512G)",
+    "model": "S24+",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25 EDGE(S9370 12G/256G)",
+    "model": "S25 EDGE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25 EDGE(S9370 12G/512G)",
+    "model": "S25 EDGE",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25 FE(S731B 8G/256G)",
+    "model": "S25 FE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25 ULTRA(S9380 12G/256G)",
+    "model": "S25 ULTRA",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25 ULTRA(S9380 12G/512G)",
+    "model": "S25 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25(S9310 12G/256G)",
+    "model": "S25",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25(S9310 12G/512G)",
+    "model": "S25",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25+(S9360 12G/256G)",
+    "model": "S25+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S25+(S9360 12G/512G)",
+    "model": "S25+",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S26 ULTRA(S9480 12G/256G)",
+    "model": "S26 ULTRA",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S26 ULTRA(S9480 12G/512G)",
+    "model": "S26 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S26(S9420 12G/256G)",
+    "model": "S26",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S26(S9420 12G/512G)",
+    "model": "S26",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S26+(S9470 12G/256G)",
+    "model": "S26+",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "S26+(S9470 12G/512G)",
+    "model": "S26+",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "T510",
+    "model": "T510",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "T515",
+    "model": "T515",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "T590",
+    "model": "T590",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "T595",
+    "model": "T595",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "T835",
+    "model": "T835",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A11 LTE 4G/64G (X135G)",
+    "model": "TAB A11 LTE 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A11 WI-FI 4G/64G (X133)",
+    "model": "TAB A11 WI-FI 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A11+ 5G 6G/128G(X236B)",
+    "model": "TAB A11+ 5G 6G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A11+ WI-FI 6G/128G(X230)",
+    "model": "TAB A11+ WI-FI 6G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A7 LITE LTE(T225)",
+    "model": "TAB A7 LITE LTE",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A7 LITE WIFI (T220)",
+    "model": "TAB A7 LITE WIFI",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A7 LTE(T505)",
+    "model": "TAB A7 LTE",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A7 WI-FI(T500)",
+    "model": "TAB A7 WI-FI",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A8 LTE 3G/32G(X205)",
+    "model": "TAB A8 LTE 3G",
+    "capacity": "32GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A8 WIFI 3G/32G(X200)",
+    "model": "TAB A8 WIFI 3G",
+    "capacity": "32GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A8 WIFI 4G/64G(X200)",
+    "model": "TAB A8 WIFI 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A9 LTE 4G/64G (X115)",
+    "model": "TAB A9 LTE 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A9 WI-FI 4G/64G (X110)",
+    "model": "TAB A9 WI-FI 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A9+ 5G 4G/64G (X216)",
+    "model": "TAB A9+ 5G 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB A9+ WIFI 4G/64G (X210)",
+    "model": "TAB A9+ WIFI 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB ACTIVE5 PRO 5G (X356B)",
+    "model": "TAB ACTIVE5 PRO 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10 FE 5G 8G/128G(X526B)",
+    "model": "TAB S10 FE 5G 8G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10 FE WIFI 8G/128G(X520)",
+    "model": "TAB S10 FE WIFI 8G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10 FE+ WIFI 8G/128G(X620)",
+    "model": "TAB S10 FE+ WIFI 8G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10 LITE 5G 6G/128G (X406B)",
+    "model": "TAB S10 LITE 5G 6G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10 LITE WI-FI (X400)",
+    "model": "TAB S10 LITE WI-FI",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10 ULTRA 5G (X926B)",
+    "model": "TAB S10 ULTRA 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10 ULTRA WIFI (X920)",
+    "model": "TAB S10 ULTRA WIFI",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10+ 5G (X826B)",
+    "model": "TAB S10+ 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S10+ WIFI (X820)",
+    "model": "TAB S10+ WIFI",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S11 5G 12G/128G (X736B)",
+    "model": "TAB S11 5G 12G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S11 5G 12G/256G (X736B)",
+    "model": "TAB S11 5G 12G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S11 WI-FI 12G/128G (X730)",
+    "model": "TAB S11 WI-FI 12G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S11 WI-FI 12G/256G (X730)",
+    "model": "TAB S11 WI-FI 12G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S11U 5G 12G/256G (X936B)",
+    "model": "TAB S11U 5G 12G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S11U 5G 12G/512G (X936B)",
+    "model": "TAB S11U 5G 12G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S11U WI-FI 12G/256G (X930)",
+    "model": "TAB S11U WI-FI 12G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S11U WI-FI 12G/512G (X930)",
+    "model": "TAB S11U WI-FI 12G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S6 LITE LTE (P619)",
+    "model": "TAB S6 LITE LTE",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S6 LITE LTE 4G/64G(P625)",
+    "model": "TAB S6 LITE LTE 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S6 LITE WIFI 4G/128G(P620)",
+    "model": "TAB S6 LITE WIFI 4G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S6 LITE WIFI 4G/64G (P620)",
+    "model": "TAB S6 LITE WIFI 4G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S6 LITE(P613)",
+    "model": "TAB S6 LITE",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S6 LITE(P613)4G/128G",
+    "model": "TAB S6 LITE(P613",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S7+",
+    "model": "TAB S7+",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S8 5G 8G/128G(X706)",
+    "model": "TAB S8 5G 8G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S8+ 5G 8G/128G(X806)",
+    "model": "TAB S8+ 5G 8G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S9 5G(X716)鍵盤組",
+    "model": "TAB S9 5G(X716)鍵盤組",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S9 ULTRA 5G(X916)鍵盤組",
+    "model": "TAB S9 ULTRA 5G(X916)鍵盤組",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S9 ULTRA WI-FI (X910)鍵盤組",
+    "model": "TAB S9 ULTRA WI-FI (X910)鍵盤組",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S9+ 5G(X816)鍵盤組",
+    "model": "TAB S9+ 5G(X816)鍵盤組",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S9FE 5G 6G/128G(X516)",
+    "model": "TAB S9FE 5G 6G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S9FE WIFI 6G/128G(X510)",
+    "model": "TAB S9FE WIFI 6G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S9FE+ 5G 8G/128G(X616)",
+    "model": "TAB S9FE+ 5G 8G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "TAB S9FE+ WIFI 12G/256G(X610)",
+    "model": "TAB S9FE+ WIFI 12G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XCOVER6 PRO 5G(G736-6G/128G)",
+    "model": "XCOVER6 PRO 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP 5G(F7070 256G)",
+    "model": "Z FLIP 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP(F700F)",
+    "model": "Z FLIP",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP3 5G(F7110-8G/128G)",
+    "model": "Z FLIP3 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP3 5G(F7110-8G/256G)",
+    "model": "Z FLIP3 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP4 5G(F7210-8G/128G)",
+    "model": "Z FLIP4 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP4 5G(F7210-8G/256G)",
+    "model": "Z FLIP4 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP5(F7310-8G/256G)",
+    "model": "Z FLIP5",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP5(F7310-8G/512G)",
+    "model": "Z FLIP5",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP6(F7410 12G/256G)",
+    "model": "Z FLIP6",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP6(F7410 12G/512G)",
+    "model": "Z FLIP6",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP7(F7660 12G/256G)",
+    "model": "Z FLIP7",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FLIP7(F7660 12G/512G)",
+    "model": "Z FLIP7",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD2 5G(F9160)",
+    "model": "Z FOLD2 5G",
+    "capacity": "",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD3 5G(F9260-12G/256G)",
+    "model": "Z FOLD3 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD3 5G(F9260-12G/512G)",
+    "model": "Z FOLD3 5G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD4 5G(F9360-12G/256G)",
+    "model": "Z FOLD4 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD4 5G(F9360-12G/512G)",
+    "model": "Z FOLD4 5G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD5(F9460-12G/1TB)",
+    "model": "Z FOLD5",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD5(F9460-12G/256G)",
+    "model": "Z FOLD5",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD5(F9460-12G/512G)",
+    "model": "Z FOLD5",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD6(F9560 12G/256G)",
+    "model": "Z FOLD6",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD6(F9560 12G/512G)",
+    "model": "Z FOLD6",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD7(F9660 12G/1TB)",
+    "model": "Z FOLD7",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD7(F9660 12G/256G)",
+    "model": "Z FOLD7",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z FOLD7(F9660 12G/512G)",
+    "model": "Z FOLD7",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Z TRIFOLD(F968B 16G/512G)",
+    "model": "Z TRIFOLD",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SAMSUNG",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 IV (XQ-CT72)/256G",
+    "model": "XPERIA 1 IV (XQ-CT72",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 IV (XQ-CT72)/512G",
+    "model": "XPERIA 1 IV (XQ-CT72",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 V (XQ-DQ72)/256G",
+    "model": "XPERIA 1 V (XQ-DQ72",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 V (XQ-DQ72)/512G",
+    "model": "XPERIA 1 V (XQ-DQ72",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 VI (XQ-EC72)/256G",
+    "model": "XPERIA 1 VI (XQ-EC72",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 VI (XQ-EC72)/512G",
+    "model": "XPERIA 1 VI (XQ-EC72",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 VII (XQ-FS72)/256G",
+    "model": "XPERIA 1 VII (XQ-FS72",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 VII (XQ-FS72)/512G",
+    "model": "XPERIA 1 VII (XQ-FS72",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 VIII (XQ-GE74)/1TB",
+    "model": "XPERIA 1 VIII (XQ-GE74",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 VIII (XQ-GE74)/256G",
+    "model": "XPERIA 1 VIII (XQ-GE74",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1 VIII (XQ-GE74)/512G",
+    "model": "XPERIA 1 VIII (XQ-GE74",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 10 III",
+    "model": "XPERIA 10 III",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 10 IV (XQ-CC72)",
+    "model": "XPERIA 10 IV",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 10 V (XQ-DC72)",
+    "model": "XPERIA 10 V",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 10 VI (XQ-ES72)",
+    "model": "XPERIA 10 VI",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 10 VII (XQ-FE72)",
+    "model": "XPERIA 10 VII",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1III 256G",
+    "model": "XPERIA 1III",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 1III 512G",
+    "model": "XPERIA 1III",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA 5 V (XQ-DE72)",
+    "model": "XPERIA 5 V",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA PRO-I (XQ-BE72)",
+    "model": "XPERIA PRO-I",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XPERIA1 II",
+    "model": "XPERIA1 II",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XQ-AU52 (XPERIA 10 II)",
+    "model": "XQ-AU52",
+    "capacity": "",
+    "year": "",
+    "brand": "SONY MOBILE",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V21",
+    "model": "V21",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V21S",
+    "model": "V21S",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V23 (12G/256G)",
+    "model": "V23",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V23 (8G/128G)",
+    "model": "V23",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V23E",
+    "model": "V23E",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V25 (8G/256G)",
+    "model": "V25",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V25 PRO",
+    "model": "V25 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V27 8G/256G",
+    "model": "V27",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V29 12G/256G",
+    "model": "V29",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V29E",
+    "model": "V29E",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V30 12G/256G",
+    "model": "V30",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V30 PRO",
+    "model": "V30 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V40",
+    "model": "V40",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V40 LITE",
+    "model": "V40 LITE",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V40 PRO",
+    "model": "V40 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V50 12G/256G",
+    "model": "V50",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V50 LITE 12G/256G",
+    "model": "V50 LITE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V60 12G/256G",
+    "model": "V60",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V60 LITE 12G/256G",
+    "model": "V60 LITE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V60 LITE 8G/256G",
+    "model": "V60 LITE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V70 12G/256G",
+    "model": "V70",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V70 12G/512G",
+    "model": "V70",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V70 FE 12G/256G",
+    "model": "V70 FE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "V70 FE 8G/256G",
+    "model": "V70 FE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "VIVO V70 FE 8G/128G",
+    "model": "VIVO V70 FE",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "VIVO Y21 4G/128G",
+    "model": "VIVO Y21",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X FOLD5 16G/512G",
+    "model": "X FOLD5",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X100",
+    "model": "X100",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X100 PRO",
+    "model": "X100 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X200",
+    "model": "X200",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X200 FE 12G/512G",
+    "model": "X200 FE",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X200 PRO",
+    "model": "X200 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X300 12G/256G",
+    "model": "X300",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X300 16G/512G",
+    "model": "X300",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X300 PRO 16G/512G",
+    "model": "X300 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X300 ULTRA 16G/1TB",
+    "model": "X300 ULTRA",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X300 ULTRA 16G/512G",
+    "model": "X300 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X50 PRO",
+    "model": "X50 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X50E",
+    "model": "X50E",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X60",
+    "model": "X60",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X60 PRO",
+    "model": "X60 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X70",
+    "model": "X70",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X70 PRO",
+    "model": "X70 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X80",
+    "model": "X80",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X90",
+    "model": "X90",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "X90 PRO",
+    "model": "X90 PRO",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y03",
+    "model": "Y03",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y04 4G/128G",
+    "model": "Y04",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y05 4G/128G",
+    "model": "Y05",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y16",
+    "model": "Y16",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y17S",
+    "model": "Y17S",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y21 6G/128G",
+    "model": "Y21",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y27",
+    "model": "Y27",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y28S 6G/128G",
+    "model": "Y28S",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y28S 8G/256G",
+    "model": "Y28S",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y29S 6G/128G",
+    "model": "Y29S",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y29S 8G/256G",
+    "model": "Y29S",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y31 8G/256G",
+    "model": "Y31",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y38",
+    "model": "Y38",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y39 8G/256G",
+    "model": "Y39",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y50",
+    "model": "Y50",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y50 6G/128G",
+    "model": "Y50",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y52",
+    "model": "Y52",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y55S",
+    "model": "Y55S",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y72",
+    "model": "Y72",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y76",
+    "model": "Y76",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "Y78",
+    "model": "Y78",
+    "capacity": "",
+    "year": "",
+    "brand": "VIVO",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "MI 10T 5G 8G/128G",
+    "model": "MI 10T 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "MI 10T PRO 5G 8G/256G",
+    "model": "MI 10T PRO 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO C65 6G/128G",
+    "model": "POCO C65",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO C65 8G/256G",
+    "model": "POCO C65",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO C75 6G/128G",
+    "model": "POCO C75",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO C75 8G/256G",
+    "model": "POCO C75",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO C85 6G/128G",
+    "model": "POCO C85",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO C85 8G/256G",
+    "model": "POCO C85",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F3 5G 6G/128G",
+    "model": "POCO F3 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F3 5G 8G/256G",
+    "model": "POCO F3 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F4 8G/256G",
+    "model": "POCO F4",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F5 12G/256G",
+    "model": "POCO F5",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F5 PRO 12G/256",
+    "model": "POCO F5 PRO 12G/256",
+    "capacity": "",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F5 PRO 12G/512G",
+    "model": "POCO F5 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F6 12G/512G",
+    "model": "POCO F6",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F6 PRO 12G/512G",
+    "model": "POCO F6 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F6 PRO 16G/1024G",
+    "model": "POCO F6 PRO",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F7 PRO 12G/256G",
+    "model": "POCO F7 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F7 PRO 12G/512G",
+    "model": "POCO F7 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F7 ULTRA 16G/256G",
+    "model": "POCO F7 ULTRA",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F7 ULTRA 16G/512G",
+    "model": "POCO F7 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F8 PRO 12G/256G",
+    "model": "POCO F8 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F8 PRO 12G/512G",
+    "model": "POCO F8 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F8 ULTRA 12G/256G",
+    "model": "POCO F8 ULTRA",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO F8 ULTRA 16G/512G",
+    "model": "POCO F8 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO M4 PRO 6G/128G",
+    "model": "POCO M4 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO M4 PRO 8G/256G",
+    "model": "POCO M4 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO M5 4G/64G",
+    "model": "POCO M5",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO M6 8G/256G",
+    "model": "POCO M6",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO M7 6G 128G",
+    "model": "POCO M7 6G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO M7 8G 256G",
+    "model": "POCO M7 8G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X3 PRO 6G/128G",
+    "model": "POCO X3 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X3 PRO 8G/256G",
+    "model": "POCO X3 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X4 GT 8G/256G",
+    "model": "POCO X4 GT",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X4 PRO 5G 6G/128G",
+    "model": "POCO X4 PRO 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X4 PRO 5G 8G/256G",
+    "model": "POCO X4 PRO 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X5 5G 6G/128G",
+    "model": "POCO X5 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X5 5G 8G/256G",
+    "model": "POCO X5 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X5 PRO 5G 8G/256G",
+    "model": "POCO X5 PRO 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X6 5G 12G/256G",
+    "model": "POCO X6 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "POCO X6 PRO 5G 12G/512G",
+    "model": "POCO X6 PRO 5G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 10 2022 4G/128G",
+    "model": "REDMI 10 2022",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 10 2022 4G/64G",
+    "model": "REDMI 10 2022",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 10 5G 4G/128G",
+    "model": "REDMI 10 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 10 5G 4G/64G",
+    "model": "REDMI 10 5G",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 12 5G 8G/128G",
+    "model": "REDMI 12 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 12 5G 8G/256G",
+    "model": "REDMI 12 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 12C 4G/128G",
+    "model": "REDMI 12C",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 12C 4G/64G",
+    "model": "REDMI 12C",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 13C 4G/128G",
+    "model": "REDMI 13C",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 13C 5G 4G/128G",
+    "model": "REDMI 13C 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 13C 8G/256G",
+    "model": "REDMI 13C",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 14C 4G/128G",
+    "model": "REDMI 14C",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 14C 8G/256G",
+    "model": "REDMI 14C",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 15 5G 4G/128G",
+    "model": "REDMI 15 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 15 5G 8G/256G",
+    "model": "REDMI 15 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 15C 4G/128G",
+    "model": "REDMI 15C",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI 15C 8G/256G",
+    "model": "REDMI 15C",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 11 PRO 5G 6G/128G",
+    "model": "REDMI NOTE 11 PRO 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 11 PRO 5G 8G/128G",
+    "model": "REDMI NOTE 11 PRO 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 11 PRO 6G/128G",
+    "model": "REDMI NOTE 11 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 11 PRO+ 5G 8G/256G",
+    "model": "REDMI NOTE 11 PRO+ 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 11S 5G 6G/128G",
+    "model": "REDMI NOTE 11S 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 11S 6G/128G",
+    "model": "REDMI NOTE 11S",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 12 5G 6G/128G",
+    "model": "REDMI NOTE 12 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 12 5G 8G/256G",
+    "model": "REDMI NOTE 12 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 12 PRO 5G 8G/256G",
+    "model": "REDMI NOTE 12 PRO 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 12 PRO+ 5G 8G/256G",
+    "model": "REDMI NOTE 12 PRO+ 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 12S 8G/256G",
+    "model": "REDMI NOTE 12S",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 13 5G 8G/256G",
+    "model": "REDMI NOTE 13 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 13 8G/256G",
+    "model": "REDMI NOTE 13",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 13 PRO 5G 8G/256G",
+    "model": "REDMI NOTE 13 PRO 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 13 PRO+5G 12G/512G",
+    "model": "REDMI NOTE 13 PRO+5G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 14 8G/256G",
+    "model": "REDMI NOTE 14",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 14 PRO+5G 12G/256G",
+    "model": "REDMI NOTE 14 PRO+5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 14 PRO+5G 12G/512G",
+    "model": "REDMI NOTE 14 PRO+5G",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI NOTE 15 PRO+ 5G 12G/256G",
+    "model": "REDMI NOTE 15 PRO+ 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD 2 4G/128G",
+    "model": "REDMI PAD 2",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD 2 9.7 4G 4G/128G",
+    "model": "REDMI PAD 2 9.7 4G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD 2 9.7 4G/128G",
+    "model": "REDMI PAD 2 9.7",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD 2 LTE 8G/256G",
+    "model": "REDMI PAD 2 LTE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD 2 PRO 5G 8G/256G",
+    "model": "REDMI PAD 2 PRO 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD 2 PRO 6G/128G",
+    "model": "REDMI PAD 2 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD 2 PRO 8G/256G",
+    "model": "REDMI PAD 2 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD PRO 8G/256G",
+    "model": "REDMI PAD PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD SE 4G/128G",
+    "model": "REDMI PAD SE",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD SE 8.7 4G/128G",
+    "model": "REDMI PAD SE 8.7",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD SE 8.7 4G/64G",
+    "model": "REDMI PAD SE 8.7",
+    "capacity": "64GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD SE 8.7 LTE 6G/128G",
+    "model": "REDMI PAD SE 8.7 LTE",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD SE 8G/128G",
+    "model": "REDMI PAD SE",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "REDMI PAD SE 8G/256G",
+    "model": "REDMI PAD SE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 12 12G/256G",
+    "model": "XIAOMI 12",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 12 LITE 5G 8G/256G",
+    "model": "XIAOMI 12 LITE 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 12 PRO 12G/256G",
+    "model": "XIAOMI 12 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 12T 5G 8G/256G",
+    "model": "XIAOMI 12T 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 12T PRO 5G 12G/256G",
+    "model": "XIAOMI 12T PRO 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 12X 8G/256G",
+    "model": "XIAOMI 12X",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 13 12G/ 256G",
+    "model": "XIAOMI 13",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 13 LITE 8G/256G",
+    "model": "XIAOMI 13 LITE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 13 PRO 12G/512G",
+    "model": "XIAOMI 13 PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 13 T 12G/256G",
+    "model": "XIAOMI 13 T",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 13 T PRO 12G/512G",
+    "model": "XIAOMI 13 T PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 13 ULTRA 12G/512G",
+    "model": "XIAOMI 13 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 14 12G/512G",
+    "model": "XIAOMI 14",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 14 ULTRA 16G/512G",
+    "model": "XIAOMI 14 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 14T 12G/512G",
+    "model": "XIAOMI 14T",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 14T PRO 12G/1024G",
+    "model": "XIAOMI 14T PRO",
+    "capacity": "1TB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 14T PRO 12G/512G",
+    "model": "XIAOMI 14T PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 15 12G/512G",
+    "model": "XIAOMI 15",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 15 ULTRA 16G/512G",
+    "model": "XIAOMI 15 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 15T 12G/256G",
+    "model": "XIAOMI 15T",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 15T 12G/512G",
+    "model": "XIAOMI 15T",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 15T PRO 12G/512G",
+    "model": "XIAOMI 15T PRO",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 17 12G/512G",
+    "model": "XIAOMI 17",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 17 ULTRA 16G/512G",
+    "model": "XIAOMI 17 ULTRA",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 17T 12G/256G",
+    "model": "XIAOMI 17T",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI 17T 12G/512G",
+    "model": "XIAOMI 17T",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI MIX FLIP 12G/512G",
+    "model": "XIAOMI MIX FLIP",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI PAD 6 8G/256G",
+    "model": "XIAOMI PAD 6",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI PAD 7 8G/128G",
+    "model": "XIAOMI PAD 7",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI PAD 7 PRO 8G/256G",
+    "model": "XIAOMI PAD 7 PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI PAD MINI 12G/512G",
+    "model": "XIAOMI PAD MINI",
+    "capacity": "512GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "XIAOMI PAD MINI 8G/256G",
+    "model": "XIAOMI PAD MINI",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 10T LITE 5G 6G/128G",
+    "model": "小米 10T LITE 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 11 LITE 5G 6G/128G",
+    "model": "小米 11 LITE 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 11 LITE 5G 8G/128G",
+    "model": "小米 11 LITE 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 11 LITE 5G NE 8G/128G",
+    "model": "小米 11 LITE 5G NE",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 11 LITE 5G NE 8G/256G",
+    "model": "小米 11 LITE 5G NE",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 11T 5G 8G/256G",
+    "model": "小米 11T 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 11T PRO 5G 12G/256G",
+    "model": "小米 11T PRO 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 PAD 5 WIFI 6G/128G",
+    "model": "小米 PAD 5 WIFI",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米 PAD 5 WIFI 6G/256G",
+    "model": "小米 PAD 5 WIFI",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米10 LITE 5G 256G",
+    "model": "小米10 LITE 5G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米11 5G 8G 256G",
+    "model": "小米11 5G 8G",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米9 6G/128G",
+    "model": "小米9",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "小米9T PRO 8G/256G",
+    "model": "小米9T PRO",
+    "capacity": "256GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "紅米 NOTE 10 5G 6G/128G",
+    "model": "紅米 NOTE 10 5G",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "紅米 NOTE 10 PRO 6G/128G",
+    "model": "紅米 NOTE 10 PRO",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "紅米 NOTE 10S 6G/128G",
+    "model": "紅米 NOTE 10S",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  },
+  {
+    "raw": "紅米 PAD WIFI 6G/128G",
+    "model": "紅米 PAD WIFI",
+    "capacity": "128GB",
+    "year": "",
+    "brand": "小米",
+    "scraped_at": "2026-07-23 02:05"
+  }
+]

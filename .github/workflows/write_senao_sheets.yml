@@ -1,0 +1,26 @@
+name: Write Senao to Sheets (one-time)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  write-senao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install gspread google-auth
+
+      - name: Write Senao to Google Sheets
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_senao.py results_senao.json
