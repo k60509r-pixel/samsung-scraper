@@ -8,18 +8,25 @@ SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive",
 ]
-SHEET_NAME = "神腦Raw"
-HEADERS = ["品牌", "神腦原始字串", "機型", "容量", "年份", "抓取時間"]
+SHEET_NAME = "神腦回收報價"
+HEADERS = ["品牌", "神腦原始字串", "機型", "容量", "年份", "回收估價（NT$）", "更新時間"]
 
 
 def get_credentials():
     creds_json = os.environ.get("GOOGLE_CREDENTIALS_JSON")
     if creds_json:
         return Credentials.from_service_account_info(json.loads(creds_json), scopes=SCOPES)
+    # 本地執行：從 credentials.json 讀取
     local_file = os.path.join(os.path.dirname(__file__), "credentials.json")
     if os.path.exists(local_file):
         return Credentials.from_service_account_file(local_file, scopes=SCOPES)
     raise ValueError("找不到憑證：請設定 GOOGLE_CREDENTIALS_JSON 環境變數，或在專案目錄放置 credentials.json")
+
+
+def format_price(price) -> str:
+    if price is None:
+        return "不予回收"
+    return f"{price:,}"
 
 
 def write_to_sheets(data: list[dict]):
@@ -30,7 +37,6 @@ def write_to_sheets(data: list[dict]):
     client = gspread.authorize(get_credentials())
     ss = client.open_by_key(spreadsheet_id)
 
-    # 建立或取得「神腦Raw」分頁
     try:
         sheet = ss.worksheet(SHEET_NAME)
     except gspread.WorksheetNotFound:
@@ -45,22 +51,23 @@ def write_to_sheets(data: list[dict]):
             item.get("model", ""),
             item.get("capacity", ""),
             item.get("year", ""),
+            format_price(item.get("price")),
             item.get("scraped_at", ""),
         ])
 
     sheet.clear()
     sheet.update("A1", rows)
-    sheet.format("A1:F1", {"textFormat": {"bold": True}})
+    sheet.format("A1:G1", {"textFormat": {"bold": True}})
 
     print(f"已寫入 {len(data)} 筆資料到「{SHEET_NAME}」分頁")
 
 
 if __name__ == "__main__":
-    input_file = sys.argv[1] if len(sys.argv) > 1 else "results_senao.json"
+    input_file = sys.argv[1] if len(sys.argv) > 1 else "results_senao_prices.json"
     try:
         with open(input_file, encoding="utf-8") as f:
             data = json.load(f)
     except FileNotFoundError:
-        print(f"找不到 {input_file}，請先執行 scraper_senao.py")
+        print(f"找不到 {input_file}，請先執行 scraper_senao_prices.py")
         sys.exit(1)
     write_to_sheets(data)

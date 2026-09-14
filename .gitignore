@@ -4,3 +4,6 @@ __pycache__/
 debug_site.py
 test_one.py
 .claude/
+credentials.json
+senao_nightly.log
+results_senao_prices.json
