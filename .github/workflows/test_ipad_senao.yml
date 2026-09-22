@@ -1,0 +1,43 @@
+name: Test iPad Scraper (Senao source)
+ 
+# 只能手動觸發：到 GitHub 的 Actions 頁籤 → 選這個 workflow → 按「Run workflow」按鈕
+# 不會自動排程，也不會動到正式的「iPad回收報價」分頁，
+# 結果會寫到獨立的「iPad回收報價(神腦測試)」分頁，方便比對後再決定要不要正式上線。
+on:
+  workflow_dispatch:
+ 
+jobs:
+  test-ipad-senao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+ 
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+ 
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+ 
+      - name: Install dependencies
+        run: pip install requests gspread google-auth
+ 
+      - name: Run iPad (Senao) scraper
+        run: python scraper_ipad_senao.py
+ 
+      - name: Write to test sheet
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python write_to_sheets_ipad_senao.py results_ipad_senao.json
+ 
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-ipad-senao-${{ github.run_number }}
+          path: results_ipad_senao.json
+          retention-days: 14
+ 
