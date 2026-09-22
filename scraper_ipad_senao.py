@@ -32,17 +32,27 @@ warnings.filterwarnings("ignore", category=InsecureRequestWarning)
 SCRAPED_AT = datetime.now().strftime("%Y-%m-%d %H:%M")
 BRAND = "APPLE"
 
+PAGE_URL = "https://helpcenter.senao.com.tw/SecondHand_Evaluate.php"
 BASE_AJAX = "https://helpcenter.senao.com.tw/include/ajax/second_hand.php"
 HEADERS = {
     "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
     "X-Requested-With": "XMLHttpRequest",
-    "Referer": "https://helpcenter.senao.com.tw/SecondHand_Evaluate.php",
+    "Referer": PAGE_URL,
+    "Origin": "https://helpcenter.senao.com.tw",
+    "Accept": "application/json, text/javascript, */*; q=0.01",
+    "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0.0.0 Safari/537.36"
     ),
 }
+
+
+def warm_up(session: requests.Session):
+    """先正常載入一次網頁，讓伺服器發 cookie 給我們，
+    再送 AJAX 請求比較像真人操作，減少被 WAF 擋掉的機會。"""
+    session.get(PAGE_URL, headers={"User-Agent": HEADERS["User-Agent"]}, timeout=15, verify=False)
 
 # 最佳狀況：所有條件選「正常/完整」（跟 scraper_senao_prices.py 一致）
 BEST_CONDITION = {
@@ -217,6 +227,9 @@ def build_display_model(parsed: dict) -> str:
 def main():
     session = requests.Session()
     results = []
+
+    print("先載入神腦估價頁面，取得 cookie...")
+    warm_up(session)
 
     print(f"── {BRAND}（篩選 iPad）──")
     models = get_models(session, BRAND)
