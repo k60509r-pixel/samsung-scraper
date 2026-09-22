@@ -51,8 +51,16 @@ HEADERS = {
 
 def warm_up(session: requests.Session):
     """先正常載入一次網頁，讓伺服器發 cookie 給我們，
-    再送 AJAX 請求比較像真人操作，減少被 WAF 擋掉的機會。"""
-    session.get(PAGE_URL, headers={"User-Agent": HEADERS["User-Agent"]}, timeout=15, verify=False)
+    再送 AJAX 請求比較像真人操作，減少被 WAF 擋掉的機會。
+    順便印出診斷資訊：如果連首頁都 403，代表整個網域被擋（IP 層級）；
+    如果首頁 200 但 AJAX 才 403，代表只有這個 API 被特別保護。"""
+    resp = session.get(PAGE_URL, headers={"User-Agent": HEADERS["User-Agent"]}, timeout=15, verify=False)
+    print(f"[診斷] GET 首頁 {PAGE_URL} → status={resp.status_code}")
+    print(f"[診斷] 回應標頭 Server={resp.headers.get('Server')} , "
+          f"CF-RAY={resp.headers.get('CF-RAY')} , "
+          f"X-Powered-By={resp.headers.get('X-Powered-By')}")
+    if resp.status_code != 200:
+        print(f"[診斷] 首頁回應內容前 300 字：{resp.text[:300]!r}")
 
 # 最佳狀況：所有條件選「正常/完整」（跟 scraper_senao_prices.py 一致）
 BEST_CONDITION = {
@@ -138,6 +146,12 @@ def get_models(session: requests.Session, brand: str) -> list[str]:
         BASE_AJAX, headers=HEADERS, data={"strType": "C", "brand": brand},
         timeout=15, verify=False,
     )
+    print(f"[診斷] POST {BASE_AJAX} → status={resp.status_code}")
+    print(f"[診斷] 回應標頭 Server={resp.headers.get('Server')} , "
+          f"CF-RAY={resp.headers.get('CF-RAY')} , "
+          f"X-Powered-By={resp.headers.get('X-Powered-By')}")
+    if resp.status_code != 200:
+        print(f"[診斷] AJAX 回應內容前 500 字：{resp.text[:500]!r}")
     resp.raise_for_status()
     data = resp.json()
     models: list[str] = []
